@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <!-- css: reset -->
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <!-- css: layout -->
+    <link rel="stylesheet" href="/static/css/layout.css">
+    <!-- font : noto sans, moserrat, roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Noto+Sans+KR:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <!-- xelcon -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+</head>
+<body>
+    <!-- 헤더 삽입 -->
+    <%-include('header.ejs') %>
+    <!-- 메인콘텐츠 삽입 구간 : nav 클릭시 나오는 화면 -->
+    <main>
+        <section class="content-box">
+            <h2>매인콘텐츠 : 메인 추천 영화와 장르별 추천 영화</h2>
+            <!-- 메인 추천 영화 : auto play -->
+            <article class="content-movie-play">
+                <div class="movie-play-info">
+                <h3>오늘의 추천 영화</h3>
+                <p>영화제목</p>
+            </div>
+            </article>
+            <!-- 장르별 추천 영화 -->
+            <article class="content-movie-genre">
+                <h3>지금 D.NEMA에서 추천하는 영화를 살펴보세요!</h3>
+                <ul>
+                    <li><img src="" alt="">
+                        <p>action</p>
+                    </li>
+                    <li><img src="" alt="">
+                        <p>romance</p>
+                    </li>
+                    <li><img src="" alt="">
+                        <p>comedy</p>
+                    </li>
+                    <li><img src="" alt="">
+                        <p>sf</p>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <address>footer</address>
+    </footer>
+    
+</body>
+</html>
