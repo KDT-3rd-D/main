@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+section h2, article h3 {
+    display: none;
+}

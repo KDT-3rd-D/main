@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // express불러오기
 const express = require('express');
 
@@ -41,3 +42,19 @@ app.get('/mypage', function(request, response){
 app.listen(PORT,function(){
     console.log(`Listening on port ${PORT}`);
 });
+=======
+const express = require("express");
+const app = express();
+const PORT = 8000;
+
+app.set("view engine", "ejs");
+app.use("/views", express.static(__dirname + "/views"));
+
+app.get("/", function (req, res) {
+  res.render("main");
+});
+
+app.listen(PORT, function () {
+  console.log(`listening on port ${PORT}! http://localhost:${PORT}`);
+});
+>>>>>>> de124cb9e2555c6b1230a9cbd50136f12cc47165
