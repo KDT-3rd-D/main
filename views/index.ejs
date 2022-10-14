@@ -15,11 +15,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
     <!-- xelcon -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- 메인js -->
+    <script defer src="/static/js/main.js"></script>
 </head>
 <body>
     <!-- 헤더 삽입 -->
     <%-include('header.ejs') %>
-    <!-- 메인콘텐츠 삽입 구간 : nav 클릭시 나오는 화면 -->
+      <!-- 원형 내비게이션 -->
+    <nav id="m_nav">
+    <ul>
+      <li><span class="num">1</span><a href="#genre" title="장르별 추천 영화" class="arctic_scroll">장르별 추천 영화</a></li>
+      <li><span class="num">2</span><a href="#like" title="내가 찜한 영화" class="arctic_scroll">내가 찜한 영화</a></li>
+      <li><span class="num">3</span><a href="#QnA" title="Q&A" class="arctic_scroll">Q&A</a></li>
+    </ul>
+  </nav>
+    <!-- 메인콘텐츠 -->
     <main>
         <section class="content-box">
             <h2>매인콘텐츠 : 메인 추천 영화와 장르별 추천 영화</h2>
@@ -27,25 +39,40 @@
             <article class="content-movie-play">
                 <div class="movie-play-info">
                 <h3>오늘의 추천 영화</h3>
-                <p>영화제목</p>
+                <p>분노의 질주 (Fast & Furious)</p>
             </div>
             </article>
             <!-- 장르별 추천 영화 -->
-            <article class="content-movie-genre">
+            <article class="content-movie-genre" id="genre">
                 <h3>지금 D.NEMA에서 추천하는 영화를 살펴보세요!</h3>
                 <ul>
-                    <li><img src="" alt="">
-                        <p>action</p>
-                    </li>
-                    <li><img src="" alt="">
-                        <p>romance</p>
-                    </li>
-                    <li><img src="" alt="">
-                        <p>comedy</p>
-                    </li>
-                    <li><img src="" alt="">
-                        <p>sf</p>
-                    </li>
+                    <li>
+                        <div class="genre-img">
+                            <img src="/static/image/main-movie.jpg" alt="">
+                        </div>
+                    <p class="genre-title">action</p>
+                    <div class="info action-info">
+                        <iframe src="https://www.youtube.com/embed/SC8uFkGlyww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </li>
+                    <li>
+                    <p class="genre-title">romance</p>
+                    <div class="info romance-info">
+                        <iframe src="https://www.youtube.com/embed/SC8uFkGlyww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </li>
+                    <li>
+                    <p class="genre-title">comedy</p>
+                    <div class="info comedy-info">
+                        <iframe src="https://www.youtube.com/embed/SC8uFkGlyww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </li>
+                    <li>
+                    <p class="genre-title">sf</p>
+                    <div class="info sf-info">
+                        <iframe src="https://www.youtube.com/embed/SC8uFkGlyww" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </li>
                 </ul>
             </article>
         </section>
@@ -53,6 +80,6 @@
     <footer>
         <address>footer</address>
     </footer>
-    
+    <script src="/static/js/jquery.arctic_scroll.js"></script>
 </body>
 </html>
