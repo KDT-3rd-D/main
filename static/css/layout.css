@@ -92,7 +92,7 @@ section h2 {
 /* main - 장르별 추천 영화 가로배치 */
 .content-box .content-movie-genre{
     width: 100%;
-    margin-top: 150px;
+    margin-top: 100px;
 }
 .content-box .content-movie-genre h3{
     font-size: 1.6rem;
@@ -108,32 +108,59 @@ section h2 {
     display: flex;
     justify-content: space-around;
 }
+.content-box .content-movie-genre ul li{
+    position: relative;
+}
 .content-box .content-movie-genre .genre-img{
     width: 240px;
     height: 280px;
     overflow: hidden;
 }
 .content-box .content-movie-genre .genre-img img{
-    width: 100%;
-    height: 100%;
+    width: 240px;
+    height: 280px;
 }
 .content-movie-genre .genre-title{
     font-family: 'Montserrat';
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: bold;
     /* writing-mode: vertical-rl; */
     color: #1579d1;
     text-transform: uppercase;
-    transform: translate(-40px,-40px);
+    transform: translate(-20px,-40px);
     letter-spacing: 2px;
+    text-shadow: 0 1px 0 #CCC,
+    0 2px 0 #CCC,
+    0 3px 0 #CCC,
+    0 4px 0 #CCC,
+    0 5px 0 #CCC,
+    0 6px 0 transparent,
+    0 7px 0 transparent,
+    0 8px 0 transparent,
+    0 9px 0 transparent,
+    0 10px 10px rgba(21, 121, 209, .4);
 }
 /* main - 장르별 추천 영화 hover 효과 */
 .content-movie-genre .info{
+    position: absolute;
+    top: 300px;
     width: 560px;
     height: 315px;
     background-color: #000;
     display: none;
     transition: 0.3s;
+}
+.content-movie-genre .action-info{
+    left: 0;
+}
+.content-movie-genre .remance-info{
+    left: 600px;
+}
+.content-movie-genre .comedy-info{
+    left: 700px;
+}
+.content-movie-genre .sf-info{
+    left: 800px;
 }
 .content-movie-genre .info iframe{
     width: 100%;
@@ -143,10 +170,19 @@ section h2 {
 .content-movie-genre ul li:first-child:hover .action-info{
     display: block;
 }
-/* hover - 영화 포스터 확대 */
-.content-movie-genre ul li:hover .content-movie-genre .genre-img img{
-   transform: scale(1.4);
+.content-movie-genre ul li:nth-child(2):hover .romance-info{
+    display: block;
 }
+.content-movie-genre ul li:nth-child(3):hover .comedy-info{
+    display: block;
+}
+.content-movie-genre ul li:last-child:hover .sf-info{
+    display: block;
+}
+/* hover - 영화 포스터 확대 */
+/* .content-movie-genre ul li:hover .content-movie-genre .genre-img img{
+   transform: scale(1.4);
+} */
 
 /* 윈도우 스크롤값이 ??일때 헤더에 적용되는 서식 */
 /* 메뉴, 로그인, 알람아이콘 글자색 변경 */
