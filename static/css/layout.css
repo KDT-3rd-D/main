@@ -111,6 +111,7 @@ section h2 {
 .content-box .content-movie-genre .genre-img{
     width: 240px;
     height: 280px;
+    overflow: hidden;
 }
 .content-box .content-movie-genre .genre-img img{
     width: 100%;
@@ -142,9 +143,9 @@ section h2 {
 .content-movie-genre ul li:first-child:hover .action-info{
     display: block;
 }
-/* hover - 영화 제목 확대 */
-.content-movie-genre ul li:hover .content-movie-genre .genre-title{
-   font-size: 1.6rem;
+/* hover - 영화 포스터 확대 */
+.content-movie-genre ul li:hover .content-movie-genre .genre-img img{
+   transform: scale(1.4);
 }
 
 /* 윈도우 스크롤값이 ??일때 헤더에 적용되는 서식 */
