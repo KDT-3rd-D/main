@@ -9,28 +9,28 @@ $(document).ready(function(){
       $('header').find('.nav-box li').addClass('on');
       $('header').find('.user-icon i').addClass('on');
       //검정색로고
-      $('header').find('h1 img').attr('src','/static/image/logo.png'); 
+      // $('header').find('h1 img').attr('src','/static/image/logo.png'); 
       $('header').addClass('h_on');
 
       $('header').mouseleave(function(){ //마우스 아웃시 동작
         $('header').find('.nav-box li').addClass('on');
         $('header').find('.user-icon i').addClass('on');
         //검정색로고
-        $('header').find('h1 img').attr('src','/static/image/logo.png'); 
+        // $('header').find('h1 img').attr('src','/static/image/logo.png'); 
         $('header').addClass('h_on');
       });
     }else{
       $('header .nav-box li').removeClass('on');
       $('.user-icon i').removeClass('on');
        //흰색로고
-      $('h1 img').attr('src','/static/image/logo.png');
+      // $('h1 img').attr('src','/static/image/logo.png');
       $('header').removeClass('h_on');
 
       $('header').mouseleave(function(){ //마우스 아웃시 동작
         $(this).find('.nav-box li').removeClass('on');
         $(this).find('.user-icon i').removeClass('on');
         //검정색로고
-        $(this).find('h1 img').attr('src','/static/image/logo.png');
+        // $(this).find('h1 img').attr('src','/static/image/logo.png');
         $(this).removeClass('h_on');
       });
     }
