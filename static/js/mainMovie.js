@@ -9,10 +9,10 @@ $(this).find('.bar').delay(300).animate({'opacity':'1','height':'35px'},400);
 
 // 2. .info의 위치를 -500px에서 0px로 바꿔서 보이게 한다.
 $(this).find('.info').delay(300).animate({'left':'20px'},400);
-$(this).find('.genre-img iframe').animate({'opacity':'1'},400);
+$(this).find('.genre-img video').animate({'opacity':'1'},400);
 
 // 영상 플레이하기
-let v = $(this).find('iframe').get(0); // 영상 객체변수 선언
+let v = $(this).find('video').get(0); // 영상 객체변수 선언
 v.play(); // 영상을 재생하라
 });
 
@@ -21,9 +21,9 @@ $('.content-movie-genre ul li').mouseleave(function(){
 $(this).stop().animate({'width':'20%'},300);
 $(this).find('.bar').animate({'opacity':'0','height':'0px'},300);
 $(this).find('.info').animate({'left':'-500px'},300);
-$(this).find('.genre-img iframe').animate({'opacity':'0'},300);
+$(this).find('.genre-img video').animate({'opacity':'0'},300);
 
-let v = $(this).find('iframe').get(0);
+let v = $(this).find('video').get(0);
 v.currentTime=0;
 v.pause();
 });
@@ -47,3 +47,18 @@ $( '.modal-close-btn' ).click( function() {
 //   modal.style = 'display : none';
 // }
 
+// main - auto slide
+$(document).ready(function(){
+  //  첫번째 목록의 앞에 마지막 목록을 배치
+   $('.content-auto-slide > ul > li:last-child').insertBefore('.content-auto-slide > ul > li:first-child');
+  //  왼쪽으로 -300px만큼 이동하여 1번이미지가 가운데 오도록
+  $('.content-auto-slide > ul').css('margin-left','-300px');
+
+  function moveLeft(){
+      $('.content-auto-slide > ul').animate({'margin-left':'-600px'},500,function(){
+          $('.content-auto-slide > ul > li:first-child').insertAfter('.content-auto-slide > ul > li:last-child');
+          $('.content-auto-slide > ul').css('margin-left','-300px');
+      });
+  }
+  let Timer = setInterval(moveLeft,1000)
+});

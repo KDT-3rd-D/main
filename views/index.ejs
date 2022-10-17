@@ -23,6 +23,8 @@
     <script defer src="/static/js/main.js"></script>
     <!-- 장르별 추천 영화 : 영상 자동재생 js -->
     <script defer src="/static/js/mainMovie.js"></script>
+    <!-- 메인 게시판 작성 기능 -->
+    <script defer src="/static/js/mainList.js"></script>
 </head>
 <body>
     <!-- 헤더 삽입 -->
@@ -41,6 +43,9 @@
             <h2>매인콘텐츠 : 메인 추천 영화와 장르별 추천 영화</h2>
             <!-- 메인 추천 영화 : auto play -->
             <article class="content-movie-play">
+                <video muted autoplay loop>
+                    <source src="/static/video/[분노의 질주 더 세븐] 1차 예고편.mp4" type="video/mp4">
+                  </video>
                 <div class="movie-play-info">
                 <h3>오늘의 추천 영화</h3>
                 <p>분노의 질주 (Fast & Furious)</p>
@@ -54,7 +59,9 @@
                 <ul>
                     <li>
                         <div class="genre-img">
-                            <iframe src="https://www.youtube.com/embed/SC8uFkGlyww?autoplay=1&mute=1" title="action:분노의 질주"></iframe>
+                            <video muted autoplay loop>
+                                <source src="/static/video/action.mp4" type="video/mp4">
+                              </video>
                         </div>
                     <p class="genre-title">action</p>
                     <div class="bar"></div>
@@ -66,7 +73,9 @@
                 </li>
                     <li>
                         <div class="genre-img">
-                            <iframe src="https://www.youtube.com/embed/tnyWkyDGWuM?autoplay=1&mute=1" title="romance:어바웃타임"></iframe>
+                            <video muted autoplay loop>
+                                <source src="/static/video/romance.mp4" type="video/mp4">
+                              </video>
                         </div>
                     <p class="genre-title">romance</p>
                     <div class="bar"></div>
@@ -78,7 +87,9 @@
                 </li>
                     <li>
                         <div class="genre-img">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/BaIRaKXrLPk?autoplay=1&mute=1" title="comedy:극한직업"></iframe>
+                            <video muted autoplay loop>
+                                <source src="/static/video/comedy.mp4" type="video/mp4">
+                              </video>
                         </div>
                     <p class="genre-title">comedy</p>
                     <div class="bar"></div>
@@ -90,7 +101,9 @@
                 </li>
                     <li>
                         <div class="genre-img">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/-5Dc8EMVYBo?autoplay=1&mute=1" title="sf:듄"></iframe>
+                            <video muted autoplay loop>
+                                <source src="/static/video/sf.mp4" type="video/mp4">
+                              </video>
                         </div>
                     <p class="genre-title">sf</p>
                     <div class="bar"></div>
@@ -105,8 +118,40 @@
             </article>
             <!-- !! 랜덤 슬라이드 애니메이션 삽입 예정 -->
             <article class="content-auto-slide">
-                <h3>랜덤 영화 추천</h3>
-                <div class="auto-slide"></div>
+                <h3>What's <strong>New?</strong></h3>
+                <div class="slide-frame"></div>
+                <ul class="auto-slide">
+                    <li><img src="/static/image/slide01.jpeg" alt="랜덤 영화 이미지"></li>
+                    <li><img src="/static/image/slide02.jpeg" alt="랜덤 영화 이미지"></li>
+                    <li><img src="/static/image/slide03.jpeg" alt="랜덤 영화 이미지"></li>
+                    <li><img src="/static/image/slide04.jpeg" alt="랜덤 영화 이미지"></li>
+                    <li><img src="/static/image/slide05.jpeg" alt="랜덤 영화 이미지"></li>
+                    <li><img src="/static/image/slide06.jpeg" alt="랜덤 영화 이미지"></li>
+                    <li><img src="/static/image/slide07.jpeg" alt="랜덤 영화 이미지"></li>
+                    <li><img src="/static/image/slide08.jpeg" alt="랜덤 영화 이미지"></li>
+                    <li><img src="/static/image/slide09.jpeg" alt="랜덤 영화 이미지"></li>
+                    <li><img src="/static/image/slide10.jpeg" alt="랜덤 영화 이미지"></li>
+                </ul>
+            </article>
+            <!-- 영화 후기 작성 : 게시판 구현 -->
+            <article class="content-review">
+                <h3>게시판 : 리뷰 작성</h3>
+
+                <!-- 리뷰 작성 공통 btn -->
+                 <div class="review-input">
+                        <!-- 게시글 입력 폼 -->
+                        <form id="list-form">
+                        <input type="text" name="list" placeholder="D:NEMA리뷰를 작성해주세요">
+                        <button type="submit" class="plus-btn"><i class="xi-plus-min"></i></button>
+                        </form>
+                        </div>
+
+                <div class="review">
+                    <button type="button" class="clear-all-btn">clear all</button>
+                    <ul class="review-list">
+                        <!-- js:form 입력값을 li 내용으로 추가하는 동작 생성 -->
+                    </ul>
+                </div>
             </article>
         </section>
     </main>
