@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* common css */
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+}
+.top-nav{
+  background: #000 !important;
+}
+body{
+  background-color: #000;
+}
+.list-box {
+  padding-top: 150px;
+  width: 80%;
+  color: #fff;
+  margin: 0 auto;
+}
+.list-box h1{
+  font-size: 2.8rem;
+  font-weight: bolder;
+  text-align: center;
+}
