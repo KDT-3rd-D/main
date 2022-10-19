@@ -289,8 +289,9 @@ input:focus, button:focus{
     z-index: 10000;
     display: none;
   }
-  .modal-bg .modal-box{
+  .modal-box{
     position: absolute;
+    z-index: 10001;
     top: 10%;
     left: 24%;
     padding-bottom: 40px;
@@ -298,9 +299,10 @@ input:focus, button:focus{
     width: 600px;
     height: 900px;
     overflow: scroll;
+    display: none;
   }
   /* modal close btn */
-  .modal-bg .modal-box .modal-close-btn{
+  .modal-box .modal-close-btn{
     outline: none;
     border: none;
     background: none;
@@ -312,7 +314,7 @@ input:focus, button:focus{
     z-index: 9999;
     cursor: pointer;
   }
-  .modal-bg .modal-box .modal-close-btn img{
+  .modal-box .modal-close-btn img{
     width: 100%;
   }
   /* modal- img 및 제목*/
@@ -546,4 +548,9 @@ input:focus, button:focus{
 .review-list li .delBtn{
     font-size: 1rem;
     color: #ff0000;
+}
+
+
+.fa-times {
+    color: white;
 }
