@@ -23,12 +23,13 @@ listForm.addEventListener('submit', function(event){
         else{
             ul.append(newList);
             newList.append(delBtnElem);
+            listInput.value = '';
     }
 
      // delete button 태그를 생성하고 설정하는 함수
      const delBtnElem = document.createElement('button');
      delBtnElem.classList.add('delBtn');
-     delBtnElem.innerHTML = '<i class="fa-solid fa-trash"></i>';
+     delBtnElem.innerHTML = '<i class="xi-trash"></i>';
      delBtnElem.onclick = clickDelBtn();
  
      newList.append(delBtnElem);
@@ -36,12 +37,14 @@ listForm.addEventListener('submit', function(event){
     // input창 초기화
     listInput.value = '';
 
-      // todo list 전체 삭제
-      const delAll = document.querySelector('.clear-all-btn');
-      delAll.onclick = function() {
-          ul.remove(newList);
-  }
-  
+          // todo list 전체 삭제
+          const delAll = document.querySelector('.clear-all-btn');
+          delAll.onclick = function() {
+              ul.remove(newList);
+      }
 
 });
     
+
+
+  

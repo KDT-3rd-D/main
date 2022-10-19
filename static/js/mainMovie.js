@@ -1,3 +1,13 @@
+// main - 모달창 내부 좋아요 btn
+const modalLike = document.querySelector('#modal-like');
+
+modalLike.onclick = function() {
+  let likeBtn = document.querySelector('#modal-like > i');
+  likeBtn.classList.toggle('xi-heart-o');
+  likeBtn.classList.toggle('xi-heart');
+}
+
+// main - 장르별 추천 영화 영상 auto play
 $(document).ready(function(){
 
 // 사용자가 마우스로 li 태그를 오버하면
