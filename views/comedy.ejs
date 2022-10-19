@@ -2,77 +2,35 @@
 <html lang="ko">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>D.nema - comedy</title>
-	<!-- css: reset -->
-	<link rel="stylesheet" href="/static/css/reset.css">
-	<!-- css: layout -->
-	<link rel="stylesheet" href="/static/css/layout.css">
-	<!-- css: header -->
-	<link rel="stylesheet" href="/static/css/header.css">
-	<!-- css: sub -->
-	<link rel="stylesheet" href="/static/css/sub.css">
-	<!-- font : noto sans, moserrat, roboto -->
-	<link
-		href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Noto+Sans+KR:wght@400;500&family=Roboto:wght@400;500&display=swap"
-		rel="stylesheet">
-	<!-- fontawsome -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
-	<!-- xelcon -->
-	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-	<!-- CDN -->
-	<script src="https://code.jquery.com/jquery-3.6.1.min.js"
-		integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D.nema - comedy</title>
+  <!-- css: reset -->
+  <link rel="stylesheet" href="/static/css/reset.css">
+  <!-- css: layout 건드리지않고 새 파일로 작업 -->
+  <link rel="stylesheet" href="/static/css/layout.css">
+  <link rel="stylesheet" href="static/css/sub.css">
+  <!-- font : noto sans, moserrat, roboto -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Noto+Sans+KR:wght@400;500&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+  <!-- xelcon -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 </head>
 
 <body>
-	<!-- 헤더 삽입 -->
-	<%-include('header.ejs') %>
+  <!-- 헤더 삽입 -->
+  <%-include('header.ejs') %>
 
-	<section>
-		<main>
-			<div class="random">
-				<div class="title-move">
-					<h2 class="hidden">Comedy random recommond</h2>
-					<p>
-						<!-- <span>D.nema의 추천, ROMANCE</span><br> -->
-						<span>COMEDY</span><br>
-						&nbsp;D.NEMA가 추천하는 코미디 영화!
-					</p>
-					<button class="button"><i class="xi-shuffle"></i> 랜덤플레이</button>
-				</div>
-				<div class="video">
-					<video src="../static/video/random_romance3.mp4" autoplay muted></video>
-					<div class="description">
-						<div class="ott">
-							<span class="age-color none"></span>
-							<img class="netflix none" src="../static/image/netflix.png"></img>
-							<img class="watcha none" src="../static/image/watcha.png"></img>
-							<img class="tving none" src="../static/image/tving.png"></img>
-							<img class="disney none" src="../static/image/disney.png"></img>
-							<img class="wavve none" src="../static/image/wavve.png"></img>
-						</div>
-						<span class="title"></span>
-						<span class="decs"></span>
-					</div>
-				</div>
-			</div>
+  <h2>COMEDY</h2>
 
-			<!-- top movie -->
-			<article class="movies">
-				<h3>Top moives</h3>
-				
-			</article>
-		</main>
-	</section>
 
-	<footer>
-		<address>footer</address>
-	</footer>
 
-	<script src="../static/js/sub.js"></script>
+
+
 
 </body>
 
