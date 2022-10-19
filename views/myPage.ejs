@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/static/image/favicon.ico" type="image/x-icon">
+    <!-- css: reset -->
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <!-- css: header -->
+    <link rel="stylesheet" href="/static/css/header.css">
+    <!-- css: mypage -->
+    <link rel="stylesheet" href="/static/css/myPage.css">
+    <!-- font : noto sans, moserrat, roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Noto+Sans+KR:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <!-- xelcon -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- 슬라이드 서식 -->
+    <link rel="stylesheet" href="/static/css/swiper.css">
+    <script src="/static/js/swiper.js"></script>
+        <!-- 헤더변경js -->
+        <script defer src="/static/js/main.js"></script>
+</head>
+<body>
+  <!-- 헤더 삽입 -->
+  <%-include('header.ejs') %>
+   <main>
+    <div class="test" style="width: 100%; height:100%; background-color: #000;"></div>
+    <div class="body">
+        <div class="cont-head">
+            <h1><strong>신진영</strong>님,<br>환영합니다!</h1>
+        </div>
+        <div class="cont-body">
+            <div class="my-new">
+            <h2>최근 활동</h2>
+            <ul class="flex">
+                <li><strong>2</strong><br>게시글</li>
+                <li><strong>8</strong><br>찜한 영화</li>
+                <li><strong>10</strong><br>별점 평가</li>
+            </ul>
+        </div>
+        <div class="slide">
+            <h2><i class="xi-heart"></i>&nbsp;내가 찜한 영화</h2>
+            <div class="swiper mySwiper">
+                <!-- Additional required wrapper -->
+            <ul class="swiper-wrapper">
+                <!-- Slides -->
+                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
+            </ul>
+        </div>
+          <!-- 슬라이드의 좌, 우에 방향표시 버튼 -->
+          <div div id="swiper-button-next" class="swiper-button-next"></div>
+          <div div id="swiper-button-prev" class="swiper-button-prev"></div>
+        </div>
+        <div class="slide02">
+            <h2><i class="xi-star"></i>&nbsp;평점 준 영화</h2>
+            <div class="swiper mySwiper02">
+                <!-- Additional required wrapper -->
+            <ul class="swiper-wrapper">
+                <!-- Slides -->
+                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
+            </ul>
+        </div>
+          <!-- 슬라이드의 좌, 우에 방향표시 버튼 -->
+          <div id="swiper-button-next" class="swiper-button-next2"></div>
+          <div id="swiper-button-prev" class="swiper-button-prev2"></div>
+        </div>
+        </div>
+        <div class="cont-foot">
+            
+        </div>
+    </div>
+    </main>
+        <!-- Initialize Swiper -->
+<script>
+    // 찜한 영화 slide
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    let slide = new Swiper('.slide',{
+        pagination : {
+            el: ".swiper-pagination",
+            clickable: true,
+        }
+    });
+    // 평점 준 영화 slide
+    var swiper02 = new Swiper(".mySwiper02", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      pagination: {
+        el: ".swiper-pagination2",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next2",
+        prevEl: ".swiper-button-prev2",
+      },
+    });
+    let slide02 = new Swiper('.slide02',{
+        pagination : {
+            el: ".swiper-pagination2",
+            clickable: true,
+        }
+    });
+  </script>
+  </body>
+</html>

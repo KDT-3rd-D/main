@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/static/image/favicon.ico" type="image/x-icon">
+    <!-- css: reset -->
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <!-- css: header -->
+    <link rel="stylesheet" href="/static/css/header.css">
+    <!-- css: layout -->
+    <link rel="stylesheet" href="/static/css/layout.css">
+    <!-- font : noto sans, moserrat, roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Noto+Sans+KR:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <!-- xelcon -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- 헤더변경js -->
+    <script defer src="/static/js/main.js"></script>
+    <!-- 장르별 추천 영화 : 영상 자동재생 js -->
+    <script defer src="/static/js/mainMovie.js"></script>
+    <!-- 메인 게시판 작성 기능 -->
+    <script defer src="/static/js/mainList.js"></script>
+</head>
+<body>
+    <!-- 헤더 삽입 -->
+    <%-include('header.ejs') %>
+      <!-- 원형 내비게이션 -->
+    <nav id="m_nav">
+    <ul>
+      <li><span class="num"><i class="xi-movie-o"></i></span><a href="#genre" title="장르별 추천 영화" class="arctic_scroll">장르별 추천 영화</a></li>
+      <li><span class="num"><i class="xi-library-image-o"></i></span><a href="#gallery" title="영화갤러리" class="arctic_scroll">영화갤러리</a></li>
+      <li><span class="num"><i class="xi-help-o"></i></span><a href="#qna" title="Q&A" class="arctic_scroll">Q&A</a></li>
+    </ul>
+  </nav>
+    <!-- 메인콘텐츠 -->
+    <main>
+        <section class="content-box">
+            <h2>매인콘텐츠 : 메인 추천 영화와 장르별 추천 영화</h2>
+            <!-- 메인 추천 영화 : auto play -->
+            <article class="content-movie-play">
+                <video muted autoplay loop>
+                    <source src="/static/video/[분노의 질주 더 세븐] 1차 예고편.mp4" type="video/mp4">
+                  </video>
+                <div class="movie-play-info">
+                <h3>오늘의 추천 영화</h3>
+                <p>분노의 질주 : 더 세븐 (Fast & Furious 7)</p>
+                <!-- modal open -->
+                <button class="movie-info-detail">영화 상세 정보</button>
+            </div>
+            </article>
+            <!-- 장르별 추천 영화 -->
+            <article class="content-movie-genre" id="genre">
+                <h3><i class="fas fa-video"></i>&nbsp;지금 D.NEMA에서 추천하는 영화를 살펴보세요!</h3>
+                <ul>
+                    <li>
+                        <div class="genre-img">
+                            <video muted autoplay loop>
+                                <source src="/static/video/action.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                    <p class="genre-title">action</p>
+                    <div class="bar"></div>
+                    <div class="info action-info">
+                        #드웨인존슨 X #제이슨스타뎀<br>
+                        올 여름, 최고의 액션 빅 매치<br>
+                        [#분노의질주_홉스앤쇼] 8월 14일 대개봉
+                    </div>
+                </li>
+                    <li>
+                        <div class="genre-img">
+                            <video muted autoplay loop>
+                                <source src="/static/video/romance.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                    <p class="genre-title">romance</p>
+                    <div class="bar"></div>
+                    <div class="info romance-info">
+                        #도널 글리슨 X #레이첼 맥아담스<br>
+                        러브액츄얼리, 노팅힐 제작<br>
+                        리차드 커티스 감독 [#어바웃타임]
+                    </div>
+                </li>
+                    <li>
+                        <div class="genre-img">
+                            <video muted autoplay loop>
+                                <source src="/static/video/comedy.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                    <p class="genre-title">comedy</p>
+                    <div class="bar"></div>
+                    <div class="info comedy-info">
+                        류승룡, 이하늬, 진선규, 이동휘, 공명 출연<br>
+                        2019년 상반기 개봉<br>
+                        총 누적 관개수 역대 2위 !
+                    </div>
+                </li>
+                    <li>
+                        <div class="genre-img">
+                            <video muted autoplay loop>
+                                <source src="/static/video/sf.mp4" type="video/mp4">
+                              </video>
+                        </div>
+                    <p class="genre-title">sf</p>
+                    <div class="bar"></div>
+                    <div class="info sf-info">
+                        #듄 #드니빌뇌브 #티모시샬라메<br>
+                        이번 생에 경험하지 못할<br>
+                        단 하나의 SF 블록버스터 탄생
+                        
+                    </div>
+                </li>
+                </ul>
+            </article>
+            <!-- !! 랜덤 슬라이드 애니메이션 삽입 예정 -->
+            <article id="gallery" class="content-auto-slide">
+                <h3>What's <strong>New?</strong></h3>
+                <div class="slide-frame"></div>
+                <ul class="auto-slide">
+                    <li><img src="/static/image/slide01.jpeg" alt="랜덤 영화 이미지"></li>
+                    <li><img src="/static/image/slide02.jpeg" alt="랜덤 영화 이미지"></li>
+                    <li><img src="/static/image/slide03.jpeg" alt="랜덤 영화 이미지"></li>
+                    <li><img src="/static/image/slide04.jpeg" alt="랜덤 영화 이미지"></li>
+                    <li><img src="/static/image/slide05.jpeg" alt="랜덤 영화 이미지"></li>
+                    <li><img src="/static/image/slide06.jpeg" alt="랜덤 영화 이미지"></li>
+                    <li><img src="/static/image/slide07.jpeg" alt="랜덤 영화 이미지"></li>
+                    <li><img src="/static/image/slide08.jpeg" alt="랜덤 영화 이미지"></li>
+                    <li><img src="/static/image/slide09.jpeg" alt="랜덤 영화 이미지"></li>
+                    <li><img src="/static/image/slide10.jpeg" alt="랜덤 영화 이미지"></li>
+                </ul>
+            </article>
+             <!-- QnA -->
+             <article id="qna" class="content-review">
+                <h3>Q&A</h3>
+                    
+                <!-- 게시글 작성 공통 btn -->
+                <div class="review-input">
+                  <!-- 게시글 입력 폼 -->
+                 <form id="list-form">
+                    <input type="text" name="list" placeholder="D:NEMA에 궁금한점을 남겨주세요!">
+                    <button type="submit" class="plus-btn"><i class="xi-plus-min"></i></button>
+                    </form>
+                </div>
+                <div class="review">
+                    <button type="button" class="clear-all-btn">clear all</button>
+                    <ul class="review-list">
+                    <!-- js:form 입력값을 li 내용으로 추가하는 동작 생성 -->
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <address>footer</address>
+    </footer>
+
+        <!-- 영화 상세 정보 btn : modal -->
+        <div class="modal-bg">
+        </div>
+        <div class="modal-box">
+            <!-- modal close btn -->
+            <button class="modal-close-btn"><img src="/static/image/close-btn.png" alt="닫기버튼"></button>
+            <div class="modal-cont">
+                <div class="modal-img">
+                    <video muted autoplay loop>
+                        <source src="/static/video/[분노의 질주 더 세븐] 1차 예고편.mp4" type="video/mp4">
+                      </video>
+                      <!-- 영화 좋아요 btn -->
+                      <button id="modal-like" class="modal-like-btn"><i class="xi-heart-o"></i></button>
+            </div>
+                <h3>분노의 질주: 더 세븐</h3>
+                <div class="cont-info">
+                    <!-- 영화 내용 -->
+                    <p>도미닉(빈 디젤)은 자신과 가장 가까웠던 형제 제이콥(존 시나)이 사이퍼(샤를리즈 테론)와 연합해 전 세계를 위기로 빠트릴 위험천만한 계획을 세운다는 사실을 알게 되고, 이를 막기 위해 다시 한 번 패밀리들을 소환한다. 가장 가까운 자가 한순간, 가장 위험한 적이 된 상황 도미닉과 패밀리들은 이에 반격할 놀라운 컴백과 작전을 세우고 지상도, 상공도, 국경도 경계가 없는 불가능한 대결이 시작되는데…</p>
+                    <!-- 출연진 및 감독 -->
+                    <p>
+                        <strong>감독</strong> 저스틴 린<br>
+                        <strong>주연</strong> 빈 디젤, 존 시나, 성 강, 샤를리즈 테론, 미셸 로드리 게즈
+                    </p>
+                </div>
+                <!-- 출연진 이미지 flex 배치 -->
+                <div class="cont-ex-list">
+                    <h3 class="cont-ex-title">출연진</h3>
+                    <ul class="cont-ex-flex">
+                        <li>
+                            <div class="flex-img">
+                            <img src="/static/image/modal.jpg" alt="빈디젤">
+                            </div>
+                            <span>빈디젤</span>
+                        </li>
+                        <li>
+                            <div class="flex-img">
+                            <img src="/static/image/modal02.jpg" alt="폴워커">
+                            </div>
+                            <span>폴워커</span>
+                        </li>
+                        <li>
+                            <div class="flex-img">
+                            <img src="/static/image/modal03.jpg" alt="드웨인 존슨">
+                            </div>
+                            <span>드웨인 존슨</span>
+                        </li>
+                        <li>
+                            <div class="flex-img">
+                            <img src="/static/image/modal04.jpg" alt="미셸 로드리게즈">
+                            </div>
+                            <span>미셸 로드리게즈</span>
+                        </li>
+                    </ul>
+                    <ul class="cont-ex-flex">
+                        <li>
+                            <div class="flex-img">
+                            <img src="/static/image/modal05.jpg" alt="성강">
+                            </div>
+                            <span>성강</span>
+                        </li>
+                        <li>
+                            <div class="flex-img">
+                            <img src="/static/image/modal06.jpg" alt="샤를리즈 테론">
+                            </div>
+                            <span>샤를리즈 테론</span>
+                        </li>
+                        <li>
+                            <div class="flex-img">
+                            <img src="/static/image/modal07.jpg" alt=" 존 시나">
+                            </div>
+                            <span>존 시나</span>
+                        </li>
+                        <li>
+                            <div class="flex-img">
+                            <img src="/static/image/modal08.jpg" alt="조다나 브류스터">
+                            </div>
+                            <span>조다나 브류스터</span>
+                        </li>
+                    </ul>
+                </div>
+            <div class="modal-to-review">
+                <a href="/list" class="plus-btn review-btn"><i class="xi-pen"></i>리뷰 작성 하기</a>
+            </div>
+            </div>
+        </div>
+
+    <script src="/static/js/jquery.arctic_scroll.js"></script>
+</body>
+</html>

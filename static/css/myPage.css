@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* common css */
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+}
+/* 전체 레이아웃 */
+.top-nav{
+  background: #000 !important;
+}
+.user-icon{
+  color: #35aef7 !important;
+}
+main{
+  background-color: #000;
+  width: 100%;
+  min-height: 1000px;
+  padding-bottom: 50px;
+}
+.body{
+  width: 60%;
+  margin: 0 auto;
+}
+.cont-head, .cont-body, .cont-foot{
+  color: #fff;
+  width: 100%;
+  margin: 0 auto;
+}
+/* 사용자 이름 */
+.cont-head h1{
+  font-size: 4rem;
+  font-weight: bolder;
+  padding: 160px 0 50px 100px;
+  line-height: 5rem;
+}
+.cont-head h1 strong{
+  color: #35aef7;
+}
+/* 아이콘 색상 지정 */
+i.xi-heart{
+  color: #ff0000;
+}
+i.xi-star{
+  color: rgb(255, 255, 0);
+}
+/* 사용자 최근 활동 */
+.cont-body h2{
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 50px 0 30px 100px;
+}
+.cont-body .flex{
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 0.8rem;
+}
+.flex strong{
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+/* 내가 찜한 영화 - slide */
+.slide, .slide02{
+  width: 100%;
+  position: relative;
+}
+.swiper{
+  width: 100%;
+  overflow: hidden;
+}
+.swiper-wrapper{
+  display: flex;
+}
+.slide .swiper-slide, .slide02 .swiper-slide{
+  width: 200px !important;
+  height: 200px !important;
+  overflow: hidden;
+}
+.slide .swiper-slide img, .slide02 .swiper-slide img{
+  width: 100%;
+  object-fit: cover;
+}
