@@ -5,7 +5,7 @@ const express = require('express');
 // express 함수를 호출해서 만들어진 express application
 const app = express();
 
-const PORT = 8100; // PORT NUMBER
+const PORT = 8080; // PORT NUMBER
 
 // app에 view engine을 ejs로 설정
 app.set('view engine' , 'ejs'); 
