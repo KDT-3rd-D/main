@@ -20,17 +20,19 @@ main{
 .body{
   width: 60%;
   margin: 0 auto;
+  padding-top: 200px;
 }
 .cont-head, .cont-body, .cont-foot{
   color: #fff;
   width: 100%;
   margin: 0 auto;
+  display: none;
 }
 /* 사용자 이름 */
 .cont-head h1{
   font-size: 4rem;
   font-weight: bolder;
-  padding: 160px 0 50px 100px;
+  padding: 160px 0 200px 100px;
   line-height: 5rem;
 }
 .cont-head h1 strong{
@@ -43,11 +45,14 @@ i.xi-heart{
 i.xi-star{
   color: rgb(255, 255, 0);
 }
+i.xi-time{
+  color: #35aef7;
+}
 /* 사용자 최근 활동 */
 .cont-body h2{
   font-size: 1.4rem;
   font-weight: 600;
-  margin: 50px 0 30px 100px;
+  margin: 50px 0 50px 100px;
 }
 .cont-body .flex{
   display: flex;

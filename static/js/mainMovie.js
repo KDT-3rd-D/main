@@ -1,10 +1,29 @@
 // main - 모달창 내부 좋아요 btn
 const modalLike = document.querySelector("#modal-like");
 
+modalLike.onclick = function() {
+  let likeBtn = document.querySelector('#modal-like > i');
+  likeBtn.classList.toggle('xi-heart-o');
+  likeBtn.classList.toggle('xi-heart');
+}
+// main - 모달창 내부 별점
+const drawStar = (target) => {
+  document.querySelector(`.star span`).style.width = `${target.value * 10}%`;
+};
+const drawStar2 = (target) => {
+  document.querySelector(`.star2 span`).style.width = `${target.value * 10}%`;
+};
+const drawStar3 = (target) => {
+  document.querySelector(`.star3 span`).style.width = `${target.value * 10}%`;
+};
+const drawStar4 = (target) => {
+  document.querySelector(`.star4 span`).style.width = `${target.value * 10}%`;
+  
 modalLike.onclick = function () {
   let likeBtn = document.querySelector("#modal-like > i");
   likeBtn.classList.toggle("xi-heart-o");
   likeBtn.classList.toggle("xi-heart");
+
 };
 
 // main - 장르별 추천 영화 영상 auto play

@@ -33,8 +33,9 @@ app.get("/comedy", function (request, response) {
 app.get("/sf", function (request, response) {
   response.render("sf");
 });
-app.get("/mypage", function (request, response) {
-  response.render("myPage");
+
+app.get('/list', function(request, response){
+    response.render('list')
 });
 app.get("/my", function (request, response) {
   response.render("myPage");

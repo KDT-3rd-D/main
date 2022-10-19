@@ -16,6 +16,9 @@ listForm.addEventListener('submit', function(event){
     ul.append(newList);
     newList.textContent = list;
 
+     // input창 초기화
+     listInput.value = '';
+
     //input.value값이 없을 경우, alert창 띄우기
     if (list === ""){
         alert('값을 입력해주세요')
@@ -27,21 +30,19 @@ listForm.addEventListener('submit', function(event){
     }
 
      // delete button 태그를 생성하고 설정하는 함수
-     const delBtnElem = document.createElement('button');
-     delBtnElem.classList.add('delBtn');
-     delBtnElem.innerHTML = '<i class="xi-trash"></i>';
-     delBtnElem.onclick = clickDelBtn();
+    //  const delBtnElem = document.createElement('button');
+    //  delBtnElem.classList.add('delBtn');
+    //  delBtnElem.innerHTML = '<i class="xi-trash"></i>';
+    //  delBtnElem.onclick = clickDelBtn();
  
-     newList.append(delBtnElem);
-
-    // input창 초기화
-    listInput.value = '';
+    //  newList.append(delBtnElem);
 
           // todo list 전체 삭제
-          const delAll = document.querySelector('.clear-all-btn');
-          delAll.onclick = function() {
-              ul.remove(newList);
-      }
+          // const delAll = document.querySelector('.clear-all-btn');
+          // let qna = document.querySelector('.qna')
+          // delAll.click = function() {
+          //     ul.remove(qna);
+      // }
 
 });
     
