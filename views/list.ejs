@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>action</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/static/image/favicon.ico" type="image/x-icon">
+    <!-- css: reset -->
+    <link rel="stylesheet" href="/static/css/reset.css">
+    <!-- css: header -->
+    <link rel="stylesheet" href="/static/css/header.css">
+    <!-- css: list -->
+    <link rel="stylesheet" href="/static/css/list.css">
+    <!-- font : noto sans, moserrat, roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Noto+Sans+KR:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <!-- xelcon -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</head>
+<body>
+    <!-- 헤더 삽입 -->
+    <%-include('header.ejs') %>
+    <div class="list-box">
+      <!-- 왼쪽 : 작성구간 -->
+      <div class="left-box">
+        <i class="fas fa-edit"></i>
+    <h1>REVIEW</h1>
+    <form>
+      <label for="writer">작성자</label>
+      <input type="text" id="writer" autocomplete="off" />
+      <br />
+      <br />
+
+      <label for="content">내용</label>
+      <input type="text" id="content" style="width: 500px" autocomplete="off" />
+      <br />
+      <br />
+
+      <button type="button" onclick="writeNote();">등록</button>
+    </form>
+  </div>
+    <br />
+    <br />
+    <!-- 오른쪽 : 입력된 내용 구간 -->
+    <div class="right-box">
+    <table id="table" border="1" cellpadding="10" cellspacing="1">
+      <tr>
+        <th>작성자</th>
+        <th>내용</th>
+        <th>작성일</th>
+      </tr>
+    </div>
+      <!-- 
+        코드 추가 예시
+        <tr>
+          <td>홍길동</td>
+          <td>하이</td>
+          <td>2022-10-05 12:34</td>
+        </tr>
+      -->
+    </table>
+  </div>
+
+    <script>
+      function writeNote() {
+        event.preventDefault();
+        const writer = document.getElementById('writer').value;
+        const text = document.getElementById('content').value;
+        const table = document.getElementById('table');
+
+        const textAll = document.createElement('tr');
+        const textWriter = document.createElement('td');
+        const textContent = document.createElement('td');
+        const textDate = document.createElement('td');
+
+        // 댓글 단 시간 설정 
+        let time = new Date();
+
+        let year = time.getFullYear();
+        let month = time.getMonth();
+        let day = time.getDate();
+
+        let hour = time.getHours();
+        let minute = time.getMinutes();
+
+        textWriter.innerHTML = writer;
+        textContent.innerHTML = text;
+        textDate.innerHTML = `${year}-${month+1}-${day} ${hour} : ${minute}`;
+         
+        table.append(textAll);
+        textAll.append(textWriter,textContent,textDate);
+
+        writer.value = '';
+        text.value = '';
+      }
+    </script>
+</body>
+</html>

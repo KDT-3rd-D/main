@@ -49,7 +49,7 @@ section h2 {
 }
 .nav .nav-box a:hover, 
 .top-nav .user-icon i:hover{
-    color: #35aef7;
+    color: #f956bc;
 }
 
 /* mypage icon */
@@ -75,164 +75,117 @@ section h2 {
     bottom: 0px;
     background-color: #000;
 }
-/* main - auto play위 글자 */
 .content-box .content-movie-play .movie-play-info {
     position: absolute;
-    bottom: 26%;
+    bottom: 40%;
     left: 10%;
     color: #fff;
 }
-.content-box .content-movie-play .movie-play-info h3{
-    margin-bottom: 30px;
-    font-size: 3rem;
+
+.content-box .content-movie-play .movie-play-info h3 {
+  margin-bottom: 30px;
+  font-size: 3rem;
 }
 .content-box .content-movie-play .movie-play-info p{
-    margin-bottom: 30px;
     font-size: 1.6rem;
 }
 /* main - auto play 영화 상세 정보 btn */
 .content-movie-play .movie-play-info .movie-info-detail{
-    border: 2px solid #fff;
-    background: none;
-    padding: 10px 30px;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-weight: 800;
+    width: 250px;
+    height: 50px;
+    background: linear-gradient(101.83deg, rgb(127, 135, 224) -13.2%, rgb(38, 73, 202) -13.19%, rgb(106, 118, 223) 46.63%, rgb(50, 176, 247) 107.09%);
+    box-shadow: rgb(63 152 239 / 20%) 0px 12px 24px;
+    border-radius: 48px;
     color: #fff;
-    display: inline-block;
-    margin-right: 10px;
-    transition: 0.3s;
-    cursor: pointer;
+    display: block;
+    background-size: 200% 50%;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
 }
-.content-movie-play .movie-play-info .movie-info-detail:hover{
-    color: #000;
-    background-color: #fff;
+.content-movie-play .movie-play-info .movie-info-detail:hover,
+.review-btn:hover
+{
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    border: 1px solid #fff;
 }
 /* main - 장르별 추천 영화 가로배치 */
 .content-box .content-movie-genre{
     width: 100%;
-    margin-top: 120px;
+    margin-top: 150px;
 }
 .content-box .content-movie-genre h3{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     font-weight: 700;
-    color: #6186F4;
+    color: #1371c3;
     margin-bottom: 80px;
     text-align: center;
 }
-/* main - 가로배치 박스 */
 .content-box .content-movie-genre ul{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
-    height: 500px;
+    height: 600px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
-.content-box .content-movie-genre ul li{
-    position: relative;
-    width: 20%;
-    height: 100%;
-    overflow: hidden;
-}
-.content-box .content-movie-genre ul li:first-child{
-    background: url('/static/image/action-poster.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.content-box .content-movie-genre ul li:nth-child(2){
-    background: url('/static/image/romance-poster.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.content-box .content-movie-genre ul li:nth-child(3){
-    background: url('/static/image/comedy-poster.png') no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.content-box .content-movie-genre ul li:last-child{
-    background: url('/static/image/sf-poster.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-/* main - 가로배치 이미지 박스 */
 .content-box .content-movie-genre .genre-img{
+    width: 240px;
+    height: 280px;
+}
+.content-box .content-movie-genre .genre-img img{
     width: 100%;
     height: 100%;
 }
-/* main - 가로배치 이미지 */
-.content-box .content-movie-genre .genre-img iframe{
-    opacity: 0;
-    width: 100%;
-    height: 100%;
-}
-/* .content-movie-genre .genre-img::before{
-    content: "";
-    opacity: 0.5;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    background-color: #000;
-} */
-/* main - 가로배치 이미지: 제목 */
 .content-movie-genre .genre-title{
-    position: absolute;
-    top: 15%; 
-    left: 40%;
-    transform: translateX(-40%);
     font-family: 'Montserrat';
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-weight: bold;
     /* writing-mode: vertical-rl; */
-    color: #fff;
+    color: #1579d1;
     text-transform: uppercase;
+    transform: translate(-40px,-40px);
     letter-spacing: 2px;
+}
+/* main - 장르별 추천 영화 hover 효과 */
+.content-movie-genre .info{
+    width: 560px;
+    height: 315px;
+    background-color: #000;
+    display: none;
     transition: 0.3s;
 }
-.bar{
-    background: rgba(255,255,255,.3);
-    width: 60%; height: 0px;
-    position: absolute;
-    top: 18%; left: 0px;
-    transform: translateY(-50);
-    transform: skew(-10deg); /*기울기*/
-    opacity: 0;
+.content-movie-genre .info iframe{
+    width: 100%;
+    height: 100%;
 }
-.content-movie-genre ul li:hover .genre-title{
-    text-shadow: 0 1px 0 #CCC,
-    0 2px 0 #CCC,
-    0 3px 0 #CCC,
-    0 4px 0 #CCC,
-    0 5px 0 #CCC,
-    0 6px 0 transparent,
-    0 7px 0 transparent,
-    0 8px 0 transparent,
-    0 9px 0 transparent,
-    0 10px 10px #ccc;
+/* hover - 예고편 등장 */
+.content-movie-genre ul li:first-child:hover .action-info{
+    display: block;
 }
-
-/* main - 가로배치 박스 hover시 등장하는 영화 소개 */
-.content-movie-genre .info{
-    position: absolute;
-    width: 60%;
-    top: 76%;
-    left: 500px;
-    font-size: 0.8rem;
-    color: #fff;
-    line-height: 1.4rem;
-    text-align: left;
+/* hover - 영화 제목 확대 */
+.content-movie-genre ul li:hover .content-movie-genre .genre-title{
+   font-size: 1.6rem;
 }
 
 /* main.js-윈도우 스크롤값이 700일때 헤더에 적용되는 서식 */
 
 /* 메뉴, 로그인, 알람아이콘 글자색 변경 */
 .on {
-    color: #35aef7 !important;
+    color: #f956bc !important;
   }
   
 /* 헤더배경서식 */
 .h_on {
-    background: #000 !important;
-  }
+  background: #000 !important;
+}
+
 /* 원형 내비게이션 */
 #m_nav {
     position: fixed;
@@ -302,34 +255,26 @@ section h2 {
     top: 0px;
   }
 
-  /* main - 랜덤 영화 슬라이드 */
-  .content-box .content-auto-slide{
-    margin-top: 140px;
-    width: 100%;
-    height: 300px;
-    background-color: #000;
-  }
-  .content-auto-slide .auto-slide{
-    width: 100%;
-    
-  }
   /* 영화 상세 정보 btn : modal */
   .modal-bg{
-    position: absolute;
+    position: fixed;
     top: 0; left:0;
     width: 100%;
-    height: 2000px;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 10000;
     display: none;
+    overflow: hidden;
   }
   .modal-bg .modal-box{
-    position: absolute;
+    position: fixed;
     top: 10%;
-    left: 30%;
+    left: 24%;
+    padding-bottom: 40px;
     background-color: #000;
     width: 600px;
-    height: 800px;
+    height: 900px;
+    overflow: scroll;
   }
   /* modal close btn */
   .modal-bg .modal-box .modal-close-btn{
@@ -339,8 +284,8 @@ section h2 {
     position: absolute;
     width: 40px;
     height: 40px;
-    top: -8%;
-    right: 0;
+    top: 2%;
+    right: 5%;
     z-index: 9999;
     cursor: pointer;
   }
@@ -353,9 +298,17 @@ section h2 {
     height: 300px;
     position: relative;
 }
-.modal-box .modal-cont .modal-img img{
+.modal-box .modal-cont .modal-img video{
     object-fit: cover;
     width: 100%;
+}
+.modal-box .modal-cont .modal-img .modal-like-btn{
+    position: absolute;
+    top: 268px;
+    right: 35px;
+    font-size: 2.4rem;
+    background: none;
+    color: #ff0000;
 }
 .modal-box .modal-cont > h3{
     position: absolute;
@@ -392,16 +345,236 @@ section h2 {
 .modal-cont .cont-ex-title{
     font-size: 1.4rem;
     color: #fff;
-    margin: 10px 0 30px 20px;
+    margin: 10px 0 20px 20px;
 }
 .modal-cont .cont-ex-list .cont-ex-flex{
     display: flex;
+    position: relative;
     justify-content: space-around;
+    margin-bottom: 40px;
     width: 100%;
     height: 100px;
     color: #fff;
 }
-.modal-cont .cont-ex-list li img{
+.modal-cont .cont-ex-list .cont-ex-flex .flex-img{
+    border-radius: 100%;
+    border: 1px solid #000;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    color: #fff;
+}
+.cont-ex-list .cont-ex-flex li span{
+    position: absolute;
+    top: 110px;
+    margin-left: 15px;
+    font-size: 0.8rem;
+}
+.modal-cont .cont-ex-list .flex-img img{
+    width: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+.modal-cont .cont-ex-list .flex-img:hover{
+    border: 1px solid #fff;
+}
+.cont-ex-list .flex-img img:hover{
+    transform: scale(1.2);
+}
+/* 모달창 -> 리뷰 작성 페이지로 가는 btn */
+.modal-to-review{
+    width: 100%;
+    margin: 0 auto;
+}
+.review-btn-box{
+    width: 40%;
+    margin: 0 auto;
+}
+.modal-cont .review-btn{
+    margin: 0 auto;
+    color: #fff;
+    font-size: 1rem;
+    padding: 15px 40px;
+    background-size: 200% 50%;
+    border: 1px solid #000;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.modal-cont .review-btn i{
+    font-size: 1rem;
+    margin-right: 5px;
+}
+/* 리뷰 일부 미리보기 + 별점 */
+.modal-to-review .review-part-view{
+    width: 80%;
+    margin: 0 auto;
+    transform: translateY(80px);
+    color: #fff;
+    font-size: 0.8rem;
+    padding-bottom: 50px;
+}
+.modal-to-review .review-part-view li{
+    display: flex;
+    margin-bottom: 20px;
+}
+.Rs {
+    position: relative;
+    font-size: 2rem;
+    color: #ddd;
+  }
+  .Rs input {
+    width: 100%;
     height: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .Rs span {
+    width: 0;
+    position: absolute;
+    left: 0;
+    color: yellow;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  /* 별점 기본값 설정 */
+  .star span{
+    width: 100%;
+  }
+  .star2 span{
+    width: 10%;
+  }
+  .star3 span{
+    width: 80%;
+  }
+  .star4 span{
+    width: 90%;
+  }
+  .modal-to-review .review-part-view li .star-info{
+    width: 62%;
+    margin-left: 15px;
+    line-height: 2rem;
+  }
+  /* main - 랜덤 영화 슬라이드 */
+  .content-box .content-auto-slide{
+    position: relative;
+    padding-top: 140px;
+    width: 100vw;
+    height: 200px;
+    padding-bottom: 140px;
+    overflow-x: hidden;
+  }
+  .content-box .content-auto-slide h3{
+    transform: translate(300px,-20px);
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+  }
+  .content-box .content-auto-slide h3 strong{
+    font-family: 'Montserrat';
+    color: #7f6cf4;
+  }
+  .content-box .content-auto-slide .slide-frame{
+    position: absolute;
+    top: 155px;
+    left: 300px;
+    width: 300px;
+    height: 200px;
+    border: 4px solid #000;
+  }
+  .content-auto-slide .auto-slide{
+    display: flex;
+    width: 100vw;
+    height: 200px;
+  }
+  .content-auto-slide .auto-slide li{
+    width: 300px;
+    height: 100%;
+  }
+  .content-auto-slide .auto-slide li img{
+    object-fit: cover;
+    height: 100%;
+    transition: 0.3s;
+  }
+
+  /* 삽입 위치 조정 */
+/* 메인콘텐츠 - 리뷰 작성 */
+.content-box .content-review{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fbfbfd;
+    padding: 50px 0 100px 0;
+}
+.content-review h3{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+/* 리뷰 입력창 */
+.content-review .review-input{
+    width: 50%;
+    margin: 0 auto;
+}
+.content-review .review-input input{
+    position: relative;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    padding: 12px;
+    box-shadow: 4px 4px 8px rgba(0,0,0,.2);
+    width: 90%;
+    text-indent: 10px;
+    font-size: 16px;
+}
+/* 리뷰 입력 btn */
+.plus-btn{
+    position: absolute;
+    transform: translate(10px,8px);
+    border-radius: 100px;
+    padding: 3px 3px;
+    background: linear-gradient(101.83deg, rgb(127, 135, 224) -13.2%, rgb(38, 73, 202) -13.19%, rgb(106, 118, 223) 46.63%, rgb(50, 176, 247) 107.09%);
+}
+.review-input .plus-btn i{
+    color: #fff;
+    font-size: 1.8rem;
+}
+/* 리뷰 모두 삭제 btn */
+.content-review .review{
+    width: 60%;
+    margin: 0 auto;
+}
+.content-review .review .clear-all-btn{
+    background: none;
+    font-size: 1rem;
+    color: #0099ff;
+    float: left;
+    transform: translate(50px,30px);
+}
+.content-review .review .clear-all-btn:hover{
+    color: #ff0000;
+}
+/* 리뷰 입력 목록 : js */
+.content-review .review .review-list{
+    padding-top: 60px;
+    width: 80%;
+    margin: 0 auto;
+}
+.content-review .review .review-list li{
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    text-indent: 10px;
+    text-align: left;
+    font-size: 0.9rem;
+    background-color: #fff;
+    border-radius: 10px;
+    transform: translateX(-5px);
 }
 
+.review-list li .delBtn{
+    font-size: 1rem;
+    color: #ff0000;
+}
