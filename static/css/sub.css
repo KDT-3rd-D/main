@@ -43,7 +43,7 @@ main {
 .random span {
   display: block;
   font-size: 4em;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .random button {
@@ -60,11 +60,20 @@ main {
   top: 320px;
   left: 8%;
   z-index: 101;
+  background-size: 200% 50%;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
 }
 
 .random button:hover {
-  transition: .3s;
-  border: solid 2px #fff;
+  background-position: 100% 0;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  border: 1px solid #fff;
 }
 
 /* 비디오 헤더쪽 어둡게 */
@@ -95,6 +104,7 @@ main {
   text-align: left;
 }
 
+/* 랜덤 비디오 좌측아래 */
 /* .random .description::before {
   content: "";
   position: absolute;
@@ -103,7 +113,6 @@ main {
   width: 600px;
   height: 300px;
   background: rgba(0, 0, 0, .4);
-  z-index: -1;
 } */
 
 .random .ott {
