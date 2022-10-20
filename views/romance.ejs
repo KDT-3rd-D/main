@@ -24,135 +24,134 @@
 	<script src="https://code.jquery.com/jquery-3.6.1.min.js"
 		integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
-
 <body>
-	<!-- 헤더 삽입 -->
-	<%-include('header.ejs') %>
+  <!-- 헤더 삽입 -->
+  <%-include('header.ejs') %>
 
-	<section>
-		<main>
-			<div class="random">
-				<div class="title-move">
-					<h4 class="hidden">Romance random recommond</h4>
-					<p>
-						<!-- <span>D.nema의 추천, ROMANCE</span><br> -->
-						<span>ROMANCE</span><br>
-						&nbsp;D.NEMA가 추천하는 로맨스 영화!
-					</p>
-					<button><i class="xi-shuffle"></i> 랜덤플레이</button>
-					<div class="video">
-						<video src="../static/video/random_romance3.mp4" autoplay muted></video>
-						<div class="description">
-							<div class="ott">
-								<span class="age-color none"></span>
-								<img class="netflix none" src="../static/image/netflix.png"></img>
-								<img class="watcha none" src="../static/image/watcha.png"></img>
-								<img class="tving none" src="../static/image/tving.png"></img>
-								<img class="disney none" src="../static/image/disney.png"></img>
-								<img class="wavve none" src="../static/image/wavve.png"></img>
-							</div>
-							<span class="title"></span>
-							<span class="decs"></span>
-						</div>
-					</div>
-				</div>
-			</div>
+  <section>
+    <main>
+      <div class="random">
+        <div class="title-move">
+          <h2 class="hidden">Romance random recommond</h2>
+          <p>
+            <!-- <span>D.nema의 추천, ROMANCE</span><br> -->
+            <span>ROMANCE</span><br>
+            &nbsp;D.NEMA가 추천하는 로맨스 영화!
+          </p>
+          <button><i class="xi-shuffle"></i> 랜덤플레이</button>
+          <div class="video">
+            <video src="../static/video/random_romance3.mp4" autoplay muted></video>
+            <div class="description">
+              <div class="ott">
+                <span class="age-color none"></span>
+                <img class="netflix none" src="../static/image/netflix.png"></img>
+                <img class="watcha none" src="../static/image/watcha.png"></img>
+                <img class="tving none" src="../static/image/tving.png"></img>
+                <img class="disney none" src="../static/image/disney.png"></img>
+                <img class="wavve none" src="../static/image/wavve.png"></img>
+              </div>
+              <span class="title"></span>
+              <span class="decs"></span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-			<!-- top movie -->
-			<article class="movies">
-				<h4>Top moives</h4>
-				<ul>
-					<li class="movie">
-						<img class="front" src="../static/image/romance1.jpg" alt="로맨스 이미지">
-						<dl class="back">
-							<dt>더 로맨스</dt>
-							<dd>
-								대한민국 대표하는 청춘 남녀 스타들이 함께 로맨스 웹드라마 작가로 데뷔
-								남녀 스타들이 함꼐 시나리오 작성하며 점점 더 로맨틱 해지는 그들의 알콩달콩 썸스토리!
-							</dd>
-						</dl>
-					</li>
-					<li class="movie">
-						<img class="front" src="../static/image/romance2.jpg" alt="로맨스 이미지">
-						<dl class="back">
-							<dt>연애 빠진 로맨스</dt>
-							<dd>
-								일도 연애도 마음대로 되지 않는 스물아홉 '자영'(전종서).
-								전 남친과의 격한 이별 후 호기롭게 연애 은퇴를 선언했지만
-								참을 수 없는 외로움에 못 이겨 최후의 보루인 데이팅 어플로 상대를 검색한다...
-							</dd>
-						</dl>
-					</li>
-					<li class="movie">
-						<img class="front" src="../static/image/romance3.jpg" alt="로맨스 이미지">
-						<dl class="back">
-							<dt>러브 앤 위시</dt>
-							<dd>
-								사랑에 거침없는 직진녀, '손다은'.
-								사랑에 서툰 신비주의 철벽남, '김승휴'
-								과연 다은은 승휴의 철벽을 무너뜨리고 사랑을 쟁취할 수 있을까?
-							</dd>
-						</dl>
-					</li>
-					<li class="movie">
-						<img class="front" src="../static/image/romance4.jpg" alt="로맨스 이미지">
-						<dl class="back">
-							<dt>지금, 만나러갑니다</dt>
-							<dd>
-								세상을 떠난 그녀가 다시 돌아왔다.
-								모든 기억을 잃은 채.
-								비가 오는 날 다시 돌아오겠다는 믿기 힘든 약속을 남기고 세상을 떠난 '수아'.
-							</dd>
-						</dl>
-					</li>
-					<li class="movie">
-						<img class="front" src="../static/image/romance5.jpg" alt="로맨스 이미지">
-						<dl class="back">
-							<dt>더 로맨스</dt>
-							<dd>
-								대한민국 대표하는 청춘 남녀 스타들이 함께 로맨스 웹드라마 작가로 데뷔
-								남녀 스타들이 함꼐 시나리오 작성하며 점점 더 로맨틱 해지는 그들의 알콩달콩 썸스토리!
-							</dd>
-						</dl>
-					</li>
-					<li class="movie">
-						<img class="front" src="../static/image/romance6.jpg" alt="로맨스 이미지">
-						<dl class="back">
-							<dt>더 로맨스</dt>
-							<dd>
-								대한민국 대표하는 청춘 남녀 스타들이 함께 로맨스 웹드라마 작가로 데뷔
-								남녀 스타들이 함꼐 시나리오 작성하며 점점 더 로맨틱 해지는 그들의 알콩달콩 썸스토리!
-							</dd>
-						</dl>
-					</li>
-					<li class="movie">
-						<img class="front" src="../static/image/romance7.jpg" alt="로맨스 이미지">
-						<dl class="back">
-							<dt>더 로맨스</dt>
-							<dd>
-								대한민국 대표하는 청춘 남녀 스타들이 함께 로맨스 웹드라마 작가로 데뷔
-								남녀 스타들이 함꼐 시나리오 작성하며 점점 더 로맨틱 해지는 그들의 알콩달콩 썸스토리!
-							</dd>
-						</dl>
-					</li>
-					<li class="movie">
-						<img class="front" src="../static/image/romance8.jpg" alt="로맨스 이미지">
-						<dl class="back">
-							<dt>더 로맨스</dt>
-							<dd>
-								대한민국 대표하는 청춘 남녀 스타들이 함께 로맨스 웹드라마 작가로 데뷔
-								남녀 스타들이 함꼐 시나리오 작성하며 점점 더 로맨틱 해지는 그들의 알콩달콩 썸스토리!
-							</dd>
-						</dl>
-					</li>
-				</ul>
-			</article>
-		</main>
-	</section>
+      <!-- top movie -->
+      <article class="movies">
+        <h3>Top moives</h3>
+        <ul>
+          <li class="movie">
+            <img class="front" src="../static/image/romance1.jpg" alt="로맨스 이미지">
+            <dl class="back">
+              <dt>더 로맨스</dt>
+              <dd>
+                대한민국 대표하는 청춘 남녀 스타들이 함께 로맨스 웹드라마 작가로 데뷔
+                남녀 스타들이 함꼐 시나리오 작성하며 점점 더 로맨틱 해지는 그들의 알콩달콩 썸스토리!
+              </dd>
+            </dl>
+          </li>
+          <li class="movie">
+            <img class="front" src="../static/image/romance2.jpg" alt="로맨스 이미지">
+            <dl class="back">
+              <dt>연애 빠진 로맨스</dt>
+              <dd>
+                일도 연애도 마음대로 되지 않는 스물아홉 '자영'(전종서).
+                전 남친과의 격한 이별 후 호기롭게 연애 은퇴를 선언했지만
+                참을 수 없는 외로움에 못 이겨 최후의 보루인 데이팅 어플로 상대를 검색한다...
+              </dd>
+            </dl>
+          </li>
+          <li class="movie">
+            <img class="front" src="../static/image/romance3.jpg" alt="로맨스 이미지">
+            <dl class="back">
+              <dt>러브 앤 위시</dt>
+              <dd>
+                사랑에 거침없는 직진녀, '손다은'.
+                사랑에 서툰 신비주의 철벽남, '김승휴'
+                과연 다은은 승휴의 철벽을 무너뜨리고 사랑을 쟁취할 수 있을까?
+              </dd>
+            </dl>
+          </li>
+          <li class="movie">
+            <img class="front" src="../static/image/romance4.jpg" alt="로맨스 이미지">
+            <dl class="back">
+              <dt>지금, 만나러갑니다</dt>
+              <dd>
+                세상을 떠난 그녀가 다시 돌아왔다.
+                모든 기억을 잃은 채.
+                비가 오는 날 다시 돌아오겠다는 믿기 힘든 약속을 남기고 세상을 떠난 '수아'.
+              </dd>
+            </dl>
+          </li>
+          <li class="movie">
+            <img class="front" src="../static/image/romance5.jpg" alt="로맨스 이미지">
+            <dl class="back">
+              <dt>더 로맨스</dt>
+              <dd>
+                대한민국 대표하는 청춘 남녀 스타들이 함께 로맨스 웹드라마 작가로 데뷔
+                남녀 스타들이 함꼐 시나리오 작성하며 점점 더 로맨틱 해지는 그들의 알콩달콩 썸스토리!
+              </dd>
+            </dl>
+          </li>
+          <li class="movie">
+            <img class="front" src="../static/image/romance6.jpg" alt="로맨스 이미지">
+            <dl class="back">
+              <dt>더 로맨스</dt>
+              <dd>
+                대한민국 대표하는 청춘 남녀 스타들이 함께 로맨스 웹드라마 작가로 데뷔
+                남녀 스타들이 함꼐 시나리오 작성하며 점점 더 로맨틱 해지는 그들의 알콩달콩 썸스토리!
+              </dd>
+            </dl>
+          </li>
+          <li class="movie">
+            <img class="front" src="../static/image/romance7.jpg" alt="로맨스 이미지">
+            <dl class="back">
+              <dt>더 로맨스</dt>
+              <dd>
+                대한민국 대표하는 청춘 남녀 스타들이 함께 로맨스 웹드라마 작가로 데뷔
+                남녀 스타들이 함꼐 시나리오 작성하며 점점 더 로맨틱 해지는 그들의 알콩달콩 썸스토리!
+              </dd>
+            </dl>
+          </li>
+          <li class="movie">
+            <img class="front" src="../static/image/romance8.jpg" alt="로맨스 이미지">
+            <dl class="back">
+              <dt>더 로맨스</dt>
+              <dd>
+                대한민국 대표하는 청춘 남녀 스타들이 함께 로맨스 웹드라마 작가로 데뷔
+                남녀 스타들이 함꼐 시나리오 작성하며 점점 더 로맨틱 해지는 그들의 알콩달콩 썸스토리!
+              </dd>
+            </dl>
+          </li>
+        </ul>
+      </article>
+    </main>
+  </section>
 
-	<footer>
-		<address>footer</address>
-	</footer>
+  <footer>
+    <address>footer</address>
+  </footer>
 
 	<script src="/static/js/sub.js"></script>
 

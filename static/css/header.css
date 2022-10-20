@@ -1,13 +1,15 @@
 @charset "utf-8";
 
-#nav-check{
+#nav-check {
   display: none;
 }
-.nav .nav-box .user-icon-mob{
+
+.nav .nav-box .user-icon-mob {
   display: none;
 }
+
 /* logo */
-.top-nav{
+.top-nav {
   background: none;
   display: flex;
   position: fixed;
@@ -18,27 +20,34 @@
   translate: 0.3s;
   z-index: 10000;
 }
-.top-nav:hover{
+
+.top-nav:hover {
   background: #000;
 }
-.top-nav .h1-logo{
+
+.top-nav .h1-logo {
   width: 30%;
   margin-top: 5px;
   margin-left: 50px;
 }
-.top-nav .h1-logo img{
+
+.top-nav .h1-logo img {
   width: 140px;
 }
+
 /* nav - web ver */
-.nav{
+.nav {
   width: 60%;
 }
-.nav .nav-box{
+
+.nav .nav-box {
   display: flex;
   justify-content: space-around;
   text-transform: uppercase;
 }
-.nav .nav-box a, .top-nav .user-icon {
+
+.nav .nav-box a,
+.top-nav .user-icon {
   display: block;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
@@ -46,41 +55,89 @@
   font-weight: bold;
   translate: 0.3s;
 }
-.nav .nav-box a:hover, 
-.top-nav .user-icon i:hover{
+
+.nav .nav-box a:hover,
+.top-nav .user-icon i:hover {
   color: #35aef7;
 }
 
 /* mypage icon */
-.top-nav .user-icon{
+.top-nav .user-icon {
   width: 10%;
   text-align: center;
 }
 
 /* nav - mobile ver */
 @media (max-width:745px) {
-  .top-nav > .nav-btn {
+  .top-nav>.nav-btn {
     display: inline-block;
     position: absolute;
     right: 0px;
     top: 0px;
   }
-  .top-nav > .nav-btn > label {
-    display: inline-block;
+
+  .top-nav>.nav-btn>label {
+    display: block;
     width: 50px;
     height: 50px;
-    padding: 25px;
+    padding: 10px 40px 10px 20px;
   }
-  .top-nav > .nav-btn > label:hover,.top-nav #nav-check:checked ~ .nav-btn > label {
+
+  .top-nav>.nav-btn>label:hover,
+  .top-nav #nav-check:checked~.nav-btn>label {
     background-color: rgba(0, 0, 0, 0);
   }
-  .top-nav > .nav-btn > label > span {
+
+  .top-nav>.nav-btn>label>span {
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    position: relative;
+    text-indent: -9999px;
     display: block;
-    width: 28px;
-    height: 8px;
-    border-top: 2px solid #eee;
+    margin: 24px;
+    border-radius: 5px;
+    transition: all .3s;
   }
-  .top-nav > .nav {
+
+  .top-nav>.nav-btn>label>span::before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: -8px;
+    left: 0;
+    border-radius: 5px;
+    transition: all .3s;
+  }
+
+  .top-nav>.nav-btn>label>span::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    border-radius: 5px;
+    transition: all .3s;
+  }
+
+  /* 메뉴가 열렸을 때 */
+  .top-nav>.nav-btn>label.open>span::before{
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  .top-nav>.nav-btn>label.open>span::after{
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+  .top-nav>.nav {
     position: absolute;
     display: block;
     width: 100%;
@@ -91,26 +148,32 @@
     top: 70px;
     left: 0px;
   }
-  .top-nav > .nav .nav-box{
-      margin-top: 20px;
-      display: inline-block;
-      width: 100%;
-      text-align: center;
+
+  .top-nav>.nav .nav-box {
+    margin-top: 20px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
   }
-  .top-nav > .nav > li {
+
+  .top-nav>.nav>li {
     display: block;
   }
-  .top-nav > #nav-check:not(:checked) ~ .nav {
+
+  .top-nav>#nav-check:not(:checked)~.nav {
     height: 0px;
   }
-  .top-nav > #nav-check:checked ~ .nav {
+
+  .top-nav>#nav-check:checked~.nav {
     height: calc(100vh - 50px);
     overflow-y: auto;
   }
-  .nav .nav-box .user-icon{
-      display: none;
+
+  .nav .nav-box .user-icon {
+    display: none;
   }
-  .nav .nav-box .user-icon-mob{
-      display: block;
+
+  .nav .nav-box .user-icon-mob {
+    display: block;
   }
 }

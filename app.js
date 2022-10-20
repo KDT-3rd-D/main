@@ -21,9 +21,13 @@ app.get("/", function (request, response) {
   response.render("index");
 });
 
-app.get("/action", function (request, response) {
-  response.render("action");
+app.get('/login', function(request, response){
+    response.render('login');
 });
+
+app.get('/action', function(request, response){
+    response.render('action')
+
 app.get("/romance", function (request, response) {
   response.render("romance");
 });

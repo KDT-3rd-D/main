@@ -76,6 +76,7 @@ const movies = [{
 // SF random movies array
 
 $(document).ready(function () {
+
 window.onload = function(){
 	let i = Math.floor(Math.random() * 10);
 	$('video').attr('src', `../static/video/random_romance${i}.mp4`);
@@ -202,13 +203,6 @@ $(window).on('scroll', function () {
 	//$('.text').text(scroll);          
 	if (winSize > 1024) {
 		if (scroll > 600) {
-			$('.top-nav').css('background', 'rgba(0,0,0,.8)');
 
-		} else {
-			$('.top-nav').css('background', 'none');
-		}
-	} else {
-		$('.top-nav').css('background', 'rgba(0,0,0,.8)');
-	}
 });
 });
