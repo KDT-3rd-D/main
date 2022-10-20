@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <!-- 제이쿼리 라이브러리 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- 리스트 테이블 적용 js -->
+    <script src="/static/js/listTable.js"></script>
 </head>
 <body>
     <!-- 헤더 삽입 -->
@@ -32,8 +34,12 @@
     <h1>REVIEW</h1>
     <form>
       <div class="writer">
-      <label for="writer">작성자</label><br><br>
-      <input type="text" id="writer" autocomplete="off" />
+      <label for="writer">별점</label><br><br>
+      <span class="Rs star">
+        ★★★★★
+        <span>★★★★★</span>
+        <input type="range" id="writer" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
+      </span>
     </div>
       <br />
       <div class="cont">
@@ -48,9 +54,15 @@
     <br />
     <!-- 오른쪽 : 입력된 내용 구간 -->
     <div class="right-box">
+      <div class="img-box">
+        <img src="/static/image/action-poster.jpg" alt="분노의질주 포스터">
+      </div>
+      <div class="table-btn">
+        <button class="clear-all-btn">clear all</button>
+      </div>
     <table id="table" border="1" cellpadding="10" cellspacing="10">
       <tr>
-        <th>작성자</th>
+        <th>별점</th>
         <th>내용</th>
         <th>작성일</th>
       </tr>
@@ -65,39 +77,5 @@
       -->
     </table>
   </div>
-
-    <script>
-      function writeNote() {
-        event.preventDefault();
-        const writer = document.getElementById('writer').value;
-        const text = document.getElementById('content').value;
-        const table = document.getElementById('table');
-
-        const textAll = document.createElement('tr');
-        const textWriter = document.createElement('td');
-        const textContent = document.createElement('td');
-        const textDate = document.createElement('td');
-
-        // 댓글 단 시간 설정 
-        let time = new Date();
-
-        let year = time.getFullYear();
-        let month = time.getMonth();
-        let day = time.getDate();
-
-        let hour = time.getHours();
-        let minute = time.getMinutes();
-
-        textWriter.innerHTML = writer;
-        textContent.innerHTML = text;
-        textDate.innerHTML = `${year}-${month+1}-${day} ${hour} : ${minute}`;
-         
-        table.append(textAll);
-        textAll.append(textWriter,textContent,textDate);
-
-        writer.value = '';
-        text.value = '';
-      }
-    </script>
 </body>
 </html>
