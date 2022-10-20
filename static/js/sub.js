@@ -76,6 +76,64 @@ const movies = [{
 // SF random movies array
 
 $(document).ready(function () {
+	window.onload = function(){
+		let i = Math.floor(Math.random() * 10);
+		$('video').attr('src', `../static/video/random_romance${i}.mp4`);
+		// 플레이 상세설명 변경
+		console.log(movies[i]);
+		let title = document.querySelector('.title');
+		let decs = document.querySelector('.decs');
+		let ageColor = document.querySelector('.age-color');
+		title.innerHTML = movies[i].title;
+		decs.innerHTML = `: ${movies[i].desc}`;
+		ageColor.innerHTML = movies[i].age;
+
+		// 지원 ott 표기
+		let netflix = document.querySelector(".netflix");
+		let watcha = document.querySelector(".watcha");
+		let tving = document.querySelector(".tving");
+		let disney = document.querySelector(".disney");
+		let wavve = document.querySelector(".wavve");
+
+		// console.log('넷플릭스', movies[i].ott.indexOf('넷플릭스'))
+		// console.log('왓챠', movies[i].ott.indexOf('왓챠'))
+		// console.log('티빙', movies[i].ott.indexOf('티빙'))
+		// console.log('디즈니', movies[i].ott.indexOf('디즈니'))
+		// console.log('웨이브', movies[i].ott.indexOf('웨이브'))
+
+		// reset
+		netflix.classList.add('none');
+		watcha.classList.add('none');
+		tving.classList.add('none');
+		disney.classList.add('none');
+		wavve.classList.add('none');
+
+		if (movies[i].ott.indexOf('넷플릭스') > -1) {
+			netflix.classList.remove('none');
+		};
+		if (movies[i].ott.indexOf('왓챠') > -1) {
+			watcha.classList.remove('none');
+		};
+		if (movies[i].ott.indexOf('티빙') > -1) {
+			tving.classList.remove('none');
+		};
+		if (movies[i].ott.indexOf('디즈니') > -1) {
+			disney.classList.remove('none');
+		};
+		if (movies[i].ott.indexOf('웨이브') > -1) {
+			wavve.classList.remove('none');
+		};
+
+		if (movies[i].age === '12') {
+			$('.age-color').css('background', '#23A2E4').removeClass('none');
+		} else if (movies[i].age === '15') {
+			$('.age-color').css('background', '#EDA128').removeClass('none');
+		} else if (movies[i].age === '19') {
+			$('.age-color').css('background', '#CA2324').removeClass('none');
+		} else {
+			$('.age-color').css('background', '#3EA14F')
+		};
+	}
 	// 버튼 눌렀을때 랜덤 플레이
 	$('button').click(function () {
 		let i = Math.floor(Math.random() * 10);
