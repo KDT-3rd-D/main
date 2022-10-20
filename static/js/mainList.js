@@ -34,6 +34,7 @@ listForm.addEventListener('submit', function (event) {
     alert('값을 입력해주세요')
   } else {
     ul.append(newList);
+    
     newList.append(delBtnElem);
     listInput.value = '';
   }
@@ -43,10 +44,6 @@ listForm.addEventListener('submit', function (event) {
   delBtnElem.innerHTML = '<i class="xi-trash"></i>';
   delBtnElem.onclick = clickDelBtn();
 
-  newList.append(delBtnElem);
-
-
-
-  
+  newList.append(delBtnElem);  
 
 });
