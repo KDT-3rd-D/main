@@ -1,6 +1,7 @@
 * {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 12px;
+  box-sizing: content-box;
 }
 
 /* 화면에서 보이지 않아도 되지만 콘텐츠상 있어야 하는 부분 */
@@ -241,7 +242,6 @@ main {
 .movies ul li.movie {
   width: 200px;
   height: 300px;
-  position: relative;
   margin-bottom: 20px;
 }
 
@@ -251,4 +251,63 @@ main {
   border-radius: 10px;
   object-fit: cover;
 }
+<<<<<<< HEAD
+=======
 
+.movies ul li.movie .hoverbox {
+  color: #fff;
+  width: 400px;
+  height: 400px;
+  background: #111;
+  padding: 20px;
+  border-radius: 5px;
+}
+>>>>>>> main
+
+.movies ul li.movie span {
+  display: inline-block;
+}
+
+.movies ul li.movie video {
+  width: 400px;
+  z-index: 100;
+  margin-bottom: 20px;
+}
+
+.movies ul li.movie .tit {
+  overflow: hidden;
+}
+
+.movies ul li.movie .tit i {
+  font-size: 1.6em;
+  margin-left: 285px;
+}
+
+.movies ul li.movie .tit span:nth-child(1) {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.movies ul li.movie .tit span:nth-child(3) {
+  display: block;
+  width: 30px;
+  padding: 2px;
+  font-size: 1.4em;
+  border: solid 1px #888;
+  border-radius: 2px;
+  float: left;
+}
+
+.movies ul li.movie .tit span:nth-child(4) {
+  color: #888;
+  font-size: 1rem;
+  margin: 2px 15px;
+}
+
+.movies ul li.movie p {
+  color: #fff;
+  margin-top: 20px;
+  text-overflow: ellipsis;
+  line-height: 1.5em;
+}
