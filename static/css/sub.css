@@ -85,7 +85,7 @@ main {
   content: "";
   position: absolute;
   width: 100%;
-  height: 600px;
+  height: 100vh;
   top: 0;
   left: 0;
   z-index: 100;
@@ -95,6 +95,7 @@ main {
 .random video {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .random .description {
@@ -250,3 +251,5 @@ main {
   border-radius: 10px;
   object-fit: cover;
 }
+}
+

@@ -4,12 +4,22 @@
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 12px;
 }
+button{
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+input:focus, button:focus{
+  border: none !important;
+  outline: none !important;
+}
 .top-nav{
   background: #000 !important;
 }
 body{
   background-color: #000;
 }
+/* 왼쪽 컨텐츠 */
 .list-box {
   display: flex;
   padding-top: 150px;
@@ -26,10 +36,55 @@ body{
   font-weight: bolder;
 }
 .left-box{
-  width: 50%;
+  width: 40%;
   float: left;
 }
+/* 오른쪽 컨텐츠 */
 .right-box{
-  width: 50%;
+  width: 40%;
   float: right;
+}
+.left-box form{
+  margin-top: 80px;
+}
+.left-box form .writer{
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+.left-box form .cont{
+  font-size: 1.2rem;
+}
+.left-box form input{
+  position: relative;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 12px;
+    box-shadow: 4px 4px 8px rgba(0,0,0,.2);
+    width: 90%;
+    text-indent: 10px;
+    font-size: 16px;
+}
+/* 테이블 */
+.right-box table{
+  margin: 50px 0 0 200px;
+}
+.right-box table tr{
+  padding: 20px;
+}
+.right-box table th{
+  text-align: center;
+}
+/* 버튼 */
+button{
+  margin-top: 50px;
+  border-radius: 100%;
+  padding: 2px 8px;
+  background: linear-gradient(101.83deg, rgb(127, 135, 224) -13.2%, rgb(38, 73, 202) -13.19%, rgb(106, 118, 223) 46.63%, rgb(50, 176, 247) 107.09%);
+  color: #fff;
+}
+button i{
+  font-size: 1.4rem;
+  transform: translateY(4px);
 }

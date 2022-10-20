@@ -1,3 +1,5 @@
+// 메인 스크롤 시 헤더 스타일 변경되는 js
+
 $(document).ready(function () {
   // 스크롤이벤트를 사용하여 일정영역이상으로 내려가면 위 서식을 적용한다.
   $(window).scroll(function () {
@@ -24,7 +26,7 @@ $(document).ready(function () {
     } else {
       $("header .nav-box li").removeClass("on");
       $(".user-icon i").removeClass("on");
-      //흰색로고d
+      //흰색로고
       // $('h1 img').attr('src','/static/image/logo.png');
       $("header").removeClass("h_on");
 

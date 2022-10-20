@@ -23,7 +23,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!-- 슬라이드 서식 -->
     <link rel="stylesheet" href="/static/css/swiper.css">
+    <!-- 스와이퍼 슬라이드 js -->
     <script src="/static/js/swiper.js"></script>
+    <!-- 메뉴 등장 이벤트 js / jy -->
+    <script src="/static/js/myPage.js"></script>
 </head>
 <body>
   <!-- 헤더 삽입 -->
@@ -49,14 +52,14 @@
             <ul class="swiper-wrapper">
                 <!-- Slides -->
                 <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
-                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
-                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
-                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
-                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
-                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
-                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
-                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
-                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/romance-poster.png" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/sf-poster.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/comedy-poster.png" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/romance1.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/romance10.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/romance11.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/romance12.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/romance2.jpg" alt=""></li>
             </ul>
         </div>
           <!-- 슬라이드의 좌, 우에 방향표시 버튼 -->
@@ -69,10 +72,10 @@
                 <!-- Additional required wrapper -->
             <ul class="swiper-wrapper">
                 <!-- Slides -->
-                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
-                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
-                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
-                <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/romance3.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/romance4.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/romance5.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/romance6.jpg" alt=""></li>
                 <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
                 <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
                 <li class="swiper-slide"><img src="/static/image/action-poster.jpg" alt=""></li>
@@ -85,9 +88,9 @@
           <div id="swiper-button-prev" class="swiper-button-prev2"></div>
         </div>
         </div>
-        <div class="cont-foot">
+        <!-- <div class="cont-foot">
             
-        </div>
+        </div> -->
     </div>
     </main>
         <!-- Initialize Swiper -->
@@ -130,24 +133,7 @@
             clickable: true,
         }
     });
-    // 스크롤 값에 따른 화면 등장과 아웃
-    $(document).ready(function(){
-  // 스크롤이벤트를 사용하여 일정영역이상으로 내려가면 위 서식을 적용한다.
-  $(window).scroll(function(){
-    let sPos = $(this).scrollTop();
-    console.log(sPos);//스크롤값을 체크한다.
-    if(sPos>=50){
-      $( '.cont-head' ).fadeIn( 1000, 'swing');
-    }else{
-        $( '.cont-head' ).fadeOut( 1000, 'swing');
-    }
-    if(sPos>=300){
-      $( '.cont-body' ).fadeIn( 1000, 'swing');
-    }else{
-        $( '.cont-body' ).fadeOut( 1000, 'swing');
-    }
-});
-});
+
   </script>
   </body>
 </html>

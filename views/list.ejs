@@ -31,24 +31,24 @@
         <i class="fas fa-edit"></i>
     <h1>REVIEW</h1>
     <form>
-      <label for="writer">작성자</label>
+      <div class="writer">
+      <label for="writer">작성자</label><br><br>
       <input type="text" id="writer" autocomplete="off" />
+    </div>
       <br />
+      <div class="cont">
+      <label for="content">내용</label><br><br>
+      <input type="text" id="content" autocomplete="off" />
       <br />
-
-      <label for="content">내용</label>
-      <input type="text" id="content" style="width: 500px" autocomplete="off" />
-      <br />
-      <br />
-
-      <button type="button" onclick="writeNote();">등록</button>
+</div>
+      <button type="button" onclick="writeNote();"><i class="xi-plus-min"></i></button>
     </form>
   </div>
     <br />
     <br />
     <!-- 오른쪽 : 입력된 내용 구간 -->
     <div class="right-box">
-    <table id="table" border="1" cellpadding="10" cellspacing="1">
+    <table id="table" border="1" cellpadding="10" cellspacing="10">
       <tr>
         <th>작성자</th>
         <th>내용</th>
