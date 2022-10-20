@@ -1,3 +1,5 @@
+// 메인 하단 영역 삽입될 게시판 js
+
 const listForm = document.querySelector('#list-form');
 
 listForm.addEventListener('submit', function(event){

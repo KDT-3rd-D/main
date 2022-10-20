@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* common css */
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 12px;
+}
+.nav .nav-box li:first-of-type a{
+  color: #35aef7 !important;
+}
