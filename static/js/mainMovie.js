@@ -3,11 +3,11 @@
 // main - 좋아요 btn 활성화
 const modalLike = document.querySelector("#modal-like");
 
-modalLike.onclick = function() {
-  let likeBtn = document.querySelector('#modal-like > i');
-  likeBtn.classList.toggle('xi-heart-o');
-  likeBtn.classList.toggle('xi-heart');
-}
+modalLike.onclick = function () {
+  let likeBtn = document.querySelector("#modal-like > i");
+  likeBtn.classList.toggle("xi-heart-o");
+  likeBtn.classList.toggle("xi-heart");
+};
 // main - 모달창 내부 별점
 const drawStar = (target) => {
   document.querySelector(`.star span`).style.width = `${target.value * 10}%`;
@@ -25,36 +25,32 @@ modalLike.onclick = function () {
   let likeBtn = document.querySelector("#modal-like > i");
   likeBtn.classList.toggle("xi-heart-o");
   likeBtn.classList.toggle("xi-heart");
-
 };
 
-  // modal 등장 - fade in , fade out
-  $(".movie-info-detail").click(function () {
-    $(".modal-bg").fadeIn(1000, "swing");
-    $(".modal-box").fadeIn(1000, "swing");
-  });
-  $(".modal-close-btn").click(function () {
-    $(".modal-bg").fadeOut(1000);
-    $(".modal-box").fadeOut(1000);
-  });
-  $(".modal-bg").click(function () {
-    $(".modal-bg").fadeOut(1000);
-    $(".modal-box").fadeOut(1000);
-  });
-  
-// 모달창 등장 시, 배경(body)부분의 콘텐츠 고정 , 모달창 내부만 스크롤 생성 및 작동
-var posY;
-        
-$(".bnt_open").on("click", function(e){
-    posY = $(window).scrollTop();
-    
-    $("html, body").addClass("not_scroll");
-    $(".cont").css("top",-posY);
+// modal 등장 - fade in , fade out
+$(".movie-info-detail").click(function () {
+  $(".modal-bg").fadeIn(1000, "swing");
+});
+$(".modal-close-btn").click(function () {
+  $(".modal-bg").fadeOut(1000);
+});
+$(".modal-exit").click(function () {
+  $(".modal-bg").fadeOut(1000);
 });
 
-$(".bnt_close").on("click", function(){
-    $("html, body").removeClass("not_scroll");
-    posY = $(window).scrollTop(posY);
+// 모달창 등장 시, 배경(body)부분의 콘텐츠 고정 , 모달창 내부만 스크롤 생성 및 작동
+var posY;
+
+$(".bnt_open").on("click", function (e) {
+  posY = $(window).scrollTop();
+
+  $("html, body").addClass("not_scroll");
+  $(".cont").css("top", -posY);
+});
+
+$(".bnt_close").on("click", function () {
+  $("html, body").removeClass("not_scroll");
+  posY = $(window).scrollTop(posY);
 });
 
 // main - 장르별 추천 영화 영상 auto play
@@ -89,7 +85,6 @@ $(document).ready(function () {
     v.pause();
   });
 });
-
 
 // main - auto slide
 $(document).ready(function () {
