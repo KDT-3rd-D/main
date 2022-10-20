@@ -27,7 +27,7 @@ app.get('/login', function(request, response){
 
 app.get('/action', function(request, response){
     response.render('action')
-
+});
 app.get("/romance", function (request, response) {
   response.render("romance");
 });
