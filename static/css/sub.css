@@ -235,14 +235,13 @@ main {
 .movies ul {
   padding-top: 20px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .movies ul li.movie {
   width: 200px;
   height: 300px;
-  margin-bottom: 20px;
+  margin: 0 15px 20px;
 }
 
 .movies ul li.movie img {
