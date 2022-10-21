@@ -20,13 +20,12 @@ app.use("/static", express.static(__dirname + "/static"));
 app.get("/", function (request, response) {
   response.render("index");
 });
-
-app.get('/login', function(request, response){
-    response.render('login');
+app.get("/login", function (request, response) {
+  response.render("login");
 });
 
-app.get('/action', function(request, response){
-    response.render('action')
+app.get("/action", function (request, response) {
+  response.render("action");
 });
 app.get("/romance", function (request, response) {
   response.render("romance");
@@ -37,8 +36,9 @@ app.get("/comedy", function (request, response) {
 app.get("/sf", function (request, response) {
   response.render("sf");
 });
-app.get("/mypage", function (request, response) {
-  response.render("myPage");
+
+app.get('/list', function(request, response){
+    response.render('list')
 });
 app.get("/my", function (request, response) {
   response.render("myPage");
@@ -63,4 +63,3 @@ app.listen(PORT, function () {
 // app.listen(PORT, function () {
 //   console.log(`listening on port ${PORT}! http://localhost:${PORT}`);
 // });
-// >>>>>>> de124cb9e2555c6b1230a9cbd50136f12cc47165
