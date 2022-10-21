@@ -208,11 +208,15 @@ $(document).ready(function () {
 let hoverBox = document.querySelector(".hoverbox");
 let hoverBoxVd = document.querySelector(".hoverbox > video");
 let movieImg = document.querySelector(".movie > img");
+let modalBox = document.querySelector(".modal-box");
+let modalBg = document.querySelector(".modal-bg");
 
 movieImg.addEventListener("mouseenter", function () {
+  // movieImg
   movieImg.style.zIndex = "-1";
   movieImg.style.transform = "scale(1.5)";
   movieImg.style.opacity = "0";
+  // hoverBox
   hoverBox.style.zIndex = "1";
   hoverBox.style.opacity = "1";
   hoverBoxVd.style.width = "350px";
@@ -220,31 +224,35 @@ movieImg.addEventListener("mouseenter", function () {
 });
 
 hoverBox.addEventListener("mouseleave", function () {
+  // movieImg
   movieImg.style.zIndex = "1";
   movieImg.style.transform = "scale(1)";
   movieImg.style.width = "200px";
   movieImg.style.height = "300px";
   movieImg.style.opacity = "1";
+  // hoverBox
   hoverBox.style.zIndex = "-1";
   hoverBox.style.opacity = "0";
-  hoverBoxVd.style.width = "250px";
   hoverBox.style.width = "250px";
+  hoverBoxVd.style.width = "250px";
 });
 
-$(function () {
-  $(".movie-info-detail").click(function () {
-    $(".modal-bg").fadeIn(500);
-    $(".modal-box").animate({ width: "40%" }, 500);
-
-    let v = $(".modal-img").find("video").get(0);
-    v.play();
-  });
-  $(".modal-close-btn").click(function () {
-    $(".modal-bg").fadeOut(500);
-    $(".modal-box").animate({ width: "0%" }, 500);
-  });
-  $(".modal-exit").click(function () {
-    $(".modal-bg").fadeOut(500);
-    $(".modal-box").animate({ width: "0%" }, 500);
-  });
+$(".fa-chervron-down").click(function () {
+  // movieImg
+  movieImg.style.zIndex = "1";
+  movieImg.style.transform = "scale(1)";
+  movieImg.style.width = "200px";
+  movieImg.style.height = "300px";
+  movieImg.style.opacity = "1";
+  // hoverBox
+  hoverBox.style.zIndex = "-1";
+  hoverBox.style.opacity = "0";
+  hoverBox.style.width = "250px";
+  hoverBoxVd.style.width = "250px";
+  // modalBox
+  modalBox.style.width = "800px";
+  modalBox.style.height = "740px";
+  // modalBg
+  modalBg.style.opacity = "1";
+  modalBg.style.zIndex = "10000";
 });

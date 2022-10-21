@@ -322,3 +322,232 @@ main {
   text-overflow: ellipsis;
   line-height: 1.5em;
 }
+
+/* 영화 상세 정보 btn : modal */
+.fa-chevron-down{
+  cursor: pointer;
+}
+
+.modal-bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2000px;
+  opacity: 0;
+}
+.modal-bg .modal-box{
+  position: absolute;
+  position: fixed;
+  top: 10%;
+  left: 25%;
+  background-color: #000;
+  width: 800px;
+  height: 740px;
+  z-index:  10002;
+  overflow-y: scroll;
+  transition: all ease-in-out;
+}
+.modal-exit {
+  position: absolute;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2000px;
+  z-index:  10001;
+}
+ /* 바디에 스크롤 막는 방법 */
+  .not_scroll{
+      position: fixed;
+      overflow: hidden;
+      width: 100%;
+      height: 100%
+  }
+  .not_scroll .cont {
+      position: relative;
+      top: 0;
+  }
+/* modal close btn */
+  .modal-box .modal-close-btn{
+  outline: none;
+  border: none;
+  background: none;
+  position: absolute;
+  color: #fff;
+  font-size: 2.4rem;
+  top: 1%;
+  right: 35px;
+  z-index: 10002;
+  cursor: pointer;
+}
+.modal-bg .modal-box .modal-close-btn img{
+  width: 100%;
+}
+/* modal- img 및 제목*/
+.modal-box .modal-cont .modal-img{
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.modal-box .modal-cont .modal-img video{
+  object-fit: cover;
+  width: 100%;
+}
+.modal-box .modal-cont .modal-img .modal-like-btn{
+  position: absolute;
+  top: 355px;
+  right: 35px;
+  font-size: 2.4rem;
+  background: none;
+  color: #ff0000;
+}
+.modal-box .modal-cont > h3{
+  position: absolute;
+  font-size: 2rem;
+  color: #fff;
+  transform: translate(30px,65px);
+}
+/* modal- 영화 정보 */
+.modal-box .modal-cont .cont-info{
+  padding-top: 140px;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 1.2rem;
+  font-size: 0.8rem;
+  color: #fff;
+}
+.modal-box .modal-cont .cont-info strong{
+  color: #ccc;
+}
+.modal-cont .cont-info p:first-of-type{
+  width: 60%;
+  float: left;
+}
+.modal-cont .cont-info p:last-of-type{
+  width: 35%;
+  float: right;
+}
+/* modal- 영화 시리즈 리스트 */
+.modal-cont .cont-ex-list{
+  width: 90%;
+  clear: both;
+  padding: 20px;
+}
+.modal-cont .cont-ex-title{
+  font-size: 1.4rem;
+  color: #fff;
+  margin: 10px 0 20px 20px;
+}
+.modal-cont .cont-ex-list .cont-ex-flex{
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  width: 100%;
+  height: 100px;
+  color: #fff;
+}
+.modal-cont .cont-ex-list .cont-ex-flex .flex-img{
+  border-radius: 100%;
+  border: 1px solid #000;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  color: #fff;
+}
+.cont-ex-list .cont-ex-flex li span{
+  position: absolute;
+  top: 110px;
+  margin-left: 15px;
+  font-size: 0.8rem;
+}
+.modal-cont .cont-ex-list .flex-img img{
+  width: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.modal-cont .cont-ex-list .flex-img:hover{
+  border: 1px solid #fff;
+}
+.cont-ex-list .flex-img img:hover{
+  transform: scale(1.2);
+}
+/* 모달창 -> 리뷰 작성 페이지로 가는 btn */
+.modal-to-review{
+  width: 100%;
+  margin: 0 auto;
+}
+.review-btn-box{
+  width: 40%;
+  margin: 0 auto;
+}
+.modal-cont .review-btn{
+  margin: 0 auto;
+  color: #fff;
+  font-size: 1rem;
+  padding: 15px 40px;
+  background-size: 200% 50%;
+  border: 1px solid #000;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.modal-cont .review-btn i{
+  font-size: 1rem;
+  margin-right: 5px;
+}
+/* 리뷰 일부 미리보기 + 별점 */
+.modal-to-review .review-part-view{
+  width: 80%;
+  margin: 0 auto;
+  transform: translateY(80px);
+  color: #fff;
+  font-size: 0.8rem;
+  padding-bottom: 50px;
+}
+.modal-to-review .review-part-view li{
+  display: flex;
+  margin-bottom: 20px;
+}
+.Rs {
+  position: relative;
+  font-size: 2rem;
+  color: #ddd;
+}
+.Rs input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.Rs span {
+  width: 0;
+  position: absolute;
+  left: 0;
+  color: yellow;
+  overflow: hidden;
+  pointer-events: none;
+}
+/* 별점 기본값 설정 */
+.star span{
+  width: 100%;
+}
+.star2 span{
+  width: 10%;
+}
+.star3 span{
+  width: 80%;
+}
+.star4 span{
+  width: 90%;
+}
+.modal-to-review .review-part-view li .star-info{
+  width: 62%;
+  margin-left: 15px;
+  line-height: 2rem;
+}
