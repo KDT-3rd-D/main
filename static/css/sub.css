@@ -249,15 +249,23 @@ main {
   height: 300px;
   border-radius: 10px;
   object-fit: cover;
+  transition: all 0.5s ease-in-out;
 }
 
 .movies ul li.movie .hoverbox {
   color: #fff;
-  width: 400px;
+  width: 250px;
   height: 400px;
   background: #111;
   padding: 20px;
   border-radius: 5px;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .movies ul li.movie span {
@@ -265,18 +273,23 @@ main {
 }
 
 .movies ul li.movie video {
-  width: 400px;
+  width: 250px;
   z-index: 100;
   margin-bottom: 20px;
+  transition: all 0.5s ease-in-out;
 }
 
 .movies ul li.movie .tit {
   overflow: hidden;
+
 }
 
-.movies ul li.movie .tit i {
-  font-size: 1.6em;
-  margin-left: 285px;
+.movies ul li.movie .tit button {
+  top: 355px;
+  right: 35px;
+  font-size: 2.4rem;
+  background: none;
+  color: white;
 }
 
 .movies ul li.movie .tit span:nth-child(1) {
