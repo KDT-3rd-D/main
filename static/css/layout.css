@@ -277,18 +277,30 @@ body{
     left: 0;
     width: 100%;
     height: 2000px;
-    background-color: rgba(0, 0, 0, 0.3);
     z-index: 10000;
     display: none;
   }
   .modal-bg .modal-box{
+    position: absolute;
     position: fixed;
     top: 10%;
     left: 25%;
     background-color: #000;
     width: 800px;
     height: 740px;
+    z-index:  10002;
     overflow-y: scroll;
+    transition: all ease-in-out;
+  }
+  .modal-exit {
+    position: absolute;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2000px;
+    z-index:  10002;
   }
    /* 바디에 스크롤 막는 방법 */
     .not_scroll{
@@ -302,7 +314,7 @@ body{
         top: 0;
     }
   /* modal close btn */
-  .modal-bg .modal-box .modal-close-btn{
+    .modal-box .modal-close-btn{
     outline: none;
     border: none;
     background: none;
@@ -311,7 +323,7 @@ body{
     font-size: 2.4rem;
     top: 1%;
     right: 35px;
-    z-index: 99999;
+    z-index: 10002;
     cursor: pointer;
   }
   .modal-bg .modal-box .modal-close-btn img{
