@@ -292,6 +292,24 @@ body{
     overflow-y: scroll;
     transition: all ease-in-out;
   }
+
+  /*scroll bar customizing*/
+  .modal-box::-webkit-scrollbar {
+    width: 9px;  /* 스크롤바의 너비 */
+  }
+
+  .modal-box::-webkit-scrollbar-track {
+    background: black;  /*스크롤바 뒷 배경 색상*/
+    border-radius: 10px;
+  }
+
+  .modal-box::-webkit-scrollbar-thumb {
+    height: 20%; /* 스크롤바의 길이 */
+    background: rgba(69, 68, 68, 0.719); /* 스크롤바의 색상 */
+    
+    border-radius: 10px;
+}
+
   .modal-exit {
     position: absolute;
     position: fixed;

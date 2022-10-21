@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>Login</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="/static/image/favicon.ico" type="image/x-icon">
     <!-- css: reset -->
     <link rel="stylesheet" href="/static/css/reset.css">
     <!-- css: layout -->
-    <link rel="stylesheet" href="/static/css/layout.css">
+    <!-- <link rel="stylesheet" href="/static/css/layout.css"> -->
     <!-- font : noto sans, moserrat, roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Noto+Sans+KR:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <!-- fontawsome -->
@@ -26,59 +26,49 @@
 </head>
 
 <body>
-
+  <!--login page: background image-->
   <img class="login-main-bg-image" src="/static/image/main-bg.jpg" alt="main-bg">
 
+  <!--login container-->
   <form class="login-container">
 
+      <!--D.NEMA logo image-->
       <img class="login-logo-image" src="/static/image/logo-v2.png" alt="D.NEMA logo">
   
+      <!--login title(logo image 바로 아래)-->
       <h1 class="login-title">LOGIN</h1>
   
-      <input class="input-email" type="email" id="email" placeholder="EMAIL" required>
-      <input class="input-pw" type="password" id="password" placeholder="PASSWORD" required>
-      <div class="pw-warning input-pw-warning"></div>
+      <!--input: email, pw-->
+      <input class="login-input-email" type="email" id="email" placeholder="EMAIL" required>
+      <input class="login-input-pw" type="password" id="password" placeholder="PASSWORD" required>
+      <!--pw 8글자 미만 경고메세지-->
+      <div class="login-pw-warning login-input-pw-warning"></div>
       
-      <label class="checkbox">
+      <!--checkbox-->
+      <label class="login-checkbox">
         <input type="checkbox">Remember Me
       </label>
 
-      <!-- <button class="login-button" type="submit" onclick="location.href='/'">LOGIN</button> -->
+      <!--login btn-->
       <button class="login-button" type="submit">LOGIN</button>
       
 
-        <!--소셜 로그인 버튼 추가하기-->
-
-        <!--폰트어썸 활용한 소셜로그인 코드-->
-      <!-- <div class="login-social-container">
-        <a href="" class="social-btn login-btn-google">
-          <i class="fab fa-google social-icon"></i>
-          <div class="social-text">Login With Google</div>
-        </a>
-
-        <a href="" class="social-btn login-btn-facebook">
-          <i class="fab fa-facebook-f social-icon"></i>
-          <div class="social-text">Login With Facebook</div>
-        </a>
-
-        <a href="" class="social-btn login-btn-kakaotalk">
-          <i class="fas fa-comment social-icon"></i>
-          <div class="social-text">Login With KakaoTalk</div>
-        </a>
-      </div> -->
-
-      <!--현재 소셜 로그인 코드-->
+    <!--social login container-->
     <div class="social-login-container">
 
-      <div class="social-google">
-        <img class="social-google-img" src="/static/image/loginlogo/g-logo.png" alt="">
+      <!--google-->
+      <div class="login-social-google">
+        <img class="login-social-google-img" src="/static/image/loginlogo/g-logo.png" alt="">
       </div>
 
-      <img class="social-naver" src="/static/image/loginlogo/btnW_icon_square.png" alt="">
+      <!--naver-->
+      <img class="login-social-naver" src="/static/image/loginlogo/btnW_icon_square.png" alt="">
 
-      <div class="social-kakao">
-      <i class="fas fa-comment fa-lg social-icon"></i>
+      <!--kakaotalk-->
+      <div class="login-social-kakao">
+      <i class="fas fa-comment fa-lg"></i>
       </div>
+
     </div>
 
   </form>
@@ -87,4 +77,14 @@
 </body>
 </html>
 
-
+<!--
+내가 추가한 파일 및 변경
+-login.ejs(layout.css link 해제)
+-login.css
+-app.js
+app.get('/login', function(request, response){
+    response.render('login');
+});
+-login.js
+-image.loginlogo
+-->
