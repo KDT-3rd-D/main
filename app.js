@@ -20,6 +20,9 @@ app.use("/static", express.static(__dirname + "/static"));
 app.get("/", function (request, response) {
   response.render("index");
 });
+app.get("/login", function (request, response) {
+  response.render("login");
+});
 
 app.get("/login", function (request, response) {
   response.render("login");
@@ -40,6 +43,7 @@ app.get("/sf", function (request, response) {
 
 app.get("/list", function (request, response) {
   response.render("list");
+
 });
 app.get("/my", function (request, response) {
   response.render("myPage");
@@ -62,4 +66,6 @@ app.listen(PORT, function () {
 // });
 
 // app.listen(PORT, function () {
-//   console.lo
+
+//   console.log(`listening on port ${PORT}! http://localhost:${PORT}`);
+// });
