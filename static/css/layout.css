@@ -290,11 +290,12 @@ body{
     height: 740px;
     z-index:  10002;
     overflow-y: scroll;
+    transition: all ease-in-out;
   }
   .modal-exit {
     position: absolute;
     position: fixed;
-    color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100%;
