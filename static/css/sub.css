@@ -1,6 +1,7 @@
 * {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 12px;
+  box-sizing: content-box;
 }
 
 /* 화면에서 보이지 않아도 되지만 콘텐츠상 있어야 하는 부분 */
@@ -85,7 +86,7 @@ main {
   content: "";
   position: absolute;
   width: 100%;
-  height: 600px;
+  height: 100vh;
   top: 0;
   left: 0;
   z-index: 100;
@@ -95,6 +96,7 @@ main {
 .random video {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .random .description {
@@ -180,7 +182,7 @@ main {
     font-weight: 700;
   }
 
-  .random .button {
+  .random button {
     position: static;
     margin: 30px auto 20px;
     display: block;
@@ -240,10 +242,83 @@ main {
 .movies ul li.movie {
   width: 200px;
   height: 300px;
+  margin-bottom: 20px;
   position: relative;
 }
 
 .movies ul li.movie img {
   width: 100%;
+  height: 300px;
   border-radius: 10px;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+
+.movies ul li.movie .hoverbox {
+  color: #fff;
+  width: 250px;
+  height: 400px;
+  background: #111;
+  padding: 20px;
+  border-radius: 5px;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.movies ul li.movie span {
+  display: inline-block;
+}
+
+.movies ul li.movie video {
+  width: 250px;
+  z-index: 100;
+  margin-bottom: 20px;
+  transition: all 0.5s ease-in-out;
+}
+
+.movies ul li.movie .tit {
+  overflow: hidden;
+
+}
+
+.movies ul li.movie .tit button {
+  top: 355px;
+  right: 35px;
+  font-size: 2.4rem;
+  background: none;
+  color: white;
+}
+
+.movies ul li.movie .tit span:nth-child(1) {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.movies ul li.movie .tit span:nth-child(3) {
+  display: block;
+  width: 30px;
+  padding: 2px;
+  font-size: 1.4em;
+  border: solid 1px #888;
+  border-radius: 2px;
+  float: left;
+}
+
+.movies ul li.movie .tit span:nth-child(4) {
+  color: #888;
+  font-size: 1rem;
+  margin: 2px 15px;
+}
+
+.movies ul li.movie p {
+  color: #fff;
+  margin-top: 20px;
+  text-overflow: ellipsis;
+  line-height: 1.5em;
 }

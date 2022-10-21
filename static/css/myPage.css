@@ -14,23 +14,24 @@
 main{
   background-color: #000;
   width: 100%;
-  min-height: 1000px;
+  height: 1600px;
   padding-bottom: 50px;
 }
 .body{
   width: 60%;
   margin: 0 auto;
 }
-.cont-head, .cont-body, .cont-foot{
+.cont-head, .cont-body{
   color: #fff;
   width: 100%;
   margin: 0 auto;
+  display: none;
 }
 /* 사용자 이름 */
 .cont-head h1{
   font-size: 4rem;
   font-weight: bolder;
-  padding: 160px 0 50px 100px;
+  padding: 500px 0 50px 100px;
   line-height: 5rem;
 }
 .cont-head h1 strong{
@@ -43,7 +44,13 @@ i.xi-heart{
 i.xi-star{
   color: rgb(255, 255, 0);
 }
+i.xi-time{
+  color: #35aef7;
+}
 /* 사용자 최근 활동 */
+.cont-body{
+  margin-top: 100px;
+}
 .cont-body h2{
   font-size: 1.4rem;
   font-weight: 600;
@@ -73,11 +80,11 @@ i.xi-star{
   display: flex;
 }
 .slide .swiper-slide, .slide02 .swiper-slide{
-  width: 200px !important;
+  width: 150px !important;
   height: 200px !important;
   overflow: hidden;
 }
 .slide .swiper-slide img, .slide02 .swiper-slide img{
-  width: 100%;
+  height: 100%;
   object-fit: cover;
 }

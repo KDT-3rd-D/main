@@ -24,6 +24,10 @@ app.get("/login", function (request, response) {
   response.render("login");
 });
 
+app.get("/login", function (request, response) {
+  response.render("login");
+});
+
 app.get("/action", function (request, response) {
   response.render("action");
 });
@@ -37,8 +41,9 @@ app.get("/sf", function (request, response) {
   response.render("sf");
 });
 
-app.get('/list', function(request, response){
-    response.render('list')
+app.get("/list", function (request, response) {
+  response.render("list");
+
 });
 app.get("/my", function (request, response) {
   response.render("myPage");
@@ -61,5 +66,6 @@ app.listen(PORT, function () {
 // });
 
 // app.listen(PORT, function () {
+
 //   console.log(`listening on port ${PORT}! http://localhost:${PORT}`);
 // });
