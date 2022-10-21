@@ -65,7 +65,7 @@ $(document).ready(function () {
 
   window.onload = function () {
     let i = Math.floor(Math.random() * 10);
-    $('.random-video').attr('src', `../static/video/random_comedy${i}.mp4`);
+    // $('.random-video').attr('src', `../static/video/random_comedy${i}.mp4`);
     // 플레이 상세설명 변경
     let title = document.querySelector('.title');
     let decs = document.querySelector('.decs');
