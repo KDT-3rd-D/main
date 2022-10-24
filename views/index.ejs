@@ -118,23 +118,7 @@
                 </li>
                 </ul>
             </article>
-            <!-- !! 랜덤 슬라이드 애니메이션 삽입 예정 -->
-            <article id="gallery" class="content-auto-slide">
-                <h3>What's <strong>New?</strong></h3>
-                <div class="slide-frame"></div>
-                <ul class="auto-slide">
-                    <li><img src="/static/image/slide01.jpeg" alt="랜덤 영화 이미지"></li>
-                    <li><img src="/static/image/slide02.jpeg" alt="랜덤 영화 이미지"></li>
-                    <li><img src="/static/image/slide03.jpeg" alt="랜덤 영화 이미지"></li>
-                    <li><img src="/static/image/slide04.jpeg" alt="랜덤 영화 이미지"></li>
-                    <li><img src="/static/image/slide05.jpeg" alt="랜덤 영화 이미지"></li>
-                    <li><img src="/static/image/slide06.jpeg" alt="랜덤 영화 이미지"></li>
-                    <li><img src="/static/image/slide07.jpeg" alt="랜덤 영화 이미지"></li>
-                    <li><img src="/static/image/slide08.jpeg" alt="랜덤 영화 이미지"></li>
-                    <li><img src="/static/image/slide09.jpeg" alt="랜덤 영화 이미지"></li>
-                    <li><img src="/static/image/slide10.jpeg" alt="랜덤 영화 이미지"></li>
-                </ul>
-            </article>
+
              <!-- QnA -->
              <article id="qna" class="content-review">
                 <h3>Q&A</h3>
@@ -152,10 +136,25 @@
                     <ul class="review-list">
                     <!-- js:form 입력값을 li 내용으로 추가하는 동작 생성 -->
                     <li>Q. 내가 찜한 영화 목록은 어디에서 볼 수 있나요?
+                        <span id="down" class="right-down-btn"><i class="xi-angle-down i01"></i>
+                        <div class="none-text n01">
+                            상단의 사람 아이콘(mypage)을 클릭하면 내 회원 정보로 이동하여, 확인 가능합니다!
+                        </div>
+                    </span>
                     </li>
-                    <li>Q. 영화외의 드라마 같은 콘텐츠도 추천 받을 수 있나요?</li>
-                    <li>Q. 질문질문
-                        <i class="fas fa-trash"></i>
+                    <li>Q. 영화외의 드라마 같은 콘텐츠도 추천 받을 수 있나요?
+                        <span id="down02" class="right-down-btn"><i class="xi-angle-down i02"></i>
+                        <div class="none-text n02">
+                            영화 외의 컨텐츠는 아직 준비중입니다.
+                        </div>
+                    </span>
+                    </li>
+                    <li>Q. 영화 장르마다 얻을 수 있는 정보가 무엇인가요?
+                        <span id="down03" class="right-down-btn"><i class="xi-angle-down i03"></i>
+                        <div class="none-text n03">
+                            랜덤 영화 플레이와 영화의 상세 정보를 모두 보실 수 있습니다!
+                        </div>
+                    </span>
                     </li>
                     <!-- 쓰레기통 폰트어썸 : <i class="fas fa-trash"></i> -->
                     </ul>
@@ -163,9 +162,24 @@
             </article>
         </section>
     </main>
-    <!-- <footer>
-        <address>footer</address>
-    </footer> -->
+
+    <!--footer-->
+    <footer class="main-footer-container">
+        <div class="main-footer-left">
+            <img class="main-footer-logoimg" src="/static/image/logo-v2.png" alt="">
+            
+            <div class="main-footer-groupD">CodingOn X POSCO KDT3rd - Group D</div>
+        </div>
+
+        <div class="main-footer-right">
+            <div class="main-footer-right-icon">
+                <i class="fab fa-instagram fa-2x"></i>
+                <i class="fab fa-twitter-square fa-2x"></i>
+                <i class="fab fa-facebook-square fa-2x"></i>
+            </div>
+            <div class="main-footer-copy">&copy;2022. All Rights Reserved</div>
+        </div>
+    </footer>
 
         <!-- 영화 상세 정보 btn : modal -->
         <div class="modal-bg bnt_close">
