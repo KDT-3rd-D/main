@@ -4,6 +4,23 @@
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 12px;
 }
+
+  /*scroll bar customizing*/
+  body::-webkit-scrollbar {
+    width: 11px;  /* 스크롤바의 너비 */
+  }
+
+  body::-webkit-scrollbar-track {
+    background: rgba(83, 82, 82, 0.897);  /*스크롤바 뒷 배경 색상*/
+  }
+
+  body::-webkit-scrollbar-thumb {
+    height: 60%; /* 스크롤바의 길이 */
+    background: black; /* 스크롤바의 색상 */
+    
+    border-radius: 5px;
+}
+
 section h2 {
     display: none;
 }
@@ -559,7 +576,7 @@ body{
     width: 100%;
     margin: 0 auto;
     background-color: #fbfbfd;
-    padding: 50px 0 100px 0;
+    padding: 200px 0px 350px 0px;
 }
 .content-review h3{
     text-align: center;
@@ -631,4 +648,53 @@ body{
 .review-list li .delBtn{
     font-size: 1rem;
     color: #ff0000;
+}
+
+/*footer*/
+.main-footer-container {
+  background-color: #000;
+  padding: 10px 0px 10px 0px;
+
+  font-size: 10px;
+  color: rgba(204, 204, 204, 0.758);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-footer-left {
+  margin-left: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.main-footer-logoimg {
+  width: 70px;
+  height: 14px;
+  margin-bottom: 10px;
+}
+.fa-github-square {
+  cursor: pointer;
+}
+.main-footer-right {
+  margin-right: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.main-footer-right-icon {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+.fa-instagram {
+  cursor: pointer;
+}
+.fa-twitter-square {
+  cursor: pointer;
+}
+.fa-facebook-square {
+  cursor: pointer;
 }
