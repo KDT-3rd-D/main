@@ -685,3 +685,9 @@ main {
   font-size: 1rem;
   color: #ff0000;
 }
+
+.hover-filter {
+  width: 2000vw;
+  height: 2000vh;
+  position: absolute;
+}
