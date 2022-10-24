@@ -205,8 +205,10 @@ let movieImg = document.querySelectorAll(".movie > img");
 let modalBox = document.querySelectorAll(".modal-box");
 let modalBg = document.querySelector(".modal-bg");
 
-for (let i = 0; i > movieImg.length; i++) {
+for (let i = 0; i < movieImg.length; i++) {
+  console.log(i);
   movieImg[i].addEventListener("mouseenter", function () {
+    console.log("1");
     // movieImg
     movieImg[i].style.zIndex = "-1";
     movieImg[i].style.transform = "scale(1.5)";
@@ -219,7 +221,7 @@ for (let i = 0; i > movieImg.length; i++) {
   });
 }
 
-for (let i = 0; i > hoverBox.length; i++) {
+for (let i = 0; i < hoverBox.length; i++) {
   hoverBox[i].addEventListener("mouseleave", function () {
     // movieImg
     movieImg[i].style.zIndex = "1";
