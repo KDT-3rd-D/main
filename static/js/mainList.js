@@ -17,7 +17,7 @@ listForm.addEventListener("submit", function (event) {
   newList.classList.add("reviews");
 
   ul.append(newList);
-  newList.textContent = list;
+  newList.textContent = 'Q.  ' + list;
 
   // input창 초기화
   listInput.value = "";
@@ -50,3 +50,20 @@ listForm.addEventListener("submit", function (event) {
     ul.removeChild(newList);
   });
 });
+
+// 하단 qna - 고정 질문 답변 slide로 펼치고 접는 js
+  $( document ).ready( function() {
+    $( '#down' ).click( function() {
+      $( '.n01' ).slideToggle( 300 );
+      $( '.i01' ).toggleClass( 'xi-angle-down xi-angle-up' );
+    } );
+    $( '#down02' ).click( function() {
+      $( '.n02' ).slideToggle( 300 );
+      $( '.i02' ).toggleClass( 'xi-angle-down xi-angle-up' );
+    } );
+    $( '#down03' ).click( function() {
+      $( '.n03' ).slideToggle( 300 );
+      $( '.i03' ).toggleClass( 'xi-angle-down xi-angle-up' );
+    } );
+  } );
+    

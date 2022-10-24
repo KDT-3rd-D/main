@@ -7,6 +7,6 @@
 .top-nav{
   background: #000 !important;
 }
-.nav .nav-box li:first-of-type a{
+.nav .nav-box li:nth-of-type(2) a{
   color: #35aef7 !important;
 }
