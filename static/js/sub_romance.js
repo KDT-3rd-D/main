@@ -138,7 +138,7 @@ $(document).ready(function () {
     // 버튼 눌렀을때 랜덤 플레이
     $("button").click(function () {
       let i = Math.floor(Math.random() * 10);
-      $("video").attr("src", `../static/video/random_romance${i}.mp4`);
+      $(".video").attr("src", `../static/video/random_romance${i}.mp4`);
       // 플레이 상세설명 변경
       console.log(movies[i]);
       let title = document.querySelector(".title");
@@ -200,21 +200,22 @@ $(document).ready(function () {
 //----------------------------------------------hover animation
 
 let hoverBox = document.querySelectorAll(".hoverbox");
-let hoverBoxVd = document.querySelectorAll(".hoverbox > video");
+let hoverBoxVd = document.querySelectorAll(".top-video");
 let movieImg = document.querySelectorAll(".movie > img");
 let modalBox = document.querySelectorAll(".modal-box");
 let modalBg = document.querySelector(".modal-bg");
+let hoverFilter = document.querySelector(".hover-filter");
 
 for (let i = 0; i < movieImg.length; i++) {
-  console.log(i);
   movieImg[i].addEventListener("mouseenter", function () {
-    console.log("1");
+    //hoverFilter
+    hoverFilter.style.zIndex = "1";
     // movieImg
     movieImg[i].style.zIndex = "-1";
     movieImg[i].style.transform = "scale(1.5)";
     movieImg[i].style.opacity = "0";
     // hoverBox
-    hoverBox[i].style.zIndex = "1";
+    hoverBox[i].style.zIndex = "2";
     hoverBox[i].style.opacity = "1";
     hoverBox[i].style.width = "350px";
     hoverBoxVd[i].style.width = "350px";
@@ -223,6 +224,8 @@ for (let i = 0; i < movieImg.length; i++) {
 
 for (let i = 0; i < hoverBox.length; i++) {
   hoverBox[i].addEventListener("mouseleave", function () {
+    //hoverFilter
+    hoverFilter.style.zIndex = "0";
     // movieImg
     movieImg[i].style.zIndex = "1";
     movieImg[i].style.transform = "scale(1)";
