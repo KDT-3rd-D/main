@@ -126,7 +126,7 @@ body{
     overflow: hidden;
 }
 .content-box .content-movie-genre ul li:first-child{
-    background: url('/static/image/action-poster.jpg') no-repeat;
+    background: url('/static/image/action0.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -376,7 +376,7 @@ body{
 }
 .modal-box .modal-cont .modal-img .modal-like-btn{
     position: absolute;
-    top: 355px;
+    top: 368px;
     right: 35px;
     font-size: 2.4rem;
     background: none;
@@ -386,11 +386,11 @@ body{
     position: absolute;
     font-size: 2rem;
     color: #fff;
-    transform: translate(30px,65px);
+    transform: translate(30px,73px);
 }
 /* modal- 영화 정보 */
 .modal-box .modal-cont .cont-info{
-    padding-top: 140px;
+    padding-top: 148px;
     width: 90%;
     margin: 0 auto;
     line-height: 1.2rem;
@@ -697,4 +697,3 @@ body{
 }
 .fa-facebook-square {
   cursor: pointer;
-}

@@ -43,7 +43,6 @@ app.get("/sf", function (request, response) {
 
 app.get("/list", function (request, response) {
   response.render("list");
-
 });
 app.get("/my", function (request, response) {
   response.render("myPage");

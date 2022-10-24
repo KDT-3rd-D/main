@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="wispanh=device-wispanh, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Romance</title>
   <!-- favicon -->
   <link rel="shortcut icon" href="/static/image/favicon.ico" type="image/x-icon">
@@ -45,7 +45,7 @@
           </p>
           <button><i class="xi-shuffle"></i> 랜덤플레이</button>
           <div class="video">
-            <video class="random-video" autoplay muted></video>
+            <video class="random-video" loop autoplay muted></video>
             <div class="description">
               <div class="ott">
                 <span class="age-color none"></span>
@@ -64,155 +64,151 @@
 
       <!-- top movie -->
       <article class="movies">
-         <!-- modal box -->
+        <!-- modal box -->
         <div class="modal-bg bnt_close">
-    <div class="modal-exit"></div>
-    <div class="modal-box">
-        <!-- modal close btn -->
-        <button class="modal-close-btn bnt_close"><i class="xi-close"></i></button>
-        <div class="modal-cont">
-            <div class="modal-img">
+          <div class="modal-exit"></div>
+          <div class="modal-box">
+            <!-- modal close btn -->
+            <button class="modal-close-btn bnt_close"><i class="xi-close"></i></button>
+            <div class="modal-cont">
+              <div class="modal-img">
                 <video muted autoplay loop>
-                    <source src="/static/video/random_romance0.mp4" type="video/mp4">
-                  </video>
-                  <!-- 영화 좋아요 btn -->
-                  <button id="modal-like" class="modal-like-btn"><i class="xi-heart-o"></i></button>
-        </div>
-            <h3>분노의 질주: 더 세븐</h3>
-            <div class="cont-info">
+                  <source src="/static/video/random_romance0.mp4" type="video/mp4">
+                </video>
+                <!-- 영화 좋아요 btn -->
+                <button id="modal-like" class="modal-like-btn"><i class="xi-heart-o"></i></button>
+              </div>
+              <h3>분노의 질주: 더 세븐</h3>
+              <div class="cont-info">
                 <!-- 영화 내용 -->
-                <p>도미닉(빈 디젤)은 자신과 가장 가까웠던 형제 제이콥(존 시나)이 사이퍼(샤를리즈 테론)와 연합해 전 세계를 위기로 빠트릴 위험천만한 계획을 세운다는 사실을 알게 되고, 이를 막기 위해 다시 한 번 패밀리들을 소환한다. 가장 가까운 자가 한순간, 가장 위험한 적이 된 상황 도미닉과 패밀리들은 이에 반격할 놀라운 컴백과 작전을 세우고 지상도, 상공도, 국경도 경계가 없는 불가능한 대결이 시작되는데…</p>
+                <p>도미닉(빈 디젤)은 자신과 가장 가까웠던 형제 제이콥(존 시나)이 사이퍼(샤를리즈 테론)와 연합해 전 세계를 위기로 빠트릴 위험천만한 계획을 세운다는 사실을 알게 되고, 이를 막기
+                  위해 다시 한 번 패밀리들을 소환한다. 가장 가까운 자가 한순간, 가장 위험한 적이 된 상황 도미닉과 패밀리들은 이에 반격할 놀라운 컴백과 작전을 세우고 지상도, 상공도, 국경도
+                  경계가 없는 불가능한 대결이 시작되는데…</p>
                 <!-- 출연진 및 감독 -->
                 <p>
-                    <strong>감독</strong> 저스틴 린<br>
-                    <strong>주연</strong> 빈 디젤, 존 시나, 성 강, 샤를리즈 테론, 미셸 로드리 게즈
+                  <strong>감독</strong> 저스틴 린<br>
+                  <strong>주연</strong> 빈 디젤, 존 시나, 성 강, 샤를리즈 테론, 미셸 로드리 게즈
                 </p>
-            </div>
-            <!-- 출연진 이미지 flex 배치 -->
-            <div class="cont-ex-list">
+              </div>
+              <!-- 출연진 이미지 flex 배치 -->
+              <div class="cont-ex-list">
                 <h3 class="cont-ex-title">출연진</h3>
                 <ul class="cont-ex-flex">
-                    <li>
-                        <div class="flex-img">
-                        <img src="/static/image/modal.jpg" alt="빈디젤">
-                        </div>
-                        <span>빈디젤</span>
-                    </li>
-                    <li>
-                        <div class="flex-img">
-                        <img src="/static/image/modal02.jpg" alt="폴워커">
-                        </div>
-                        <span>폴워커</span>
-                    </li>
-                    <li>
-                        <div class="flex-img">
-                        <img src="/static/image/modal03.jpg" alt="드웨인 존슨">
-                        </div>
-                        <span>드웨인 존슨</span>
-                    </li>
-                    <li>
-                        <div class="flex-img">
-                        <img src="/static/image/modal04.jpg" alt="미셸 로드리게즈">
-                        </div>
-                        <span>미셸 로드리게즈</span>
-                    </li>
+                  <li>
+                    <div class="flex-img">
+                      <img src="/static/image/modal.jpg" alt="빈디젤">
+                    </div>
+                    <span>빈디젤</span>
+                  </li>
+                  <li>
+                    <div class="flex-img">
+                      <img src="/static/image/modal02.jpg" alt="폴워커">
+                    </div>
+                    <span>폴워커</span>
+                  </li>
+                  <li>
+                    <div class="flex-img">
+                      <img src="/static/image/modal03.jpg" alt="드웨인 존슨">
+                    </div>
+                    <span>드웨인 존슨</span>
+                  </li>
+                  <li>
+                    <div class="flex-img">
+                      <img src="/static/image/modal04.jpg" alt="미셸 로드리게즈">
+                    </div>
+                    <span>미셸 로드리게즈</span>
+                  </li>
                 </ul>
                 <ul class="cont-ex-flex">
-                    <li>
-                        <div class="flex-img">
-                        <img src="/static/image/modal05.jpg" alt="성강">
-                        </div>
-                        <span>성강</span>
-                    </li>
-                    <li>
-                        <div class="flex-img">
-                        <img src="/static/image/modal06.jpg" alt="샤를리즈 테론">
-                        </div>
-                        <span>샤를리즈 테론</span>
-                    </li>
-                    <li>
-                        <div class="flex-img">
-                        <img src="/static/image/modal07.jpg" alt=" 존 시나">
-                        </div>
-                        <span>존 시나</span>
-                    </li>
-                    <li>
-                        <div class="flex-img">
-                        <img src="/static/image/modal08.jpg" alt="조다나 브류스터">
-                        </div>
-                        <span>조다나 브류스터</span>
-                    </li>
+                  <li>
+                    <div class="flex-img">
+                      <img src="/static/image/modal05.jpg" alt="성강">
+                    </div>
+                    <span>성강</span>
+                  </li>
+                  <li>
+                    <div class="flex-img">
+                      <img src="/static/image/modal06.jpg" alt="샤를리즈 테론">
+                    </div>
+                    <span>샤를리즈 테론</span>
+                  </li>
+                  <li>
+                    <div class="flex-img">
+                      <img src="/static/image/modal07.jpg" alt=" 존 시나">
+                    </div>
+                    <span>존 시나</span>
+                  </li>
+                  <li>
+                    <div class="flex-img">
+                      <img src="/static/image/modal08.jpg" alt="조다나 브류스터">
+                    </div>
+                    <span>조다나 브류스터</span>
+                  </li>
                 </ul>
+              </div>
+              <div class="modal-to-review">
+                <div class="review-btn-box">
+                  <a href="/list" class="plus-btn review-btn"><i class="xi-pen"></i>리뷰 작성 하기</a>
+                </div>
+                <!-- 리뷰 일부 보여주도록? -->
+                <ul class="review-part-view">
+                  <li><span class="Rs star">
+                      ★★★★★
+                      <span>★★★★★</span>
+                      <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
+                    </span>
+                    <span class="star-info">
+                      고인 폴 워커의 마지막 작품이지만 화끈한 액션이였다. 차들도 대박이고 액션씬도 강하다! 삼가 고인의 명복을 빕니다 분노의질주 올해도 실망안시킨다 대박 영화이다 정말 흥미진진하다
+                      분노의질주 세븐 대박 짱이다
+                    </span>
+                  </li>
+                  <li><span class="Rs star2">
+                      ★★★★★
+                      <span>★★★★★</span>
+                      <input type="range" oninput="drawStar2(this)" value="1" step="1" min="0" max="10">
+                    </span>
+                    <span class="star-info">
+                      전 시즌이랑 다름없는 스토리 ㅠ
+                    </span>
+                  </li>
+                  <li><span class="Rs star3">
+                      ★★★★★
+                      <span>★★★★★</span>
+                      <input type="range" oninput="drawStar3(this)" value="1" step="1" min="0" max="10">
+                    </span>
+                    <span class="star-info">
+                      폴 워커의 의리를 지킨 영화.. 고인의 명복을 빕니다
+                    </span>
+                  </li>
+                  <li><span class="Rs star4">
+                      ★★★★★
+                      <span>★★★★★</span>
+                      <input type="range" oninput="drawStar4(this)" value="1" step="1" min="0" max="10">
+                    </span>
+                    <span class="star-info">
+                      미친 액션
+                    </span>
+                  </li>
+                </ul>
+              </div>
             </div>
-        <div class="modal-to-review">
-            <div class="review-btn-box">
-            <a href="/list" class="plus-btn review-btn"><i class="xi-pen"></i>리뷰 작성 하기</a>
+          </div>
         </div>
-            <!-- 리뷰 일부 보여주도록? -->
-            <ul class="review-part-view">
-                <li><span class="Rs star">
-                    ★★★★★
-                    <span>★★★★★</span>
-                    <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
-                  </span>
-                  <span class="star-info">
-                  고인 폴 워커의 마지막 작품이지만 화끈한 액션이였다. 차들도 대박이고 액션씬도 강하다! 삼가 고인의 명복을 빕니다 분노의질주 올해도 실망안시킨다 대박 영화이다 정말 흥미진진하다 분노의질주 세븐 대박 짱이다
-                  </span>
-                </li>
-                <li><span class="Rs star2">
-                    ★★★★★
-                    <span>★★★★★</span>
-                    <input type="range" oninput="drawStar2(this)" value="1" step="1" min="0" max="10">
-                  </span>
-                  <span class="star-info">
-                   전 시즌이랑 다름없는 스토리 ㅠ
-                </span>
-                </li>
-                <li><span class="Rs star3">
-                    ★★★★★
-                    <span>★★★★★</span>
-                    <input type="range" oninput="drawStar3(this)" value="1" step="1" min="0" max="10">
-                  </span>
-                  <span class="star-info">
-                    폴 워커의 의리를 지킨 영화.. 고인의 명복을 빕니다
-                 </span>
-                </li>
-                <li><span class="Rs star4">
-                    ★★★★★
-                    <span>★★★★★</span>
-                    <input type="range" oninput="drawStar4(this)" value="1" step="1" min="0" max="10">
-                  </span>
-                  <span class="star-info">
-                    미친 액션
-                 </span>
-                </li>
-            </ul>
-        </div>
-</div>
-    
-    </div>
-        </div>
+
         <h3>Top moives</h3>
         <ul>
+          <li class="hover-filter"></li>
           <li class="movie">
             <img src="/static/image/romance0.jpg" alt="로맨스 이미지">
             <div class="hoverbox">
               <video class="top-video" src="/static/video/random_romance0.mp4" autoplay muted></video>
               <div class="tit">
-                <!-- <span>여름날 우리</span> -->
-                <!-- <span>12+</span> -->
-                <!-- <span>1시간 55분</span> -->
-                <button id="modal-like" class="modal-like-btn"><i class="fas fa-chevron-down"></i></button>
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="far fa-heart heart"></i>
               </div>
-              <p>
-                처음이었다, 사랑이 싹트는 기분
-
-                너에게 풍덩 빠져버렸던 17살의 여름.
-                너를 두고 아무것도 할 수 없었던 21살의 여름.
-                그리고 몇번의 여름이 지나고 다시 만난 너,
-                이젠 놓치지 않을 거야.
-                ‘널 만난 건 내 인생 최고의 행운이었어’
-              </p>
+              <p class="hover-story"></p>
             </div>
           </li>
           <li class="movie">
@@ -220,57 +216,28 @@
             <div class="hoverbox">
               <video class="top-video" src="/static/video/random_romance1.mp4" autoplay muted></video>
               <div class="tit">
-                <span>동감</span>
-                <i class="far fa-heart"></i>
-                <span>12+</span>
-                <span>114분</span>
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="far fa-heart heart"></i>
+
               </div>
-              <p>
-                1999년, '용'은 첫눈에 반하게 된 '한솔'을 사로잡기 위해 
-                친구에게 HAM 무전기를 빌린다.
-
-                2022년, ‘무늬’는 인터뷰 과제를 위해 
-                오래된 HAM 무전기를 작동시킨다.
-
-                "씨큐... 씨큐... 제 목소리 들리세요?"
-
-                개기 월식이 일어난 날,
-                시간을 뛰어넘어 기적처럼 연결된 ‘용’과 ‘무늬’는
-                서로의 사랑과 우정을 이야기하며 특별한 감정을 쌓아가는데...
-
-                1999 - 2022
-                마음을 수신합니다.
-              </p>
+              <p class="hover-story"></p>
             </div>
           </li>
-        
           <li class="movie">
             <img src="/static/image/romance2.jpg" alt="로맨스 이미지">
             <div class="hoverbox">
               <video class="top-video" src="/static/video/random_romance2.mp4" autoplay muted></video>
               <div class="tit">
-                <span>연애 빠진 로맨스</span>
-                <i class="far fa-heart"></i>
-                <span>15+</span>
-                <span>95분</span>
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="far fa-heart heart"></i>
+
               </div>
-              <p>
-                일도 연애도 마음대로 되지 않는 스물아홉 `자영`(전종서).
-                전 남친과의 격한 이별 후 호기롭게 연애 은퇴를 선언했지만
-                참을 수 없는 외로움에 못 이겨 최후의 보루인 데이팅 어플로 상대를 검색한다.
-
-                일도 연애도 호구 잡히기 일쑤인 서른셋 `우리`(손석구).
-                뒤통수 제대로 맞은 연애의 아픔도 잠시
-                편집장으로부터 19금 칼럼을 떠맡게 되고 데이팅 어플에 반강제로 가입하게 된다.
-
-                그렇게 설 명절 아침!
-                이름, 이유, 마음 다 감추고 만난 `자영`과 `우리`.
-                1도 기대하지 않았지만, 1일 차부터 둘은 서로에게 급속도로 빠져들게 되고
-                연애인 듯 아닌 듯 미묘한 관계 속에 누구 하나 속마음을 쉽게 터놓지 못하는데...
-
-                이게 연애가 아니면 도대체 뭔데?
-                발 빼려다 푹 빠졌다!
-              </p>
+              <p class="hover-story"></p>
+            </div>
             </div>
           </li>
           <li class="movie">
@@ -278,16 +245,13 @@
             <div class="hoverbox">
               <video class="top-video" src="/static/video/random_romance3.mp4" autoplay muted></video>
               <div class="tit">
-                <span>영화의 거리</span>
-                <i class="far fa-heart"></i>
-                <span>12+</span>
-                <span>77분</span>
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="far fa-heart heart"></i>
+
               </div>
-              <p>
-                일도 연애도 마음대로 되지 않는 스물아홉 '자영'(전종서).
-                전 남친과의 격한 이별 후 호기롭게 연애 은퇴를 선언했지만
-                참을 수 없는 외로움에 못 이겨 최후의 보루인 데이팅 어플로 상대를 검색한다...
-              </p>
+              <p class="hover-story"></p>
             </div>
           </li>
           <li class="movie">
@@ -295,25 +259,13 @@
             <div class="hoverbox">
               <video class="top-video" src="/static/video/random_romance4.mp4" autoplay muted></video>
               <div class="tit">
-                <span>너의 결혼식</span>
-                <i class="far fa-heart"></i>
-                <span>12+</span>
-                <span>110분</span>
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="far fa-heart heart"></i>
+
               </div>
-              <p>
-                기억하나요? 당신의 첫사랑
-
-                고3 여름, 전학생 ‘승희’(박보영)를 보고 첫눈에 반한 ‘우연’(김영광).
-                승희를 졸졸 쫓아다닌 끝에 마침내 공식커플로 거듭나려던 그때!
-                잘 지내라는 전화 한 통만 남긴 채 승희는 사라져버리고,
-                우연의 첫사랑은 그렇게 막을 내리는 듯했다.
-
-                1년 뒤, 승희의 흔적을 쫓아 끈질긴 노력으로 같은 대학에 합격한 우연.
-                그런데 그의 앞을 가로막은 건… 다름 아닌 그녀의 남.자.친.구!
-
-                예술로 빗나가는 타이밍 속
-                다사다난한 그들의 첫사랑 연대기는 계속된다!
-              </p>
+              <p class="hover-story"></p>
             </div>
           </li>
           <li class="movie">
@@ -321,23 +273,13 @@
             <div class="hoverbox">
               <video class="top-video" src="/static/video/random_romance5.mp4" autoplay muted></video>
               <div class="tit">
-                <span>노트북</span>
-                <i class="far fa-heart"></i>
-                <span>15+</span>
-                <span>123분</span>
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="far fa-heart heart"></i>
+
               </div>
-              <p>
-                17살, ‘노아’는 밝고 순수한 ‘앨리’를 보고 첫눈에 반한다.
-                빠른 속도로 서로에게 빠져드는 둘.
-                그러나 이들 앞에 놓인 장벽에 막혀 이별하게 된다.
-
-                24살, ‘앨리’는 우연히 신문에서 ‘노아’의 소식을 접하고
-                잊을 수 없는 첫사랑 앞에서
-                다시 한 번 선택의 기로에 서게 되는데…
-
-                열일곱의 설렘, 스물넷의 아픈 기억, 그리고 마지막까지…
-                한 사람을 지극히 사랑했으니 내 인생은 성공한 인생입니다.
-              </p>
+              <p class="hover-story"></p>
             </div>
           </li>
           <li class="movie">
@@ -345,23 +287,13 @@
             <div class="hoverbox">
               <video class="top-video" src="/static/video/random_romance6.mp4" autoplay muted></video>
               <div class="tit">
-                <span>가장 보통의 연애</span>
-                <i class="far fa-heart"></i>
-                <span>15+</span>
-                <span>109분</span>
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="far fa-heart heart"></i>
+
               </div>
-              <p>
-                전 여친에 상처받은 ‘재훈’(김래원).
-                여느 때처럼 숙취로 시작한 아침,
-                모르는 번호의 누군가와 밤새 2시간이나 통화한 기록을 발견하게 되고 그 상대가 바로! 통성명한 지 24시간도 채 되지 않은 직장 동료 ‘선영’임을 알게 된다.
-
-                남친과 뒤끝 있는 이별 중인 ‘선영’(공효진).
-                새로운 회사로 출근한 첫날, 할 말 못 할 말 쏟아내며 남친과 헤어지던 현장에서 하필이면! 같은 직장의 ‘재훈’을 마주친다.
-
-                만난 지 하루 만에 일보다 서로의 연애사를 더 잘 알게 된 두 사람.
-                하지만 미묘한 긴장과 어색함도 잠시
-                ‘한심하다’, ‘어이없다’ 부딪히면서도 마음이 쓰이는 건 왜 그럴까?
-              </p>
+              <p class="hover-story"></p>
             </div>
           </li>
           <li class="movie">
@@ -369,48 +301,27 @@
             <div class="hoverbox">
               <video class="top-video" src="/static/video/random_romance7.mp4" autoplay muted></video>
               <div class="tit">
-                <span>뷰티인사이드</span>
-                <i class="far fa-heart"></i>
-                <span>12+</span>
-                <span>127분</span>
-              </div>
-              <p>
-                남자, 여자, 아이, 노인.. 심지어 외국인까지! 자고 일어나면 매일 다른 모습으로 변하는 남자, ‘우진’. 그에게 처음으로 비밀을 말하고 싶은 단 한 사람이 생겼다.드디어 D-DAY!
-                ‘우진’은 그녀에게 자신의 마음을 고백하기로 하는데…
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="far fa-heart heart"></i>
 
-                “초밥이 좋아요? 스테이크가 좋아요?
-                사실.. 연습 엄청 많이 했어요.
-                오늘 꼭 그쪽이랑 밥 먹고 싶어서…”
-              </p>
+              </div>
+              <p class="hover-story"></p>
             </div>
           </li>
-          <li></li>
           <li class="movie">
             <img src="/static/image/romance8.jpg" alt="로맨스 이미지">
             <div class="hoverbox">
               <video class="top-video" src="/static/video/random_romance8.mp4" autoplay muted></video>
               <div class="tit">
-                <span>비와 당신의 이야기</span>
-                <i class="far fa-heart"></i>
-                <span>All</span>
-                <span>117분</span>
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="far fa-heart heart"></i>
+
               </div>
-              <p>
-                “이건 기다림에 관한 이야기다”
-
-                뚜렷한 꿈도 목표도 없이 지루한 삼수 생활을 이어가던 `영호`(강하늘),
-                오랫동안 간직해온 기억 속 친구를 떠올리고 무작정 편지를 보낸다.
-
-                자신의 꿈은 찾지 못한 채 엄마와 함께 오래된 책방을 운영하는 `소희`(천우희)는
-                언니 `소연`에게 도착한`영호`의 편지를 받게 된다.
-
-                “몇 가지 규칙만 지켜줬으면 좋겠어.
-                질문하지 않기, 만나자고 하기 없기 그리고 찾아오지 않기.”
-
-                `소희`는 아픈 언니를 대신해 답장을 보내고 두 사람은 편지를 이어나간다.
-                우연히 시작된 편지는 무채색이던 두 사람의 일상을 설렘과 기다림으로 물들이기 시작하고,
-                `영호`는 12월 31일 비가 오면 만나자는 가능성이 낮은 제안을 하게 되는데...
-              </p>
+              <p class="hover-story"></p>
             </div>
           </li>
           <li class="movie">
@@ -418,36 +329,13 @@
             <div class="hoverbox">
               <video class="top-video" src="/static/video/random_romance9.mp4" autoplay muted></video>
               <div class="tit">
-                <span>20세기 소녀</span>
-                <i class="far fa-heart"></i>
-                <span>12+</span>
-                <span>129분</span>
-              </div>
-              <p>
-                어느 겨울 도착한 비디오 테이프에 담긴 1999년의 기억, 17세 소녀 ‘보라’가 절친 ‘연두’의 첫사랑을 이루어주기 위해 사랑의 큐피트를 자처하며 벌어지는 첫사랑 관찰 로맨스.
-              </p>
-            </div>
-          </li>
-          <li class="movie">
-            <img src="/static/image/romance10.jpg" alt="로맨스 이미지">
-            <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_romance10.mp4" autoplay muted></video>
-              <div class="tit">
-                <span>노트르담</span>
-                <i class="far fa-heart"></i>
-                <span>15+</span>
-                <span>90분</span>
-              </div>
-              <p>
-                나는 꿈을 짓는 건축가
-                “사랑도 다시 지을 수 있나요?”
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="far fa-heart heart"></i>
 
-                만년 유망주 건축가이자 두 아이를 키우는 싱글맘,모드.
-                툭하면 애인과 싸우고 찾아오는 전남편과는 여전히 오묘한 관계를 유지하고 있다.
-                잊고 있던 옛사랑까지 나타나 혼란스러운 가운데 노트르담 성당 산책로 복원 사업이라는 중대한 프로젝트까지 맡게 되고…
-
-                일과 사랑,육아까지 그 무엇 하나 놓치고 싶지 않은 모드의 행운은 어디까지 이어질까?
-              </p>
+              </div>
+              <p class="hover-story"></p>
             </div>
           </li>
         </ul>
@@ -455,7 +343,7 @@
     </main>
   </section>
 
- 
+
 
   <footer>
     <aspanress>footer</aspanress>

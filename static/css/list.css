@@ -19,7 +19,6 @@ input:focus, button:focus{
 body{
   background-color: #000;
 }
-/* 왼쪽 컨텐츠 */
 .list-box {
   display: flex;
   padding-top: 150px;
@@ -34,27 +33,24 @@ body{
 .list-box h1{
   font-size: 2.8rem;
   font-weight: bolder;
+  font-family: 'Montserrat';
 }
+/* 왼쪽 컨텐츠 */
 .left-box{
   width: 40%;
   float: left;
 }
-/* 오른쪽 컨텐츠 */
-.right-box{
-  width: 40%;
-  float: right;
-}
 .left-box form{
-  margin-top: 80px;
+  margin-top: 60px;
 }
 .left-box form .writer{
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 1.2rem;
 }
 .left-box form .cont{
   font-size: 1.2rem;
 }
-.left-box form input{
+.left-box .cont input{
   position: relative;
     width: 100%;
     border: none;
@@ -62,29 +58,100 @@ body{
     border-radius: 20px;
     padding: 12px;
     box-shadow: 4px 4px 8px rgba(0,0,0,.2);
-    width: 90%;
     text-indent: 10px;
-    font-size: 16px;
+    font-size: 0.8rem;
+}
+/* 별점 */
+.Rs {
+  position: relative;
+  font-size: 2rem;
+  color: #ddd;
+}
+.Rs input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.Rs span {
+  width: 0;
+  position: absolute;
+  left: 0;
+  color: yellow;
+  overflow: hidden;
+  pointer-events: none;
+}
+/* 별점 기본값 설정 */
+.star span{
+  width: 0;
+}
+.size{
+  font-size: 1.5rem;
+  margin-left: 10px;
+}
+/* 오른쪽 컨텐츠 */
+.right-box{
+  width: 40%;
+  float: right;
+}
+.right-box .img-box{
+  width: 180px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  transform: translateX(240px);
+}
+.right-box .img-box img{
+  width: 100%;
+  object-fit: cover;
 }
 /* 테이블 */
 .right-box table{
-  margin: 50px 0 0 200px;
+  margin: 30px 0 0 100px;
+  border-collapse: separate;
+  border-radius: 10px;
+  width: 540px;
+  text-align: center;
+  background-color: rgb(148, 148, 148);
+  color: #fff;
 }
-.right-box table tr{
-  padding: 20px;
+.right-box .table-btn{
+  transform: translate(120px,10px);
+  background: none;
+}
+.right-box .table-btn .clear-all-btn{
+  color: #ff0000;
+  font-size: 1rem;
+  font-family: 'Montserrat';
 }
 .right-box table th{
-  text-align: center;
+  padding: 14px 0 14px 0;
+}
+.right-box table tr th:first-of-type{
+  width: 20%;
+}
+.right-box table tr th:nth-of-type(2){
+  width: 50%;
+}
+.right-box table tr th:last-of-type{
+  width: 30%;
+}
+.right-box table td{
+  padding: 16px 0 16px 0;
+  line-height: 1.5rem;
+  margin: 10px;
 }
 /* 버튼 */
-button{
+.left-box button{
   margin-top: 50px;
   border-radius: 100%;
   padding: 2px 8px;
   background: linear-gradient(101.83deg, rgb(127, 135, 224) -13.2%, rgb(38, 73, 202) -13.19%, rgb(106, 118, 223) 46.63%, rgb(50, 176, 247) 107.09%);
   color: #fff;
 }
-button i{
+.left-box button i{
   font-size: 1.4rem;
   transform: translateY(4px);
 }
