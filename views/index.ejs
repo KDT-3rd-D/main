@@ -46,7 +46,7 @@
             <!-- 메인 추천 영화 : auto play -->
             <article class="content-movie-play">
                 <video muted autoplay loop>
-                    <source src="/static/video/[분노의 질주 더 세븐] 1차 예고편.mp4" type="video/mp4">
+                    <source src="/static/video/main.mp4" type="video/mp4">
                   </video>
                 <div class="movie-play-info">
                 <h3>오늘의 추천 영화</h3>
@@ -62,7 +62,7 @@
                     <li>
                         <div class="genre-img">
                             <video muted autoplay loop>
-                                <source src="/static/video/action.mp4" type="video/mp4">
+                                <source src="/static/video/random_action0.mp4" type="video/mp4">
                               </video>
                         </div>
                     <p class="genre-title">action</p>
@@ -90,7 +90,7 @@
                     <li>
                         <div class="genre-img">
                             <video muted autoplay loop>
-                                <source src="/static/video/comedy.mp4" type="video/mp4">
+                                <source src="/static/video/random_comedy5.mp4" type="video/mp4">
                               </video>
                         </div>
                     <p class="genre-title">comedy</p>
@@ -104,7 +104,7 @@
                     <li>
                         <div class="genre-img">
                             <video muted autoplay loop>
-                                <source src="/static/video/sf.mp4" type="video/mp4">
+                                <source src="/static/video/random_sf1.mp4" type="video/mp4">
                               </video>
                         </div>
                     <p class="genre-title">sf</p>
@@ -118,23 +118,7 @@
                 </li>
                 </ul>
             </article>
-            <!-- !! 랜덤 슬라이드 애니메이션 삽입 예정 -->
-            <article id="gallery" class="content-auto-slide">
-                <h3>What's <strong>New?</strong></h3>
-                <div class="slide-frame"></div>
-                <ul class="auto-slide">
-                    <li><img src="/static/image/slide01.jpeg" alt="랜덤 영화 이미지"></li>
-                    <li><img src="/static/image/slide02.jpeg" alt="랜덤 영화 이미지"></li>
-                    <li><img src="/static/image/slide03.jpeg" alt="랜덤 영화 이미지"></li>
-                    <li><img src="/static/image/slide04.jpeg" alt="랜덤 영화 이미지"></li>
-                    <li><img src="/static/image/slide05.jpeg" alt="랜덤 영화 이미지"></li>
-                    <li><img src="/static/image/slide06.jpeg" alt="랜덤 영화 이미지"></li>
-                    <li><img src="/static/image/slide07.jpeg" alt="랜덤 영화 이미지"></li>
-                    <li><img src="/static/image/slide08.jpeg" alt="랜덤 영화 이미지"></li>
-                    <li><img src="/static/image/slide09.jpeg" alt="랜덤 영화 이미지"></li>
-                    <li><img src="/static/image/slide10.jpeg" alt="랜덤 영화 이미지"></li>
-                </ul>
-            </article>
+
              <!-- QnA -->
              <article id="qna" class="content-review">
                 <h3>Q&A</h3>
@@ -178,20 +162,35 @@
             </article>
         </section>
     </main>
-    <!-- <footer>
-        <address>footer</address>
-    </footer> -->
+
+    <!--footer-->
+    <footer class="main-footer-container">
+        <div class="main-footer-left">
+            <img class="main-footer-logoimg" src="/static/image/logo-v2.png" alt="">
+            
+            <div class="main-footer-groupD">CodingOn X POSCO KDT3rd - Group D</div>
+        </div>
+
+        <div class="main-footer-right">
+            <div class="main-footer-right-icon">
+                <i class="fab fa-instagram fa-2x"></i>
+                <i class="fab fa-twitter-square fa-2x"></i>
+                <i class="fab fa-facebook-square fa-2x"></i>
+            </div>
+            <div class="main-footer-copy">&copy;2022. All Rights Reserved</div>
+        </div>
+    </footer>
 
         <!-- 영화 상세 정보 btn : modal -->
         <div class="modal-bg bnt_close">
             <div class="modal-exit"></div>
-            <div class="modal-box" style="width: 0%;" style="opacity: 0;">
+            <div class="modal-box">
                 <!-- modal close btn -->
                 <button class="modal-close-btn bnt_close"><i class="xi-close"></i></button>
                 <div class="modal-cont">
                     <div class="modal-img">
                         <video muted autoplay loop>
-                            <source src="/static/video/[분노의 질주 더 세븐] 1차 예고편.mp4" type="video/mp4">
+                            <source src="/static/video/main.mp4" type="video/mp4">
                           </video>
                           <!-- 영화 좋아요 btn -->
                           <button id="modal-like" class="modal-like-btn"><i class="xi-heart-o"></i></button>
