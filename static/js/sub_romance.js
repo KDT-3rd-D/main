@@ -68,7 +68,7 @@ const movies = [
 $(document).ready(function () {
   window.onload = function () {
     let i = Math.floor(Math.random() * 10);
-    $("video").attr("src", `../static/video/random_romance${i}.mp4`);
+    $(".video").attr("src", `../static/video/random_romance${i}.mp4`);
     // 플레이 상세설명 변경
     console.log(movies[i]);
     let title = document.querySelector(".title");
@@ -136,9 +136,9 @@ $(document).ready(function () {
       }
     };
     // 버튼 눌렀을때 랜덤 플레이
-    $("button").click(function () {
+    $(".random-button").click(function () {
       let i = Math.floor(Math.random() * 10);
-      $(".video").attr("src", `../static/video/random_romance${i}.mp4`);
+      $(".random-video").attr("src", `../static/video/random_romance${i}.mp4`);
       // 플레이 상세설명 변경
       console.log(movies[i]);
       let title = document.querySelector(".title");
@@ -244,9 +244,9 @@ for (let i = 0; i < hoverBox.length; i++) {
 $(function () {
   $(".fa-chevron-down").click(function () {
     $(".modal-bg").fadeIn(500);
-
     let v = $(".modal-img").find("video").get(0);
     v.play();
+    $(".cont-title").text(movies[0].title);
   });
   $(".modal-close-btn").click(function () {
     $(".modal-bg").fadeOut(500);

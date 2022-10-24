@@ -121,7 +121,7 @@ $(document).ready(function () {
     }
   };
   // 버튼 눌렀을때 랜덤 플레이
-  $("button").click(function () {
+  $(".random-button").click(function () {
     let i = Math.floor(Math.random() * 10);
     $(".video").attr("src", `../static/video/random_comedy${i}.mp4`);
     // 플레이 상세설명 변경

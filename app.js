@@ -20,6 +20,9 @@ app.use("/static", express.static(__dirname + "/static"));
 app.get("/", function (request, response) {
   response.render("index");
 });
+app.get("/intro", function (request, response) {
+  response.render("intro");
+});
 app.get("/login", function (request, response) {
   response.render("login");
 });
