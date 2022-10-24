@@ -68,7 +68,7 @@
 }
 
 /* nav - mobile ver */
-@media (max-width:745px) {
+@media (max-width:1025px) {
   .top-nav>.nav-btn {
     display: inline-block;
     position: absolute;
@@ -127,12 +127,12 @@
   }
 
   /* 메뉴가 열렸을 때 */
-  .top-nav>.nav-btn>label.open>span::before{
+  .top-nav>.nav-btn>label.open>span::before {
     transform: rotate(45deg);
     top: 0;
   }
 
-  .top-nav>.nav-btn>label.open>span::after{
+  .top-nav>.nav-btn>label.open>span::after {
     transform: rotate(-45deg);
     top: 0;
   }
@@ -166,7 +166,7 @@
 
   .top-nav>#nav-check:checked~.nav {
     height: calc(100vh - 50px);
-    overflow-y: auto;
+    overflow-y: hidden;
   }
 
   .nav .nav-box .user-icon {

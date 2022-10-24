@@ -109,7 +109,7 @@ body{
     overflow: hidden;
 }
 .content-box .content-movie-genre ul li:first-child{
-    background: url('/static/image/action-poster.jpg') no-repeat;
+    background: url('/static/image/action0.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }

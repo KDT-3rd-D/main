@@ -4,8 +4,6 @@ $(document).ready(function () {
   // 스크롤이벤트를 사용하여 일정영역이상으로 내려가면 위 서식을 적용한다.
   $(window).scroll(function () {
     let sPos = $(this).scrollTop();
-    // console.log(sPos); //스크롤값을 체크한다.
-
     if (sPos >= 700) {
       //영상콘텐츠가 모두 올라가면
       //사용자가 헤더에 마우스를 아웃해도 서식이 지워지지 않는다.
