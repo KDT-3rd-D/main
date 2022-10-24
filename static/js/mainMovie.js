@@ -31,18 +31,15 @@ modalLike.onclick = function () {
 $(function () {
   $(".movie-info-detail").click(function () {
     $(".modal-bg").fadeIn(500);
-    $(".modal-box").animate({ width: "40%" }, 500);
 
     let v = $(".modal-img").find("video").get(0);
     v.play();
   });
   $(".modal-close-btn").click(function () {
     $(".modal-bg").fadeOut(500);
-    $(".modal-box").animate({ width: "0%" }, 500);
   });
   $(".modal-exit").click(function () {
     $(".modal-bg").fadeOut(500);
-    $(".modal-box").animate({ width: "0%" }, 500);
   });
 
   // 모달창 등장 시, 배경(body)부분의 콘텐츠 고정 , 모달창 내부만 스크롤 생성 및 작동

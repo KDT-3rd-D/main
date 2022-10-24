@@ -199,54 +199,71 @@ $(document).ready(function () {
 
 //----------------------------------------------hover animation
 
-let hoverBox = document.querySelector(".hoverbox");
-let hoverBoxVd = document.querySelector(".hoverbox > video");
-let movieImg = document.querySelector(".movie > img");
-let modalBox = document.querySelector(".modal-box");
+let hoverBox = document.querySelectorAll(".hoverbox");
+let hoverBoxVd = document.querySelectorAll(".hoverbox > video");
+let movieImg = document.querySelectorAll(".movie > img");
+let modalBox = document.querySelectorAll(".modal-box");
 let modalBg = document.querySelector(".modal-bg");
 
-movieImg.addEventListener("mouseenter", function () {
-  // movieImg
-  movieImg.style.zIndex = "-1";
-  movieImg.style.transform = "scale(1.5)";
-  movieImg.style.opacity = "0";
-  // hoverBox
-  hoverBox.style.zIndex = "1";
-  hoverBox.style.opacity = "1";
-  hoverBoxVd.style.width = "350px";
-  hoverBox.style.width = "350px";
-});
+for (let i = 0; i < movieImg.length; i++) {
+  console.log(i);
+  movieImg[i].addEventListener("mouseenter", function () {
+    console.log("1");
+    // movieImg
+    movieImg[i].style.zIndex = "-1";
+    movieImg[i].style.transform = "scale(1.5)";
+    movieImg[i].style.opacity = "0";
+    // hoverBox
+    hoverBox[i].style.zIndex = "1";
+    hoverBox[i].style.opacity = "1";
+    hoverBox[i].style.width = "350px";
+    hoverBoxVd[i].style.width = "350px";
+  });
+}
 
-hoverBox.addEventListener("mouseleave", function () {
-  // movieImg
-  movieImg.style.zIndex = "1";
-  movieImg.style.transform = "scale(1)";
-  movieImg.style.width = "200px";
-  movieImg.style.height = "300px";
-  movieImg.style.opacity = "1";
-  // hoverBox
-  hoverBox.style.zIndex = "-1";
-  hoverBox.style.opacity = "0";
-  hoverBox.style.width = "250px";
-  hoverBoxVd.style.width = "250px";
-});
+for (let i = 0; i < hoverBox.length; i++) {
+  hoverBox[i].addEventListener("mouseleave", function () {
+    // movieImg
+    movieImg[i].style.zIndex = "1";
+    movieImg[i].style.transform = "scale(1)";
+    movieImg[i].style.width = "200px";
+    movieImg[i].style.height = "300px";
+    movieImg[i].style.opacity = "1";
+    // hoverBox
+    hoverBox[i].style.zIndex = "-1";
+    hoverBox[i].style.opacity = "0";
+    hoverBox[i].style.width = "250px";
+    hoverBoxVd[i].style.width = "250px";
+  });
+}
+// modal 등장 - fade in , fade out
 
-$(".fa-chervron-down").click(function () {
-  // movieImg
-  movieImg.style.zIndex = "1";
-  movieImg.style.transform = "scale(1)";
-  movieImg.style.width = "200px";
-  movieImg.style.height = "300px";
-  movieImg.style.opacity = "1";
-  // hoverBox
-  hoverBox.style.zIndex = "-1";
-  hoverBox.style.opacity = "0";
-  hoverBox.style.width = "250px";
-  hoverBoxVd.style.width = "250px";
-  // modalBox
-  modalBox.style.width = "800px";
-  modalBox.style.height = "740px";
-  // modalBg
-  modalBg.style.opacity = "1";
-  modalBg.style.zIndex = "10000";
+$(function () {
+  $(".fa-chevron-down").click(function () {
+    $(".modal-bg").fadeIn(500);
+
+    let v = $(".modal-img").find("video").get(0);
+    v.play();
+  });
+  $(".modal-close-btn").click(function () {
+    $(".modal-bg").fadeOut(500);
+  });
+  $(".modal-exit").click(function () {
+    $(".modal-bg").fadeOut(500);
+  });
+
+  // 모달창 등장 시, 배경(body)부분의 콘텐츠 고정 , 모달창 내부만 스크롤 생성 및 작동
+  var posY;
+
+  $(".bnt_open").on("click", function (e) {
+    posY = $(window).scrollTop();
+
+    $("html, body").addClass("not_scroll");
+    $(".cont").css("top", -posY);
+  });
+
+  $(".bnt_close").on("click", function () {
+    $("html, body").removeClass("not_scroll");
+    posY = $(window).scrollTop(posY);
+  });
 });
