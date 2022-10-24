@@ -267,6 +267,7 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 .movies ul li.movie span {
@@ -280,24 +281,18 @@ main {
   transition: all 0.5s ease-in-out;
 }
 
+
 .movies ul li.movie .tit {
+  position: relative;
   overflow: hidden;
 }
 
-.movies ul li.movie .tit .down {
-  top: 355px;
-  right: 35px;
-  font-size: 2.4rem;
-  background: none;
-  color: white;
-}
-
-.movies ul li.movie .tit .like {
-  top: 355px;
-  right: 35px;
-  font-size: 2.4rem;
-  background: none;
-  color: white;
+.movies ul li.movie .heart {
+  position: absolute;
+  top: 0;
+  right: 3px;
+  font-size: 2em;
+  color: red;
 }
 
 .movies ul li.movie .tit span:nth-child(1) {
@@ -306,17 +301,18 @@ main {
   margin-bottom: 10px;
 }
 
-.movies ul li.movie .tit span:nth-child(3) {
+.movies ul li.movie .tit .hover-age{
   display: block;
   width: 30px;
   padding: 2px;
   font-size: 1.4em;
-  border: solid 1px #888;
   border-radius: 2px;
   float: left;
+  margin-right: 10px;
+  transition: all 0.5s ease-in-out;
 }
 
-.movies ul li.movie .tit span:nth-child(4) {
+.movies ul li.movie .tit span:nth-child(3) {
   color: #888;
   font-size: 1rem;
   margin: 2px 15px;
@@ -331,8 +327,8 @@ main {
   max-height: 6em;
   overflow: hidden;
   display: -webkit-box;
--webkit-line-clamp: 4;
--webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
 
 
