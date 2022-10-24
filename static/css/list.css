@@ -20,7 +20,6 @@ body{
   background-color: #000;
 }
 .list-box {
-  display: flex;
   padding-top: 150px;
   width: 80%;
   color: #fff;
@@ -35,23 +34,28 @@ body{
   font-weight: bolder;
   font-family: 'Montserrat';
 }
-/* 왼쪽 컨텐츠 */
-.left-box{
-  width: 40%;
-  float: left;
-}
-.left-box form{
+/* top 컨텐츠 */
+.top-box .img-box{
+  width: 180px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
   margin-top: 60px;
 }
-.left-box form .writer{
-  margin-bottom: 10px;
+.top-box .img-box img{
+  width: 100%;
+  object-fit: cover;
+}
+.top-box form{
+  display: flex;
+  margin-top: 60px;
   font-size: 1.2rem;
 }
-.left-box form .cont{
-  font-size: 1.2rem;
+.top-box .cont{
+  width: 70%;
+  margin-left: 30px;
 }
-.left-box .cont input{
-  position: relative;
+.top-box .cont input{
     width: 100%;
     border: none;
     outline: none;
@@ -61,6 +65,7 @@ body{
     text-indent: 10px;
     font-size: 0.8rem;
 }
+
 /* 별점 */
 .Rs {
   position: relative;
@@ -91,67 +96,56 @@ body{
   font-size: 1.5rem;
   margin-left: 10px;
 }
-/* 오른쪽 컨텐츠 */
-.right-box{
-  width: 40%;
-  float: right;
-}
-.right-box .img-box{
-  width: 180px;
-  height: 200px;
-  border-radius: 10px;
-  overflow: hidden;
-  transform: translateX(240px);
-}
-.right-box .img-box img{
-  width: 100%;
-  object-fit: cover;
-}
+
 /* 테이블 */
-.right-box table{
-  margin: 30px 0 0 100px;
-  border-collapse: separate;
-  border-radius: 10px;
-  width: 540px;
+table{
+  width: 100%;
+  margin: 30px 0 50px 0;
   text-align: center;
-  background-color: rgb(148, 148, 148);
   color: #fff;
 }
-.right-box .table-btn{
-  transform: translate(120px,10px);
+.bottom-box .table-btn{
+  transform: translateY(10px);
   background: none;
 }
-.right-box .table-btn .clear-all-btn{
+.bottom-box .table-btn .clear-all-btn{
   color: #ff0000;
   font-size: 1rem;
   font-family: 'Montserrat';
 }
-.right-box table th{
-  padding: 14px 0 14px 0;
+/* .bottom-box table tr td:first-of-type{
+  width: 120px;
 }
-.right-box table tr th:first-of-type{
-  width: 20%;
+ */
+table tr td:nth-child(2){
+  width: 490px;
+  text-align: left;
 }
-.right-box table tr th:nth-of-type(2){
-  width: 50%;
+table tr td:nth-child(3){
+  font-size: 0.5rem;
+  color: #ccc;
 }
-.right-box table tr th:last-of-type{
-  width: 30%;
-}
-.right-box table td{
-  padding: 16px 0 16px 0;
+table td {
+  padding: 20px;
   line-height: 1.5rem;
-  margin: 10px;
 }
 /* 버튼 */
-.left-box button{
-  margin-top: 50px;
+.top-box button{
   border-radius: 100%;
-  padding: 2px 8px;
+  width: 34.8px;
+  height: 35.5px;
   background: linear-gradient(101.83deg, rgb(127, 135, 224) -13.2%, rgb(38, 73, 202) -13.19%, rgb(106, 118, 223) 46.63%, rgb(50, 176, 247) 107.09%);
   color: #fff;
+  position: absolute;
+  right: 15%;
+  transform: translateY(40px);
 }
-.left-box button i{
+.top-box button i{
   font-size: 1.4rem;
   transform: translateY(4px);
+}
+/* 댓글 삭제 btn */
+.bottom-box i.xi-trash{
+  font-size: 1.1rem;
+  color: #aaa;
 }
