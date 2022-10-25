@@ -522,7 +522,7 @@ body{
     width: 90%;
   }
   .modal-to-review .review-part-view li .star-info{
-    width: 62%;
+    width: 390px;
     margin-left: 15px;
     line-height: 2rem;
   }
