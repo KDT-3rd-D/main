@@ -112,6 +112,7 @@ table{
   color: #ff0000;
   font-size: 1rem;
   font-family: 'Montserrat';
+  float: right;
 }
 /* .bottom-box table tr td:first-of-type{
   width: 120px;

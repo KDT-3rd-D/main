@@ -522,7 +522,7 @@ body{
     width: 90%;
   }
   .modal-to-review .review-part-view li .star-info{
-    width: 62%;
+    width: 390px;
     margin-left: 15px;
     line-height: 2rem;
   }
@@ -617,7 +617,7 @@ body{
     background: none;
     font-size: 1rem;
     color: #0099ff;
-    float: left;
+    float: right;
     transform: translate(50px,30px);
 }
 .content-review .review .clear-all-btn:hover{
@@ -666,49 +666,3 @@ body{
     color: #ff0000;
 }
 
-/*footer*/
-.main-footer-container {
-  background-color: #000;
-  padding: 10px 0px 10px 0px;
-  font-size: 10px;
-  color: rgba(204, 204, 204, 0.758);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.main-footer-left {
-  margin-left: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-.main-footer-logoimg {
-  width: 70px;
-  height: 14px;
-  margin-bottom: 10px;
-}
-.fa-github-square {
-  cursor: pointer;
-}
-.main-footer-right {
-  margin-right: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-.main-footer-right-icon {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5px;
-}
-.fa-instagram {
-  cursor: pointer;
-}
-.fa-twitter-square {
-  cursor: pointer;
-}
-.fa-facebook-square {
-  cursor: pointer;
-}
