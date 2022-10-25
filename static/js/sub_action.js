@@ -1,5 +1,6 @@
 // action random movies array
-const movies = [{
+const movies = [
+  {
     title: "분노의 질주: 더 세븐",
     desc: "역대 최강의 멤버 VS 사상 최악의 상대",
     age: "15",
@@ -10,6 +11,33 @@ const movies = [{
     거대 범죄 조직을 소탕한 뒤 전과를 사면 받고, 평범한 일상을 되찾은 도미닉(빈 디젤)과 멤버들.
     하지만 평화도 잠시, 한(성 강)의 갑작스러운 죽음에 이어, 도미닉의 집이 순식간에 폭파당한다.
     그들을 차례대로 제거하려는 최악의 상대 데카드 쇼(제이슨 스타뎀)의 등장으로 도미닉은 다시 한 번 역대 최강의 멤버들을 불러모아 숨막히는 반격을 결심하는데…`,
+    director: "제임스 완",
+    actorName: [
+      "반 디젤",
+      "폴 워커",
+      "드웨인 존슨",
+      "제이슨 스타뎀",
+      "루카스 블랙",
+      "미셸 로드리게스",
+      "",
+      "",
+    ],
+    actorImg: [
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F0e848f51add0f653be967d5c4dc8edb0cb654e0f",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F5720716cc0fc42d9f6c2408495231c33243e60cb",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F5720716cc0fc42d9f6c2408495231c33243e60cb",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F14404110AE06255FEE      ",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F11402310B1605CFFD9",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F5693c31a01c6330fc8586b7a077a5d3094efd324",
+      "",
+      "",
+    ],
+    reviews: [
+      "액션, 연출은 좋았지만 스토리는 부진했던 분노의 질주 시리즈를제임스 완이 맡더니 액션, 스토리, 연출 모두 다 잡았던 영화이 시점 이후로 분노의 질주 퀄리티가 매우 올라감",
+      "다신볼수없을 그를기억하며....",
+      "굿바이 브라이언 오코너, 굿바이 폴 워커 ",
+      "",
+    ],
   },
   {
     title: "탑건: 매버릭",
@@ -22,7 +50,34 @@ const movies = [{
     최고의 파일럿이자 전설적인 인물 매버릭(톰 크루즈)은 자신이 졸업한 훈련학교 교관으로 발탁된다.
     그의 명성을 모르던 팀원들은 매버릭의 지시를 무시하지만 실전을 방불케 하는 상공 훈련에서 눈으로 봐도 믿기 힘든 전설적인 조종 실력에 모두가 압도된다.
     매버릭의 지휘아래 견고한 팀워크를 쌓아가던 팀원들에게 국경을 뛰어넘는 위험한 임무가 주어지자
-    매버릭은 자신이 가르친 동료들과 함께 마지막이 될 지 모를 하늘 위 비행에 나서는데…`
+    매버릭은 자신이 가르친 동료들과 함께 마지막이 될 지 모를 하늘 위 비행에 나서는데…`,
+    director: "조셉 코신스키",
+    actorName: [
+      "톰 크루즈",
+      "마일스 텔러",
+      "제니퍼 코넬리",
+      "발 킬머",
+      "바쉬르 살라후딘",
+      "존 햄",
+      "",
+      "찰스 파넬",
+    ],
+    actorImg: [
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Ff7704c8178c3f5acb8ee97a0079b46ab9facef40",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fc5c0f0200a69e400759259713ab7d5e68b97ff33",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Feb408451543fc0c69db506751b040f9b33856a50",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F13497810B244BBF3B8",
+      "",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F137b5b5a7844de0dfeb61ee2ca4dfca1e0b15054",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F21736B3C52B6C0362B",
+      "",
+    ],
+    reviews: [
+      "요새 나오는 마블 영화보다 백배는 재미있게 본 영화",
+      "87년에 영화관에서 보고 이번에도 무조건 영화관 갈겁니다.애들은 나중에 봐라. 아재들 먼저 볼거다.",
+      "톰 형이 이 영화를 끝으로 은퇴한다해도 아쉬움이 없을 정도로 완벽하다. 탑건과 미션임파서블을 결합해서 제리브룩하이머가 최상의 퀄리티로 제작했다. 스토리상의 약간의 아쉬움도 잊게 할만큼 압도적인 비행전투씬만으로도 흥분이 가라앉지 않는다. 이게 헐리우드다",
+      "방금 보고 왔습니다.곳곳에서 울컥 울컥!!36-7년전 1편과 이야기를 이어 가면서도새로운 신화를 창조하네요.실제 후드암을 앓고 있는 아이스맨(발 킬머)이있는 그대로 출연한 것도 감동~ㅠㅠ",
+    ],
   },
   {
     title: "어벤져스: 인피니티 워",
@@ -34,7 +89,34 @@ const movies = [{
     역대 최강 빌런 타노스에 맞서
     세계의 운명이 걸린 인피니티 스톤을 향한
     무한 대결이 펼쳐진다!
-    4월, 마블의 클라이맥스를 목격하라!`
+    4월, 마블의 클라이맥스를 목격하라!`,
+    director: "앤서니 루소",
+    actorName: [
+      "로버트 다우니 주니어",
+      "조슈 브롤린",
+      "마크 러팔로",
+      "톰 히들스턴",
+      "크리스 에반스",
+      "제레미 레너",
+      "",
+      "",
+    ],
+    actorImg: [
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fab54c9376e20f9ec5aed877bbba363c99300147a",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fada8b5bc415ba3b1e4619c37184b43901645ebf6",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F3d675930c5070980b34659028ad900349d6a4e03",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F205EAC0B4A5C337904",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F5406bf152ca8e89d6fa428af5d30ca4b8d97122b",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fa110c4966a6863d45e42ed33bd3808d173e2884a",
+      "",
+      "",
+    ],
+    reviews: [
+      "사실상 스타로드도 굉장히 불쌍한 캐릭이다.어렸을때 아버지는 거의 못 보고 어머니를 떠나보내고, 라바져들에게 납치당해서 좀도둑으로 키워졌다가 이제 드디어 진짜 아빠를 만났다 싶었을때 아빠가 엄마를 고의적으로 죽였다는 사실을 알고 충격을 먹다가 친아빠 대신 자신의 이익으로 키웠지만, 잘 보살펴 주고 희생까지 한 욘두도 떠나보냈다. 그리고 친아빠도 죽고 이제 의지할 유일한 것은 그의 여친 가모라 뿐이었다. 그러다 마지막 버팀목이었던 여친가모라도 타노스에게 살해당하자 분노를 느껴 방아쇠를 당기지도 않고 이성을 잃어버린 거다.결론:스타로드 짱",
+      "와  충격너무 재밌게 봤네요",
+      "명작",
+      "",
+    ],
   },
   {
     title: "범죄도시",
@@ -47,7 +129,34 @@ const movies = [{
     하얼빈에서 넘어와 단숨에 기존 조직들을 장악하고 가장 강력한 세력인 춘식이파 보스 ‘황사장(조재윤 분)’까지 위협하며 도시 일대의 최강자로 급부상한 신흥범죄조직의 악랄한 보스 ‘장첸(윤계상 분)’.
     대한민국을 뒤흔든 ‘장첸(윤계상 분)’ 일당을 잡기 위해 오직 주먹 한방으로 도시의 평화를 유지해 온 괴물형사 ‘마석도(마동석 분)’와 인간미 넘치는 든든한 리더 ‘전일만(최귀화 분)’ 반장이 이끄는 강력반은 나쁜 놈들을 한방에 쓸어버릴 끝.짱.나.는. 작전을 세우는데…
     통쾌하고! 화끈하고! 살벌하게!
-    올 추석, 나쁜 놈들 때려잡는 강력반 형사들의 ‘조폭소탕작전’이 시작된다!`
+    올 추석, 나쁜 놈들 때려잡는 강력반 형사들의 ‘조폭소탕작전’이 시작된다!`,
+    director: "강윤성",
+    actorName: [
+      "마동석",
+      "윤계상",
+      "조재윤",
+      "최귀화",
+      "임형준",
+      "진선규",
+      "홍기준",
+      "",
+    ],
+    actorImg: [
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F3b8713a22660343c04cca305c40741f4a2b9535c",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fc7be9c3a25016ac081a42dd776fe586e6b9eb7ce",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F853fafd611afe642a1b8ec2f7baa7b2e29c2a10d",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fe65757ab89c411d959d8e2c727d8d629872462ef",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F1414C8485154A92605",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F23680f9203311ee4d0c275928de0961d5e4bfb8c",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fa7cf37202f9891f6bfa547ecf2f099e1a393fd14",
+      "",
+    ],
+    reviews: [
+      "장첸하나로 영화보게만드는 포스가어마어마하다 연기력도 굿",
+      "장첸: 너 혼자니?마석도: 어 나 싱글이야!",
+      "첨엔  과장이 많겠지 하고 그냥봤는데 조폭썰 푸는  유튜브 허세스코 보고 영화가   실제보다 오히려 약하구나 하고 보니 정말 공감가는  부분이 많고,  영화 구성도 탄탄하고,  긴장감도 좋고, 명작이라는 생각이 든다",
+      "",
+    ],
   },
   {
     title: "베테랑",
@@ -59,15 +168,55 @@ const movies = [{
     오랫동안 쫓던 대형 범죄를 해결한 후 숨을 돌리려는 찰나, 서도철은 재벌 3세 ‘조태오’(유아인)를 만나게 된다. 세상 무서울 것 없는 안하무인의 조태오와 언제나 그의 곁을 지키는 오른팔 ‘최상무’(유해진). 서도철은 의문의 사건을 쫓던 중 그들이 사건의 배후에 있음을 직감한다.
     건들면 다친다는 충고에도 불구하고 포기하지 않는 서도철의 집념에 판은 걷잡을 수 없이 커져가고 조태오는 이를 비웃기라도 하듯 유유히 포위망을 빠져 나가는데…
     베테랑 광역수사대 VS 유아독존 재벌 3세
-    2015년 여름, 자존심을 건 한판 대결이 시작된다!`
+    2015년 여름, 자존심을 건 한판 대결이 시작된다!`,
+    director: "류승완",
+    actorName: [
+      "황정민",
+      "유아인",
+      "유해진",
+      "오달수",
+      "장윤주",
+      "오대환",
+      "김시후",
+      "정웅인",
+    ],
+    actorImg: [
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F92c4879406db32fb705bdc7bec2165087bd45752",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F490af559df02c7f5b70d1b80279218a77800d771",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fec0b9fb2fb35c447470179b0fc9b6f2a57748c4f",
+      "",
+    ],
+    reviews: [
+      "도철 같은 형사가 많다면세상이 이렇진 않을텐데....",
+      "황정민 연기 정말 소름입니다~",
+      "통쾌하다 갠적으로 천호진역이 맘에 들었음",
+      "",
+    ],
   },
   {
     title: "그레이 맨",
     desc: "CIA의 사주를 받은 소시오패스 전 동료에게 쫓기며 시작되는 액션 블록버스터",
     age: "15",
-    ott: ['넷플릭스'],
+    ott: ["넷플릭스"],
     runtime: "138분",
-    story: `그 누구도 실체를 몰라 '그레이 맨'으로 불리는 CIA의 암살 전문 요원이 우연히 CIA의 감추고 싶은 비밀을 알게 되고, CIA의 사주를 받은 소시오패스 전 동료에게 쫓기며 시작되는 액션 블록버스터`
+    story: `그 누구도 실체를 몰라 '그레이 맨'으로 불리는 CIA의 암살 전문 요원이 우연히 CIA의 감추고 싶은 비밀을 알게 되고, CIA의 사주를 받은 소시오패스 전 동료에게 쫓기며 시작되는 액션 블록버스터`,
+    director: "앤서니 루소",
+    actorName: [
+      "라이언 고슬링",
+      "크리스 에반스",
+      "아나 데 아르마스",
+      "레게장 페이지",
+      "빌리 밥 손튼",
+      "제시카 핸윅",
+      "바그네르 모라",
+      "알프리 우다드",
+    ],
+    reviews: [
+      "이 영화에 관한 한 썩토 준 평론가들의 평가 믿지 마시오.굉장한 액션과 시간 가는 줄 모르는 몰입감을 느낄 것임.고슬링도 좋지만 크리스 에반스의 악역도 인상적.관람 강추",
+      "모니터가 아닌 스크린으로 봤었으면...ㅠㅠ....라이언고슬링 크리스에반스 액션 연기 다 좋다....캡틴이 악역이라니....ㅎㅎ",
+      "무더운 여름에 감상하기 좋은 시원 시원한 액션 영화였다.블레이드러너 2049의 라이언 고슬링과 아나 데 아르마스의 조합을 다시 볼 수 있어 반가웠고 크리스 에반스의 스테레오타입 악역 연기도 재밌었다.",
+      "",
+    ],
   },
   {
     title: "미션 임파서블: 폴아웃",
@@ -79,7 +228,34 @@ const movies = [{
     전 세계 최강의 스파이 기관 IMF의 최고 요원 에단 헌트(톰 크루즈)와 그의 팀은 테러조직의 핵무기 소지를 막기 위해 미션에 착수한다.
     에단 헌트는 작전 수행 중 예상치 못한 결단을 내리게 되고, 중앙정보국 CIA는 그를 견제하기 위해 상급 요원 어거스트 워커(헨리 카빌)를 파견한다.
     최악의 테러 위기와 라이벌의 출현 속, 팀이 행한 모든 선의의 선택들이 최악의 결과로 돌아오면서 미션은 점점 더 예측할 수 없는 상황으로 치닫게 되는데…
-    사상 가장 불가능한 미션, 피할 수 없다면 끝내야 한다!`
+    사상 가장 불가능한 미션, 피할 수 없다면 끝내야 한다!`,
+    director: "크리스토퍼 맥쿼리",
+    actorName: [
+      "톰 크루즈",
+      "헨리 카빌",
+      "빙 레임스",
+      "사이먼 페그",
+      "레베카 퍼거슨",
+      "숀 해리스",
+      "안젤라 바셋",
+      "미셸 모나한",
+    ],
+    actorImg: [
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Ff7704c8178c3f5acb8ee97a0079b46ab9facef40",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F186E2A254BA8D3835D",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F3514752b40b997bda100deea77979bd5cf07ac21",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F13497F10B1F86BFF45",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F2517893851BEB14F2E",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fd3c21b58060a5f9885f5adf6881016672309f5eb",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F1540D410AE0284D08F",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F1343F110B0A3534E48",
+    ],
+    reviews: [
+      "스리즈중 최고 마지막엔 다 알면서도 손에 땀이남",
+      "이 한편으로 성룡은 톰형이 가뿐히 즈려 밟아주신 것 같다헬기 액션씬은 시작부터 끝까지 구성이 대박이다레베카 퍼거슨은 보면 볼수록 이쁜 거 같다",
+      "3번봐도또잼있죠!",
+      "",
+    ],
   },
   {
     title: "인셉션",
@@ -96,7 +272,34 @@ const movies = [{
     예기치 못한 사건들과 마주하게 되는데…
     꿈 VS 현실
     시간, 규칙, 타이밍 모든 것이 완벽해야만 하는,
-    단 한 번도 성공한 적 없는 ‘인셉션’ 작전이 시작된다!`
+    단 한 번도 성공한 적 없는 ‘인셉션’ 작전이 시작된다!`,
+    director: "크리스토퍼 놀란",
+    actorName: [
+      "레오나르도 디카프리오",
+      "조셉 고든 레빗",
+      "마리옹 꼬띠아르",
+      "톰 하디",
+      "엘리엇 페이지",
+      "와타나베 켄",
+      "킬리언 머피",
+      "",
+    ],
+    actorImg: [
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F124D8810B050B86624",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F16725F284C5282AE49",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F140D7C10ADFFA1C695",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F37125d93f7a089b8ee413c6168dcafb58ca86e2a",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fc080ed87dbd63b1b9941093d3571ae8fc5d6886f",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F146F1B10AE1133E0EC",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F07cd0b814f58f3c32c78fa20c02b11a9fc57a02c",
+      "",
+    ],
+    reviews: [
+      "인생영화. 총 7번 관람한 영화다. 놀란 감동의 끝없는 상상력과 무한한 창의력을 온몸으로 느끼며 빠져들 수 있었던 인생 최고의 영화",
+      "IQ 120이하는 3번 연속보기를 권합니다",
+      "영화의 상상력을 한단계 업그레이드시킨 수작.",
+      "",
+    ],
   },
   {
     title: "공조",
@@ -107,7 +310,34 @@ const movies = [{
     story: `비밀리에 제작된 위조 지폐 동판을 탈취하려는 내부 조직에 의해 작전 중 아내와 동료들을 잃게 된 특수 정예부대 출신의 북한형사 ‘림철령’(현빈). 동판을 찾아야만 하는 북한은 남한으로 숨어든 조직의 리더 ‘차기성’(김주혁)을 잡기 위해 역사상 최초의 남북 공조수사를 요청하고, 그 적임자로 철령을 서울에 파견한다. 한편, 북한의 속내가 의심스런 남한은 먼저 차기성을 잡기 위한 작전을 계획하고, 정직 처분 중인 생계형 형사 ‘강진태’(유해진)에게 공조수사를 위장한 철령의 밀착 감시를 지시한다.
     임무를 완수해야 하는 철령과 임무를 막아야만 하는 진태.
     그들에게 주어진 시간은 단 3일,
-    한 팀이 될 수 없는 남북 형사의 예측불가 공조수사가 시작된다!`
+    한 팀이 될 수 없는 남북 형사의 예측불가 공조수사가 시작된다!`,
+    director: "김성훈",
+    actorName: [
+      "현빈",
+      "유해진",
+      "김주혁",
+      "장영남",
+      "이동휘",
+      "윤아",
+      "김재철",
+      "공정환",
+    ],
+    actorImg: [
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fae2cffb67d20a53a16e3fced954080786ee27bd0",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F490af559df02c7f5b70d1b80279218a77800d771",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fd16b292b15c2b8e84361eec1295522bc9b6210c3",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F509fc8489f972743d3a3bedd7b2232a01c1f3d95https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Ff28d624a349cc51898c92a851017f19ed069195b",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Ff28d624a349cc51898c92a851017f19ed069195b",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F893c26077ff0dc4e4b6630df4ef9dfe7f83ddd96",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F2c0ab17e37981fe15eb43549155a8e2674052b68",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fd56218897b0fe590fa8f4795f1ca7486d47df095",
+    ],
+    reviews: [
+      "김주혁 그립습니다.",
+      "1988년에 개봉한 레드히트 그대로 표절한개 쓰레기영화;; 감독은 얼마나 능지가 딸리길래시나리오 쓸 능력도 없어서 옛날영화 그대로 베껴오냐;;",
+      "두번째 보았는데 현빈인줄은 몰랐네요잘 생기기도 했지만 연기를 참 잘하는 배우..목소리도 매력있고 키도 훤출 흠 잡을 것이 없네요",
+      "",
+    ],
   },
   {
     title: "유체이탈자",
@@ -127,7 +357,34 @@ const movies = [{
     “이제 알게 됐어. 내가 뭘 해야 되는지”
     모두가 혈안이 되어 쫓고 있는 '강이안'이 바로 자신임을 직감한 남자,
     자신을 찾기 위한 사투를 시작하는데…
-    진짜 나를 찾기 위한 본능적 액션이 시작된다!`
+    진짜 나를 찾기 위한 본능적 액션이 시작된다!`,
+    director: "윤재근",
+    actorName: [
+      "윤계상",
+      "박용우",
+      "임지연",
+      "박지환",
+      "유승목",
+      "이성욱",
+      "서현우",
+      "이운산",
+    ],
+    actorImg: [
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fc7be9c3a25016ac081a42dd776fe586e6b9eb7ce",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fb382af39258bbb751404d8d3b518307c085f1b26",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F1824f266b9a74ba09a501546087f1b1a1567960753106",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F259ecc83d56dc45037fa7063b6209ebe28b10850",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F43e96a21bbb06c4ca830a62d7d28621d3e87d0a1",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F684c9d320b190a8f6dc3907c3e48c43f3e91649c",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F0fafdc78a4244b9ca64c6bb8d1f9c1cf1575486118463",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F5b790f14f15174d3d39d1e321b51b647bbcf1e28",
+    ],
+    reviews: [
+      "박용우님.. 제발 잘 되야하는 배우님.. 연기는 늘  열정을 다해 하는데 다들 너무 못알아줌. 상도 탈수 있는데 방송국들 너무함...제발 꼭 잘 되세요~~:hearts::hearts:",
+      "박용우씨 연기 좋아요",
+      "윤계상이 이렇게 영화배우로 잘 성장할 줄 몰랐다. 정말 대단한 노력이 아닐 수 없다.",
+      "",
+    ],
   },
 ];
 
@@ -263,6 +520,7 @@ let hoverTitle = document.querySelectorAll(".hover-title");
 let hoverAge = document.querySelectorAll(".hover-age");
 let hoverRuntime = document.querySelectorAll(".hover-runtime");
 let hoverStory = document.querySelectorAll(".hover-story");
+let moreButton = document.querySelectorAll(".fa-chevron-down");
 
 for (let i = 0; i < movieImg.length; i++) {
   movieImg[i].addEventListener("mouseenter", function () {
@@ -282,7 +540,6 @@ for (let i = 0; i < movieImg.length; i++) {
     hoverAge[i].innerText = `${movies[i].age}+`;
     hoverRuntime[i].innerText = movies[i].runtime;
     hoverStory[i].innerText = movies[i].story;
-
     // hover 연령 색상 변경
     if (movies[i].age === "12") {
       $(".hover-age").css("background", "#23A2E4");
@@ -294,7 +551,6 @@ for (let i = 0; i < movieImg.length; i++) {
       $(".hover-age").css("background", "#3EA14F");
     }
   });
-
 }
 
 for (let i = 0; i < hoverBox.length; i++) {
@@ -313,47 +569,72 @@ for (let i = 0; i < hoverBox.length; i++) {
     hoverBox[i].style.width = "250px";
     hoverBoxVd[i].style.width = "250px";
   });
-
-
 }
 // modal 등장 - fade in , fade out
 
-$(function () {
-  $(".fa-chevron-down").click(function () {
-    $(".modal-bg").fadeIn(500);
+let modalVd = document.querySelector(".modal-vd");
+let modalTitle = document.querySelector(".modal-title");
+let modalStory = document.querySelector(".modal-story");
+let modalDirector = document.querySelectorAll(".director");
+let modalCast = document.querySelectorAll(".cast");
+let modalActor = document.querySelectorAll(".actor");
+let actorProfile = document.querySelectorAll(".actor-image");
+let modalReviews = document.querySelectorAll(".reviews");
 
-    let v = $(".modal-img").find("video").get(0);
-    v.play();
+for (let i = 0; i < moreButton.length; i++) {
+  moreButton[i].addEventListener("click", function () {
+    modalVd.src = `/static/video/random_action${i}.mp4`;
+    modalTitle.innerText = movies[i].title;
+    modalStory.innerText = movies[i].story;
+    modalDirector.innerText = movies[i].director;
+    modalCast.innerText = movies[i].actorName;
+    for (let n = 0; n < modalActor.length; n++) {
+      if (modalActor[n] == undefined || movies[i].actorImg[n] == undefined) {
+        modalActor[n].innerText = "";
+        actorProfile[n].src =
+          "https://chocobean.co.kr/common/img/default_profile.png";
+      } else {
+        modalActor[n].innerText = movies[i].actorName[n];
+        actorProfile[n].src = movies[i].actorImg[n];
+      }
+    }
+    for (let n = 0; n < modalReviews.length; n++) {
+      modalReviews[n].innerText = movies[i].reviews[n];
+    }
   });
-  $(".modal-close-btn").click(function () {
-    $(".modal-bg").fadeOut(500);
+
+  $(function () {
+    $(moreButton).click(function () {
+      $(".modal-bg").fadeIn(500);
+      let v = $(".modal-img").find("video").get(0);
+      v.play();
+    });
+    $(".modal-close-btn").click(function () {
+      $(".modal-bg").fadeOut(500);
+    });
+    $(".modal-exit").click(function () {
+      $(".modal-bg").fadeOut(500);
+    });
   });
-  $(".modal-exit").click(function () {
-    $(".modal-bg").fadeOut(500);
-  });
+}
 
-  // 모달창 등장 시, 배경(body)부분의 콘텐츠 고정 , 모달창 내부만 스크롤 생성 및 작동
-  var posY;
+// 모달창 등장 시, 배경(body)부분의 콘텐츠 고정 , 모달창 내부만 스크롤 생성 및 작동
+var posY;
 
-  $(".bnt_open").on("click", function (e) {
-    posY = $(window).scrollTop();
+$(".bnt_open").on("click", function (e) {
+  posY = $(window).scrollTop();
 
-    $("html, body").addClass("not_scroll");
-    $(".cont").css("top", -posY);
-  });
+  $("html, body").addClass("not_scroll");
+  $(".cont").css("top", -posY);
+});
 
-  $(".bnt_close").on("click", function () {
-    $("html, body").removeClass("not_scroll");
-    posY = $(window).scrollTop(posY);
-  });
+$(".bnt_close").on("click", function () {
+  $("html, body").removeClass("not_scroll");
+  posY = $(window).scrollTop(posY);
+});
 
-  const modalLike = document.querySelectorAll("#modal-like .heart");
-
-  for (let num = 0; num < modalLike.length; num++) {
-    modalLike[num].addEventListener('click', function () {
-      modalLike[num].classList.toggle("xi-heart-o");
-      modalLike[num].classList.toggle("xi-heart");
-    })
-  }
-
+const modalLike = document.querySelector(".fa-heart");
+modalLike.addEventListener("click", function () {
+  modalLike.classList.toggle("far");
+  modalLike.classList.toggle("fas");
 });

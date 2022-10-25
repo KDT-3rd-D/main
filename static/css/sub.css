@@ -267,7 +267,6 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  cursor: pointer;
 }
 
 .movies ul li.movie span {
@@ -287,12 +286,12 @@ main {
   overflow: hidden;
 }
 
-.movies ul li.movie .heart {
+.movies ul li.movie .fa-chevron-down {
   position: absolute;
   top: 0;
   right: 3px;
   font-size: 2em;
-  color: red;
+  cursor: pointer;
 }
 
 .movies ul li.movie .tit span:nth-child(1) {
@@ -439,6 +438,7 @@ main {
   font-size: 2.4rem;
   background: none;
   color: #ff0000;
+  cursor: pointer;
 }
 
 .modal-box .modal-cont>h3 {

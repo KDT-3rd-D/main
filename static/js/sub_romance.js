@@ -540,7 +540,7 @@ let hoverTitle = document.querySelectorAll(".hover-title");
 let hoverAge = document.querySelectorAll(".hover-age");
 let hoverRuntime = document.querySelectorAll(".hover-runtime");
 let hoverStory = document.querySelectorAll(".hover-story");
-let hoverLike = document.querySelectorAll(".fa-heart");
+let moreButton = document.querySelectorAll(".fa-chevron-down");
 
 for (let i = 0; i < movieImg.length; i++) {
   movieImg[i].addEventListener("mouseenter", function () {
@@ -560,9 +560,6 @@ for (let i = 0; i < movieImg.length; i++) {
     hoverAge[i].innerText = `${movies[i].age}+`;
     hoverRuntime[i].innerText = movies[i].runtime;
     hoverStory[i].innerText = movies[i].story;
-    //hoverButton
-    hoverLike[i].style.zIndex = "3";
-
     // hover 연령 색상 변경
     if (movies[i].age === "12") {
       $(".hover-age").css("background", "#23A2E4");
@@ -604,8 +601,8 @@ let modalActor = document.querySelectorAll(".actor");
 let actorProfile = document.querySelectorAll(".actor-image");
 let modalReviews = document.querySelectorAll(".reviews");
 
-for (let i = 0; i < hoverBox.length; i++) {
-  hoverBox[i].addEventListener("click", function () {
+for (let i = 0; i < moreButton.length; i++) {
+  moreButton[i].addEventListener("click", function () {
     modalVd.src = `/static/video/random_romance${i}.mp4`;
     modalTitle.innerText = movies[i].title;
     modalStory.innerText = movies[i].story;
@@ -625,7 +622,7 @@ for (let i = 0; i < hoverBox.length; i++) {
   });
 
   $(function () {
-    $(".hoverbox").click(function () {
+    $(moreButton).click(function () {
       $(".modal-bg").fadeIn(500);
       let v = $(".modal-img").find("video").get(0);
       v.play();
@@ -636,30 +633,26 @@ for (let i = 0; i < hoverBox.length; i++) {
     $(".modal-exit").click(function () {
       $(".modal-bg").fadeOut(500);
     });
-
-    // 모달창 등장 시, 배경(body)부분의 콘텐츠 고정 , 모달창 내부만 스크롤 생성 및 작동
-    var posY;
-
-    $(".bnt_open").on("click", function (e) {
-      posY = $(window).scrollTop();
-
-      $("html, body").addClass("not_scroll");
-      $(".cont").css("top", -posY);
-    });
-
-    $(".bnt_close").on("click", function () {
-      $("html, body").removeClass("not_scroll");
-      posY = $(window).scrollTop(posY);
-    });
-
-    const modalLike = document.querySelectorAll("#modal-like .heart");
-
-    for (let num = 0; num < modalLike.length; num++) {
-      modalLike[num].addEventListener("click", function () {
-        modalLike[num].style.zIndex = "3";
-        modalLike[num].classList.toggle("xi-heart-o");
-        modalLike[num].classList.toggle("xi-heart");
-      });
-    }
   });
 }
+
+// 모달창 등장 시, 배경(body)부분의 콘텐츠 고정 , 모달창 내부만 스크롤 생성 및 작동
+var posY;
+
+$(".bnt_open").on("click", function (e) {
+  posY = $(window).scrollTop();
+
+  $("html, body").addClass("not_scroll");
+  $(".cont").css("top", -posY);
+});
+
+$(".bnt_close").on("click", function () {
+  $("html, body").removeClass("not_scroll");
+  posY = $(window).scrollTop(posY);
+});
+
+const modalLike = document.querySelector(".fa-heart");
+modalLike.addEventListener("click", function () {
+  modalLike.classList.toggle("far");
+  modalLike.classList.toggle("fas");
+});
