@@ -46,9 +46,9 @@
             <span>SF</span><br>
             &nbsp;D.NEMA가 추천하는 SF 영화!
           </p>
-          <button><i class="xi-shuffle"></i> 랜덤플레이</button>
+          <button class="random-button"><i class="xi-shuffle"></i> 랜덤플레이</button>
           <div class="video">
-            <video class="random-video" autoplay muted></video>
+            <video class="random-video" autoplay loop muted></video>
             <div class="description">
               <div class="ott">
                 <span class="age-color none"></span>
@@ -64,55 +64,280 @@
           </div>
         </div>
       </div>
-
+  <!-- modal box -->
+  <div class="modal-bg">
+    <div class="modal-exit bnt_close"></div>
+    <div class="modal-box">
+      <!-- modal close btn -->
+      <button class="modal-close-btn bnt_close"><i class="xi-close"></i></button>
+      <div class="modal-cont">
+        <div class="modal-img">
+          <video class="modal-vd" muted autoplay loop>
+            <source src="" type="video/mp4">
+          </video>
+          <!-- 영화 좋아요 btn -->
+          <button id="modal-like" class="modal-like-btn"><i class="fas fa-heart"></i></button>
+        </div>
+        <h3 class="modal-title"></h3>
+        <div class="cont-info">
+          <!-- 영화 내용 -->
+          <p class="modal-story"></p>
+          <!-- 출연진 및 감독 -->
+          <p class="director"></p>
+          <p class="cast"></p>
+        </div>
+        <!-- 출연진 이미지 flex 배치 -->
+        <div class="cont-ex-list">
+          <h3 class="cont-ex-title">출연진</h3>
+          <ul class="cont-ex-flex">
+            <li>
+              <div class="flex-img">
+                <img class="actor-image" src="" alt="배우">
+              </div>
+              <span class="actor"></span>
+            </li>
+            <li>
+              <div class="flex-img">
+                <img class="actor-image" src="" alt="배우">
+              </div>
+              <span class="actor"></span>
+            </li>
+            <li>
+              <div class="flex-img">
+                <img class="actor-image" src="" alt="배우">
+              </div>
+              <span class="actor"></span>
+            </li>
+            <li>
+              <div class="flex-img">
+                <img class="actor-image" src="" alt="배우">
+              </div>
+              <span class="actor"></span>
+            </li>
+          </ul>
+          <ul class="cont-ex-flex">
+            <li>
+              <div class="flex-img">
+                <img class="actor-image" src="" alt="배우">
+              </div>
+              <span class="actor"></span>
+            </li>
+            <li>
+              <div class="flex-img">
+                <img class="actor-image" src="" alt="배우">
+              </div>
+              <span class="actor"></span>
+            </li>
+            <li>
+              <div class="flex-img">
+                <img class="actor-image" src="" alt="배우">
+              </div>
+              <span class="actor"></span>
+            </li>
+            <li>
+              <div class="flex-img">
+                <img class="actor-image" src="" alt="배우">
+              </div>
+              <span class="actor"></span>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-to-review">
+          <div class="review-btn-box">
+            <a href="/list" class="plus-btn review-btn"><i class="xi-pen"></i>리뷰 작성 하기</a>
+          </div>
+          <!-- 리뷰 일부 보여주도록? -->
+          <ul class="review-part-view">
+            <li><span class="Rs star">
+                ★★★★★
+                <span>★★★★★</span>
+                <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
+              </span>
+              <span class="star-info reviews">
+                
+              </span>
+            </li>
+            <li><span class="Rs star2">
+                ★★★★★
+                <span>★★★★★</span>
+                <input type="range" oninput="drawStar2(this)" value="1" step="1" min="0" max="10">
+              </span>
+              <span class="star-info reviews">
+                
+              </span>
+            </li>
+            <li><span class="Rs star3">
+                ★★★★★
+                <span>★★★★★</span>
+                <input type="range" oninput="drawStar3(this)" value="1" step="1" min="0" max="10">
+              </span>
+              <span class="star-info reviews">
+                
+              </span>
+            </li>
+            <li><span class="Rs star4">
+                ★★★★★
+                <span>★★★★★</span>
+                <input type="range" oninput="drawStar4(this)" value="1" step="1" min="0" max="10">
+              </span>
+              <span class="star-info reviews">
+                
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
       <!-- top movie -->
       <article class="movies">
         <h3>Top moives</h3>
         <ul>
-          <div class="hover-filter"></div>
-          <li class="movie movie-list1">
-            <img src="/static/image/sf0.jpg" alt="SF 이미지">
+          <li class="hover-filter"></li>
+          <li class="movie">
+            <img src="/static/image/sf0.jpg" alt="sf 이미지">
             <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_sf0.mp4" autoplay muted></video>
+              <video class="top-video" src="/static/video/random_sf0.mp4" autoplay muted loop></video>
               <div class="tit">
                 <span class="hover-title"></span>
-                <i class="far fa-heart"></i>
                 <span class="hover-age"></span>
                 <span class="hover-runtime"></span>
-              </div>
-              <p class="hover-story"></p>
-            </div>
-          </li>
-          <li class="movie movie-list2">
-            <img src="/static/image/sf1.jpg" alt="SF 이미지">
-            <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_sf1.mp4" autoplay muted></video>
-              <div class="tit">
-                <span class="hover-title"></span>
-                <i class="far fa-heart"></i>
-                <span class="hover-age"></span>
-                <span class="hover-runtime"></span>
-              </div>
-              <p class="hover-story"></p>
-            </div>
-          </li>
-          <li class="movie movie-list2">
-            <img src="/static/image/sf2.jpg" alt="SF 이미지">
-            <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_sf2.mp4" autoplay muted></video>
-              <div class="tit">
-                <span class="hover-title"></span>
-                <i class="far fa-heart"></i>
-                <span class="hover-age"></span>
-                <span class="hover-runtime"></span>
+                <i class="fas fa-chevron-down bnt_open"></i>
               </div>
               <p class="hover-story"></p>
             </div>
           </li>
           <li class="movie">
-            <img src="/static/image/sf3.jpg" alt="SF 이미지">
+            <img src="/static/image/sf1.jpg" alt="sf 이미지">
             <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_sf3.mp4" autoplay muted></video>
+              <video class="top-video" src="/static/video/random_sf1.mp4" autoplay muted loop></video>
+              <div class="tit">
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="fas fa-chevron-down bnt_open"></i>
+
+              </div>
+              <p class="hover-story"></p>
+            </div>
+          </li>
+          <li class="movie">
+            <img src="/static/image/sf2.jpg" alt="sf 이미지">
+            <div class="hoverbox">
+              <video class="top-video" src="/static/video/random_sf2.mp4" autoplay muted loop></video>
+              <div class="tit">
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="fas fa-chevron-down bnt_open"></i>
+
+              </div>
+              <p class="hover-story"></p>
+            </div>
+            </div>
+          </li>
+          <li class="movie">
+            <img src="/static/image/sf3.jpg" alt="sf 이미지">
+            <div class="hoverbox">
+              <video class="top-video" src="/static/video/random_sf3.mp4" autoplay muted loop></video>
+              <div class="tit">
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="fas fa-chevron-down bnt_open"></i>
+
+              </div>
+              <p class="hover-story"></p>
+            </div>
+          </li>
+          <li class="movie">
+            <img src="/static/image/sf4.jpg" alt="sf 이미지">
+            <div class="hoverbox">
+              <video class="top-video" src="/static/video/random_sf4.mp4" autoplay muted loop></video>
+              <div class="tit">
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="fas fa-chevron-down bnt_open"></i>
+
+              </div>
+              <p class="hover-story"></p>
+            </div>
+          </li>
+          <li class="movie">
+            <img src="/static/image/sf5.jpg" alt="sf 이미지">
+            <div class="hoverbox">
+              <video class="top-video" src="/static/video/random_sf5.mp4" autoplay muted loop></video>
+              <div class="tit">
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="fas fa-chevron-down bnt_open"></i>
+
+              </div>
+              <p class="hover-story"></p>
+            </div>
+          </li>
+          <li class="movie">
+            <img src="/static/image/sf6.jpg" alt="sf 이미지">
+            <div class="hoverbox">
+              <video class="top-video" src="/static/video/random_sf6.mp4" autoplay muted loop></video>
+              <div class="tit">
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="fas fa-chevron-down bnt_open"></i>
+
+              </div>
+              <p class="hover-story"></p>
+            </div>
+          </li>
+          <li class="movie">
+            <img src="/static/image/sf7.jpg" alt="sf 이미지">
+            <div class="hoverbox">
+              <video class="top-video" src="/static/video/random_sf7.mp4" autoplay muted loop></video>
+              <div class="tit">
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="fas fa-chevron-down bnt_open"></i>
+
+              </div>
+              <p class="hover-story"></p>
+            </div>
+          </li>
+          <li class="movie">
+            <img src="/static/image/sf8.jpg" alt="sf 이미지">
+            <div class="hoverbox">
+              <video class="top-video" src="/static/video/random_sf8.mp4" autoplay muted loop></video>
+              <div class="tit">
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="fas fa-chevron-down bnt_open"></i>
+
+              </div>
+              <p class="hover-story"></p>
+            </div>
+          </li>
+          <li class="movie">
+            <img src="/static/image/sf9.jpg" alt="sf 이미지">
+            <div class="hoverbox">
+              <video class="top-video" src="/static/video/random_sf9.mp4" autoplay muted loop></video>
+              <div class="tit">
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="fas fa-chevron-down bnt_open"></i>
+
+              </div>
+              <p class="hover-story"></p>
+            </div>
+          </li>
+          <li class="movie size-none">
+            <img src="/static/image/sf10.jpg" alt="SF 이미지">
+            <div class="hoverbox">
+              <video class="top-video" src="/static/video/random_sf10.mp4" autoplay loop muted></video>
               <div class="tit">
                 <span class="hover-title"></span>
                 <i class="far fa-heart"></i>
@@ -122,75 +347,10 @@
               <p class="hover-story"></p>
             </div>
           </li>
-          <li class="movie">
-            <img src="/static/image/sf4.jpg" alt="SF 이미지">
+          <li class="movie size-none">
+            <img src="/static/image/sf11.jpg" alt="SF 이미지">
             <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_sf4.mp4" autoplay muted></video>
-              <div class="tit">
-                <span class="hover-title"></span>
-                <i class="far fa-heart"></i>
-                <span class="hover-age"></span>
-                <span class="hover-runtime"></span>
-              </div>
-              <p class="hover-story"></p>
-            </div>
-          </li>
-          <li class="movie">
-            <img src="/static/image/sf5.jpg" alt="SF 이미지">
-            <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_sf5.mp4" autoplay muted></video>
-              <div class="tit">
-                <span class="hover-title"></span>
-                <i class="far fa-heart"></i>
-                <span class="hover-age"></span>
-                <span class="hover-runtime"></span>
-              </div>
-              <p class="hover-story"></p>
-            </div>
-          </li>
-          <li class="movie">
-            <img src="/static/image/sf6.jpg" alt="SF 이미지">
-            <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_sf6.mp4" autoplay muted></video>
-              <div class="tit">
-                <span class="hover-title"></span>
-                <i class="far fa-heart"></i>
-                <span class="hover-age"></span>
-                <span class="hover-runtime"></span>
-              </div>
-              <p class="hover-story"></p>
-            </div>
-          </li>
-          <li class="movie">
-            <img src="/static/image/sf7.jpg" alt="SF 이미지">
-            <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_sf7.mp4" autoplay muted></video>
-              <div class="tit">
-                <span class="hover-title"></span>
-                <i class="far fa-heart"></i>
-                <span class="hover-age"></span>
-                <span class="hover-runtime"></span>
-              </div>
-              <p class="hover-story"></p>
-            </div>
-          </li>
-          <li class="movie">
-            <img src="/static/image/sf8.jpg" alt="SF 이미지">
-            <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_sf8.mp4" autoplay muted></video>
-              <div class="tit">
-                <span class="hover-title"></span>
-                <i class="far fa-heart"></i>
-                <span class="hover-age"></span>
-                <span class="hover-runtime"></span>
-              </div>
-              <p class="hover-story"></p>
-            </div>
-          </li>
-          <li class="movie">
-            <img src="/static/image/sf9.jpg" alt="SF 이미지">
-            <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_sf9.mp4" autoplay muted></video>
+              <video class="top-video" src="/static/video/random_sf11.mp4" autoplay loop muted></video>
               <div class="tit">
                 <span class="hover-title"></span>
                 <i class="far fa-heart"></i>

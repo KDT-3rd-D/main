@@ -46,9 +46,9 @@
             <span>ROMANCE</span><br>
             &nbsp;D.NEMA가 추천하는 로맨스 영화!
           </p>
-          <button><i class="xi-shuffle"></i> 랜덤플레이</button>
+          <button class="random-button"><i class="xi-shuffle"></i> 랜덤플레이</button>
           <div class="video">
-            <video class="random-video" loop autoplay muted></video>
+            <video class="random-video" loop autoplay muted loop></video>
             <div class="description">
               <div class="ott">
                 <span class="age-color none"></span>
@@ -68,30 +68,26 @@
       <!-- top movie -->
       <article class="movies">
         <!-- modal box -->
-        <div class="modal-bg bnt_close">
-          <div class="modal-exit"></div>
+        <div class="modal-bg">
+          <div class="modal-exit bnt_close"></div>
           <div class="modal-box">
             <!-- modal close btn -->
             <button class="modal-close-btn bnt_close"><i class="xi-close"></i></button>
             <div class="modal-cont">
               <div class="modal-img">
-                <video muted autoplay loop>
-                  <source src="/static/video/random_romance0.mp4" type="video/mp4">
+                <video class="modal-vd" muted autoplay loop>
+                  <source src="" type="video/mp4">
                 </video>
                 <!-- 영화 좋아요 btn -->
-                <button id="modal-like" class="modal-like-btn"><i class="xi-heart-o"></i></button>
+                <button id="modal-like" class="modal-like-btn"><i class="fas fa-heart"></i></button>
               </div>
-              <h3>분노의 질주: 더 세븐</h3>
+              <h3 class="modal-title"></h3>
               <div class="cont-info">
                 <!-- 영화 내용 -->
-                <p>도미닉(빈 디젤)은 자신과 가장 가까웠던 형제 제이콥(존 시나)이 사이퍼(샤를리즈 테론)와 연합해 전 세계를 위기로 빠트릴 위험천만한 계획을 세운다는 사실을 알게 되고, 이를 막기
-                  위해 다시 한 번 패밀리들을 소환한다. 가장 가까운 자가 한순간, 가장 위험한 적이 된 상황 도미닉과 패밀리들은 이에 반격할 놀라운 컴백과 작전을 세우고 지상도, 상공도, 국경도
-                  경계가 없는 불가능한 대결이 시작되는데…</p>
+                <p class="modal-story"></p>
                 <!-- 출연진 및 감독 -->
-                <p>
-                  <strong>감독</strong> 저스틴 린<br>
-                  <strong>주연</strong> 빈 디젤, 존 시나, 성 강, 샤를리즈 테론, 미셸 로드리 게즈
-                </p>
+                <p class="director"></p>
+                <p class="cast"></p>
               </div>
               <!-- 출연진 이미지 flex 배치 -->
               <div class="cont-ex-list">
@@ -99,53 +95,53 @@
                 <ul class="cont-ex-flex">
                   <li>
                     <div class="flex-img">
-                      <img src="/static/image/modal.jpg" alt="빈디젤">
+                      <img class="actor-image" src="" alt="배우">
                     </div>
-                    <span>빈디젤</span>
+                    <span class="actor"></span>
                   </li>
                   <li>
                     <div class="flex-img">
-                      <img src="/static/image/modal02.jpg" alt="폴워커">
+                      <img class="actor-image" src="" alt="배우">
                     </div>
-                    <span>폴워커</span>
+                    <span class="actor"></span>
                   </li>
                   <li>
                     <div class="flex-img">
-                      <img src="/static/image/modal03.jpg" alt="드웨인 존슨">
+                      <img class="actor-image" src="" alt="배우">
                     </div>
-                    <span>드웨인 존슨</span>
+                    <span class="actor"></span>
                   </li>
                   <li>
                     <div class="flex-img">
-                      <img src="/static/image/modal04.jpg" alt="미셸 로드리게즈">
+                      <img class="actor-image" src="" alt="배우">
                     </div>
-                    <span>미셸 로드리게즈</span>
+                    <span class="actor"></span>
                   </li>
                 </ul>
                 <ul class="cont-ex-flex">
                   <li>
                     <div class="flex-img">
-                      <img src="/static/image/modal05.jpg" alt="성강">
+                      <img class="actor-image" src="" alt="배우">
                     </div>
-                    <span>성강</span>
+                    <span class="actor"></span>
                   </li>
                   <li>
                     <div class="flex-img">
-                      <img src="/static/image/modal06.jpg" alt="샤를리즈 테론">
+                      <img class="actor-image" src="" alt="배우">
                     </div>
-                    <span>샤를리즈 테론</span>
+                    <span class="actor"></span>
                   </li>
                   <li>
                     <div class="flex-img">
-                      <img src="/static/image/modal07.jpg" alt=" 존 시나">
+                      <img class="actor-image" src="" alt="배우">
                     </div>
-                    <span>존 시나</span>
+                    <span class="actor"></span>
                   </li>
                   <li>
                     <div class="flex-img">
-                      <img src="/static/image/modal08.jpg" alt="조다나 브류스터">
+                      <img class="actor-image" src="" alt="배우">
                     </div>
-                    <span>조다나 브류스터</span>
+                    <span class="actor"></span>
                   </li>
                 </ul>
               </div>
@@ -160,9 +156,8 @@
                       <span>★★★★★</span>
                       <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
                     </span>
-                    <span class="star-info">
-                      고인 폴 워커의 마지막 작품이지만 화끈한 액션이였다. 차들도 대박이고 액션씬도 강하다! 삼가 고인의 명복을 빕니다 분노의질주 올해도 실망안시킨다 대박 영화이다 정말 흥미진진하다
-                      분노의질주 세븐 대박 짱이다
+                    <span class="star-info reviews">
+
                     </span>
                   </li>
                   <li><span class="Rs star2">
@@ -170,8 +165,8 @@
                       <span>★★★★★</span>
                       <input type="range" oninput="drawStar2(this)" value="1" step="1" min="0" max="10">
                     </span>
-                    <span class="star-info">
-                      전 시즌이랑 다름없는 스토리 ㅠ
+                    <span class="star-info reviews">
+
                     </span>
                   </li>
                   <li><span class="Rs star3">
@@ -179,8 +174,8 @@
                       <span>★★★★★</span>
                       <input type="range" oninput="drawStar3(this)" value="1" step="1" min="0" max="10">
                     </span>
-                    <span class="star-info">
-                      폴 워커의 의리를 지킨 영화.. 고인의 명복을 빕니다
+                    <span class="star-info reviews">
+
                     </span>
                   </li>
                   <li><span class="Rs star4">
@@ -188,8 +183,8 @@
                       <span>★★★★★</span>
                       <input type="range" oninput="drawStar4(this)" value="1" step="1" min="0" max="10">
                     </span>
-                    <span class="star-info">
-                      미친 액션
+                    <span class="star-info reviews">
+
                     </span>
                   </li>
                 </ul>
@@ -204,12 +199,12 @@
           <li class="movie">
             <img src="/static/image/romance0.jpg" alt="로맨스 이미지">
             <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_romance0.mp4" autoplay muted></video>
+              <video class="top-video" src="/static/video/random_romance0.mp4" autoplay muted loop></video>
               <div class="tit">
                 <span class="hover-title"></span>
                 <span class="hover-age"></span>
                 <span class="hover-runtime"></span>
-                <i class="far fa-heart heart"></i>
+                <i class="fas fa-chevron-down bnt_open"></i>
               </div>
               <p class="hover-story"></p>
             </div>
@@ -217,13 +212,12 @@
           <li class="movie">
             <img src="/static/image/romance1.jpg" alt="로맨스 이미지">
             <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_romance1.mp4" autoplay muted></video>
+              <video class="top-video" src="/static/video/random_romance1.mp4" autoplay muted loop></video>
               <div class="tit">
                 <span class="hover-title"></span>
                 <span class="hover-age"></span>
                 <span class="hover-runtime"></span>
-                <i class="far fa-heart heart"></i>
-
+                <i class="fas fa-chevron-down bnt_open"></i>
               </div>
               <p class="hover-story"></p>
             </div>
@@ -231,13 +225,12 @@
           <li class="movie">
             <img src="/static/image/romance2.jpg" alt="로맨스 이미지">
             <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_romance2.mp4" autoplay muted></video>
+              <video class="top-video" src="/static/video/random_romance2.mp4" autoplay muted loop></video>
               <div class="tit">
                 <span class="hover-title"></span>
                 <span class="hover-age"></span>
                 <span class="hover-runtime"></span>
-                <i class="far fa-heart heart"></i>
-
+                <i class="fas fa-chevron-down bnt_open"></i>
               </div>
               <p class="hover-story"></p>
             </div>
@@ -246,13 +239,12 @@
           <li class="movie">
             <img src="/static/image/romance3.jpg" alt="로맨스 이미지">
             <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_romance3.mp4" autoplay muted></video>
+              <video class="top-video" src="/static/video/random_romance3.mp4" autoplay muted loop></video>
               <div class="tit">
                 <span class="hover-title"></span>
                 <span class="hover-age"></span>
                 <span class="hover-runtime"></span>
-                <i class="far fa-heart heart"></i>
-
+                <i class="fas fa-chevron-down bnt_open"></i>
               </div>
               <p class="hover-story"></p>
             </div>
@@ -260,13 +252,12 @@
           <li class="movie">
             <img src="/static/image/romance4.jpg" alt="로맨스 이미지">
             <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_romance4.mp4" autoplay muted></video>
+              <video class="top-video" src="/static/video/random_romance4.mp4" autoplay muted loop></video>
               <div class="tit">
                 <span class="hover-title"></span>
                 <span class="hover-age"></span>
                 <span class="hover-runtime"></span>
-                <i class="far fa-heart heart"></i>
-
+                <i class="fas fa-chevron-down bnt_open"></i>
               </div>
               <p class="hover-story"></p>
             </div>
@@ -274,13 +265,12 @@
           <li class="movie">
             <img src="/static/image/romance5.jpg" alt="로맨스 이미지">
             <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_romance5.mp4" autoplay muted></video>
+              <video class="top-video" src="/static/video/random_romance5.mp4" autoplay muted loop></video>
               <div class="tit">
                 <span class="hover-title"></span>
                 <span class="hover-age"></span>
                 <span class="hover-runtime"></span>
-                <i class="far fa-heart heart"></i>
-
+                <i class="fas fa-chevron-down bnt_open"></i>
               </div>
               <p class="hover-story"></p>
             </div>
@@ -288,13 +278,12 @@
           <li class="movie">
             <img src="/static/image/romance6.jpg" alt="로맨스 이미지">
             <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_romance6.mp4" autoplay muted></video>
+              <video class="top-video" src="/static/video/random_romance6.mp4" autoplay muted loop></video>
               <div class="tit">
                 <span class="hover-title"></span>
                 <span class="hover-age"></span>
                 <span class="hover-runtime"></span>
-                <i class="far fa-heart heart"></i>
-
+                <i class="fas fa-chevron-down bnt_open"></i>
               </div>
               <p class="hover-story"></p>
             </div>
@@ -302,13 +291,12 @@
           <li class="movie">
             <img src="/static/image/romance7.jpg" alt="로맨스 이미지">
             <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_romance7.mp4" autoplay muted></video>
+              <video class="top-video" src="/static/video/random_romance7.mp4" autoplay muted loop></video>
               <div class="tit">
                 <span class="hover-title"></span>
                 <span class="hover-age"></span>
                 <span class="hover-runtime"></span>
-                <i class="far fa-heart heart"></i>
-
+                <i class="fas fa-chevron-down bnt_open"></i>
               </div>
               <p class="hover-story"></p>
             </div>
@@ -316,13 +304,12 @@
           <li class="movie">
             <img src="/static/image/romance8.jpg" alt="로맨스 이미지">
             <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_romance8.mp4" autoplay muted></video>
+              <video class="top-video" src="/static/video/random_romance8.mp4" autoplay muted loop></video>
               <div class="tit">
                 <span class="hover-title"></span>
                 <span class="hover-age"></span>
                 <span class="hover-runtime"></span>
-                <i class="far fa-heart heart"></i>
-
+                <i class="fas fa-chevron-down bnt_open"></i>
               </div>
               <p class="hover-story"></p>
             </div>
@@ -330,13 +317,38 @@
           <li class="movie">
             <img src="/static/image/romance9.jpg" alt="로맨스 이미지">
             <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_romance9.mp4" autoplay muted></video>
+              <video class="top-video" src="/static/video/random_romance9.mp4" autoplay muted loop></video>
               <div class="tit">
                 <span class="hover-title"></span>
                 <span class="hover-age"></span>
                 <span class="hover-runtime"></span>
-                <i class="far fa-heart heart"></i>
-
+                <i class="fas fa-chevron-down bnt_open"></i>
+              </div>
+              <p class="hover-story"></p>
+            </div>
+          </li>
+          <li class="movie size-none">
+            <img src="/static/image/romance10.jpg" alt="로맨스 이미지">
+            <div class="hoverbox">
+              <video class="top-video" src="/static/video/random_romance10.mp4" autoplay loop muted></video>
+              <div class="tit">
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="fas fa-chevron-down bnt_open"></i>
+              </div>
+              <p class="hover-story"></p>
+            </div>
+          </li>
+          <li class="movie size-none">
+            <img src="/static/image/romance11.jpg" alt="로맨스 이미지">
+            <div class="hoverbox">
+              <video class="top-video" src="/static/video/random_romance11.mp4" autoplay loop muted></video>
+              <div class="tit">
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="fas fa-chevron-down bnt_open"></i>
               </div>
               <p class="hover-story"></p>
             </div>
@@ -347,8 +359,9 @@
   </section>
 
 
-    <!--footer-->
-    <%-include('footer.ejs') %>
+
+  <!--footer-->
+  <%-include('footer.ejs') %>
 
   <script src="/static/js/sub_romance.js"></script>
 
