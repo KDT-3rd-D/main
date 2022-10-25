@@ -540,6 +540,7 @@ let hoverTitle = document.querySelectorAll(".hover-title");
 let hoverAge = document.querySelectorAll(".hover-age");
 let hoverRuntime = document.querySelectorAll(".hover-runtime");
 let hoverStory = document.querySelectorAll(".hover-story");
+let hoverLike = document.querySelectorAll(".fa-heart");
 
 for (let i = 0; i < movieImg.length; i++) {
   movieImg[i].addEventListener("mouseenter", function () {
@@ -559,6 +560,8 @@ for (let i = 0; i < movieImg.length; i++) {
     hoverAge[i].innerText = `${movies[i].age}+`;
     hoverRuntime[i].innerText = movies[i].runtime;
     hoverStory[i].innerText = movies[i].story;
+    //hoverButton
+    hoverLike[i].style.zIndex = "3";
 
     // hover 연령 색상 변경
     if (movies[i].age === "12") {
@@ -653,6 +656,7 @@ for (let i = 0; i < hoverBox.length; i++) {
 
     for (let num = 0; num < modalLike.length; num++) {
       modalLike[num].addEventListener("click", function () {
+        modalLike[num].style.zIndex = "3";
         modalLike[num].classList.toggle("xi-heart-o");
         modalLike[num].classList.toggle("xi-heart");
       });
