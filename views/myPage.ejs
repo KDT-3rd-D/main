@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="/static/css/header.css">
     <!-- css: mypage -->
     <link rel="stylesheet" href="/static/css/myPage.css">
+    <!-- css: scroll -->
+    <link rel="stylesheet" href="static/css/scroll.css">
     <!-- font : noto sans, moserrat, roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Noto+Sans+KR:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <!-- fontawsome -->
@@ -40,7 +42,7 @@
             <div class="my-new">
             <h2><i class="xi-time"></i>&nbsp;최근 활동</h2>
             <ul class="flex">
-                <li><strong>2</strong><br>게시글</li>
+                <li><a href="/list">2</a><br>내가 쓴 리뷰</li>
                 <li><strong>8</strong><br>찜한 영화</li>
                 <li><strong>10</strong><br>별점 평가</li>
             </ul>
@@ -72,9 +74,9 @@
                 <!-- Additional required wrapper -->
             <ul class="swiper-wrapper">
                 <!-- Slides -->
-                <li class="swiper-slide"><img src="/static/image/romance3.jpg" alt=""></li>
-                <li class="swiper-slide"><img src="/static/image/romance4.jpg" alt=""></li>
-                <li class="swiper-slide"><img src="/static/image/romance5.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/SF0.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/SF6.jpg" alt=""></li>
+                <li class="swiper-slide"><img src="/static/image/action8.jpg" alt=""></li>
                 <li class="swiper-slide"><img src="/static/image/romance6.jpg" alt=""></li>
                 <li class="swiper-slide"><img src="/static/image/action0.jpg" alt=""></li>
                 <li class="swiper-slide"><img src="/static/image/action0.jpg" alt=""></li>
@@ -128,6 +130,8 @@
         nextEl: ".swiper-button-next2",
         prevEl: ".swiper-button-prev2",
       },
+      observer: true,
+      observeParents: true,
     });
     let slide02 = new Swiper('.slide02',{
         pagination : {

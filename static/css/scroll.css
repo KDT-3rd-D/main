@@ -1,0 +1,15 @@
+/*scroll bar customizing*/
+body::-webkit-scrollbar {
+  width: 11px;  /* 스크롤바의 너비 */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(83, 82, 82, 0.897);  /*스크롤바 뒷 배경 색상*/
+}
+
+body::-webkit-scrollbar-thumb {
+  height: 60%; /* 스크롤바의 길이 */
+  background: black; /* 스크롤바의 색상 */
+  
+  border-radius: 5px;
+}

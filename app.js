@@ -15,22 +15,16 @@ app.use("/static", express.static(__dirname + "/static"));
 
 // routing (라우팅)
 // 요청(request)과 응답(response) 경로를 설정
-// 클라이언트가 get 요청을 보내면, 응답으로 hello express 메세지를 띄운다
 // get 요청 : 리소스 검색하고 반환받기 위해 사용되는 메서드
+// main
 app.get("/", function (request, response) {
   response.render("index");
 });
-app.get("/intro", function (request, response) {
-  response.render("intro");
-});
+// login
 app.get("/login", function (request, response) {
   response.render("login");
 });
-
-app.get("/login", function (request, response) {
-  response.render("login");
-});
-
+// 영화장르별 page
 app.get("/action", function (request, response) {
   response.render("action");
 });
@@ -43,12 +37,17 @@ app.get("/comedy", function (request, response) {
 app.get("/sf", function (request, response) {
   response.render("sf");
 });
-
+// 리뷰쓰기
 app.get("/list", function (request, response) {
   response.render("list");
 });
+// 마이페이지
 app.get("/my", function (request, response) {
   response.render("myPage");
+});
+// 인트로화면
+app.get("/intro", function (request, response) {
+  response.render("intro");
 });
 
 //로컬 서버 동작
