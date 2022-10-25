@@ -13,8 +13,8 @@
   <!-- css: header -->
   <link rel="stylesheet" href="/static/css/header.css">
   <!-- css: sub -->
-  <link rel="stylesheet" href="/static/css/sub.css">  
-  <link rel="stylesheet" href="/static/css/action.css">  
+  <link rel="stylesheet" href="/static/css/sub.css">
+  <link rel="stylesheet" href="/static/css/action.css">
   <!-- css: scroll -->
   <link rel="stylesheet" href="static/css/scroll.css">
   <!-- font : noto sans, moserrat, roboto -->
@@ -65,131 +65,129 @@
 
       <!-- top movie -->
       <article class="movies">
-          <!-- modal box -->
-          <div class="modal-bg">
-            <div class="modal-exit bnt_close"></div>
-            <div class="modal-box">
-              <!-- modal close btn -->
-              <button class="modal-close-btn bnt_close"><i class="xi-close"></i></button>
-              <div class="modal-cont">
-                <div class="modal-img">
-                  <video class="modal-vd" muted autoplay loop>
-                    <source src="" type="video/mp4">
-                  </video>
-                  <!-- 영화 좋아요 btn -->
-                  <button id="modal-like" class="modal-like-btn"><i class="fas fa-heart"></i></button>
+        <!-- modal box -->
+        <div class="modal-bg">
+          <div class="modal-exit bnt_close"></div>
+          <div class="modal-box">
+            <!-- modal close btn -->
+            <button class="modal-close-btn bnt_close"><i class="xi-close"></i></button>
+            <div class="modal-cont">
+              <div class="modal-img">
+                <video class="modal-vd" muted autoplay loop>
+                  <source src="" type="video/mp4">
+                </video>
+              </div>
+              <h3 class="modal-title"></h3>
+              <div class="cont-info">
+                <!-- 영화 내용 -->
+                <p class="modal-story"></p>
+                <!-- 출연진 및 감독 -->
+                <p class="director"></p>
+                <p class="cast"></p>
+              </div>
+              <!-- 출연진 이미지 flex 배치 -->
+              <div class="cont-ex-list">
+                <h3 class="cont-ex-title">출연진</h3>
+                <ul class="cont-ex-flex">
+                  <li>
+                    <div class="flex-img">
+                      <img class="actor-image" src="" alt="배우">
+                    </div>
+                    <span class="actor"></span>
+                  </li>
+                  <li>
+                    <div class="flex-img">
+                      <img class="actor-image" src="" alt="배우">
+                    </div>
+                    <span class="actor"></span>
+                  </li>
+                  <li>
+                    <div class="flex-img">
+                      <img class="actor-image" src="" alt="배우">
+                    </div>
+                    <span class="actor"></span>
+                  </li>
+                  <li>
+                    <div class="flex-img">
+                      <img class="actor-image" src="" alt="배우">
+                    </div>
+                    <span class="actor"></span>
+                  </li>
+                </ul>
+                <ul class="cont-ex-flex">
+                  <li>
+                    <div class="flex-img">
+                      <img class="actor-image" src="" alt="배우">
+                    </div>
+                    <span class="actor"></span>
+                  </li>
+                  <li>
+                    <div class="flex-img">
+                      <img class="actor-image" src="" alt="배우">
+                    </div>
+                    <span class="actor"></span>
+                  </li>
+                  <li>
+                    <div class="flex-img">
+                      <img class="actor-image" src="" alt="배우">
+                    </div>
+                    <span class="actor"></span>
+                  </li>
+                  <li>
+                    <div class="flex-img">
+                      <img class="actor-image" src="" alt="배우">
+                    </div>
+                    <span class="actor"></span>
+                  </li>
+                </ul>
+              </div>
+              <div class="modal-to-review">
+                <div class="review-btn-box">
+                  <a href="/list" class="plus-btn review-btn"><i class="xi-pen"></i>리뷰 작성 하기</a>
                 </div>
-                <h3 class="modal-title"></h3>
-                <div class="cont-info">
-                  <!-- 영화 내용 -->
-                  <p class="modal-story"></p>
-                  <!-- 출연진 및 감독 -->
-                  <p class="director"></p>
-                  <p class="cast"></p>
-                </div>
-                <!-- 출연진 이미지 flex 배치 -->
-                <div class="cont-ex-list">
-                  <h3 class="cont-ex-title">출연진</h3>
-                  <ul class="cont-ex-flex">
-                    <li>
-                      <div class="flex-img">
-                        <img class="actor-image" src="" alt="배우">
-                      </div>
-                      <span class="actor"></span>
-                    </li>
-                    <li>
-                      <div class="flex-img">
-                        <img class="actor-image" src="" alt="배우">
-                      </div>
-                      <span class="actor"></span>
-                    </li>
-                    <li>
-                      <div class="flex-img">
-                        <img class="actor-image" src="" alt="배우">
-                      </div>
-                      <span class="actor"></span>
-                    </li>
-                    <li>
-                      <div class="flex-img">
-                        <img class="actor-image" src="" alt="배우">
-                      </div>
-                      <span class="actor"></span>
-                    </li>
-                  </ul>
-                  <ul class="cont-ex-flex">
-                    <li>
-                      <div class="flex-img">
-                        <img class="actor-image" src="" alt="배우">
-                      </div>
-                      <span class="actor"></span>
-                    </li>
-                    <li>
-                      <div class="flex-img">
-                        <img class="actor-image" src="" alt="배우">
-                      </div>
-                      <span class="actor"></span>
-                    </li>
-                    <li>
-                      <div class="flex-img">
-                        <img class="actor-image" src="" alt="배우">
-                      </div>
-                      <span class="actor"></span>
-                    </li>
-                    <li>
-                      <div class="flex-img">
-                        <img class="actor-image" src="" alt="배우">
-                      </div>
-                      <span class="actor"></span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="modal-to-review">
-                  <div class="review-btn-box">
-                    <a href="/list" class="plus-btn review-btn"><i class="xi-pen"></i>리뷰 작성 하기</a>
-                  </div>
-                  <!-- 리뷰 일부 보여주도록? -->
-                  <ul class="review-part-view">
-                    <li><span class="Rs star">
-                        ★★★★★
-                        <span>★★★★★</span>
-                        <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
-                      </span>
-                      <span class="star-info reviews">
-                        
-                      </span>
-                    </li>
-                    <li><span class="Rs star2">
-                        ★★★★★
-                        <span>★★★★★</span>
-                        <input type="range" oninput="drawStar2(this)" value="1" step="1" min="0" max="10">
-                      </span>
-                      <span class="star-info reviews">
-                        
-                      </span>
-                    </li>
-                    <li><span class="Rs star3">
-                        ★★★★★
-                        <span>★★★★★</span>
-                        <input type="range" oninput="drawStar3(this)" value="1" step="1" min="0" max="10">
-                      </span>
-                      <span class="star-info reviews">
-                        
-                      </span>
-                    </li>
-                    <li><span class="Rs star4">
-                        ★★★★★
-                        <span>★★★★★</span>
-                        <input type="range" oninput="drawStar4(this)" value="1" step="1" min="0" max="10">
-                      </span>
-                      <span class="star-info reviews">
-                        
-                      </span>
-                    </li>
-                  </ul>
-                </div>
+                <!-- 리뷰 일부 보여주도록? -->
+                <ul class="review-part-view">
+                  <li><span class="Rs star">
+                      ★★★★★
+                      <span>★★★★★</span>
+                      <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
+                    </span>
+                    <span class="star-info reviews">
+
+                    </span>
+                  </li>
+                  <li><span class="Rs star2">
+                      ★★★★★
+                      <span>★★★★★</span>
+                      <input type="range" oninput="drawStar2(this)" value="1" step="1" min="0" max="10">
+                    </span>
+                    <span class="star-info reviews">
+
+                    </span>
+                  </li>
+                  <li><span class="Rs star3">
+                      ★★★★★
+                      <span>★★★★★</span>
+                      <input type="range" oninput="drawStar3(this)" value="1" step="1" min="0" max="10">
+                    </span>
+                    <span class="star-info reviews">
+
+                    </span>
+                  </li>
+                  <li><span class="Rs star4">
+                      ★★★★★
+                      <span>★★★★★</span>
+                      <input type="range" oninput="drawStar4(this)" value="1" step="1" min="0" max="10">
+                    </span>
+                    <span class="star-info reviews">
+
+                    </span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
+        </div>
         <h3>Top moives</h3>
         <ul>
           <li class="hover-filter"></li>
@@ -201,9 +199,7 @@
                 <span class="hover-title"></span>
                 <span class="hover-age"></span>
                 <span class="hover-runtime"></span>
-                  <i class="fas fa-chevron-down bnt_open"></i>
-                <!-- 영화 좋아요 btn -->
-                <button id="modal-like" class="modal-like-btn"><i class="xi-heart-o heart"></i></button>
+                <i class="fas fa-chevron-down bnt_open"></i>
                 <!-- <i class="xi-heart heart"></i> -->
               </div>
               <p class="hover-story"></p>
@@ -218,8 +214,6 @@
                 <span class="hover-age"></span>
                 <span class="hover-runtime"></span>
                 <i class="fas fa-chevron-down bnt_open"></i>
-                <!-- 영화 좋아요 btn -->
-                <button id="modal-like" class="modal-like-btn"><i class="xi-heart-o heart"></i></button>
               </div>
               <p class="hover-story"></p>
             </div>
@@ -232,9 +226,7 @@
                 <span class="hover-title"></span>
                 <span class="hover-age"></span>
                 <span class="hover-runtime"></span>
-                  <i class="fas fa-chevron-down bnt_open"></i>
-                <!-- 영화 좋아요 btn -->
-                <button id="modal-like" class="modal-like-btn"><i class="xi-heart-o heart"></i></button>
+                <i class="fas fa-chevron-down bnt_open"></i>
               </div>
               <p class="hover-story"></p>
             </div>
@@ -248,9 +240,7 @@
                 <span class="hover-title"></span>
                 <span class="hover-age"></span>
                 <span class="hover-runtime"></span>
-                  <i class="fas fa-chevron-down bnt_open"></i>
-                <!-- 영화 좋아요 btn -->
-                <button id="modal-like" class="modal-like-btn"><i class="xi-heart-o heart"></i></button>
+                <i class="fas fa-chevron-down bnt_open"></i>
               </div>
               <p class="hover-story"></p>
             </div>
@@ -263,9 +253,7 @@
                 <span class="hover-title"></span>
                 <span class="hover-age"></span>
                 <span class="hover-runtime"></span>
-                  <i class="fas fa-chevron-down bnt_open"></i>
-                <!-- 영화 좋아요 btn -->
-                <button id="modal-like" class="modal-like-btn"><i class="xi-heart-o heart"></i></button>
+                <i class="fas fa-chevron-down bnt_open"></i>
               </div>
               <p class="hover-story"></p>
             </div>
@@ -278,9 +266,7 @@
                 <span class="hover-title"></span>
                 <span class="hover-age"></span>
                 <span class="hover-runtime"></span>
-                  <i class="fas fa-chevron-down bnt_open"></i>
-                <!-- 영화 좋아요 btn -->
-                <button id="modal-like" class="modal-like-btn"><i class="xi-heart-o heart"></i></button>
+                <i class="fas fa-chevron-down bnt_open"></i>
               </div>
               <p class="hover-story"></p>
             </div>
@@ -293,9 +279,7 @@
                 <span class="hover-title"></span>
                 <span class="hover-age"></span>
                 <span class="hover-runtime"></span>
-                  <i class="fas fa-chevron-down bnt_open"></i>
-                <!-- 영화 좋아요 btn -->
-                <button id="modal-like" class="modal-like-btn"><i class="xi-heart-o heart"></i></button>
+                <i class="fas fa-chevron-down bnt_open"></i>
               </div>
               <p class="hover-story"></p>
             </div>
@@ -308,9 +292,7 @@
                 <span class="hover-title"></span>
                 <span class="hover-age"></span>
                 <span class="hover-runtime"></span>
-                  <i class="fas fa-chevron-down bnt_open"></i>
-                <!-- 영화 좋아요 btn -->
-                <button id="modal-like" class="modal-like-btn"><i class="xi-heart-o heart"></i></button>
+                <i class="fas fa-chevron-down bnt_open"></i>
               </div>
               <p class="hover-story"></p>
             </div>
@@ -323,9 +305,7 @@
                 <span class="hover-title"></span>
                 <span class="hover-age"></span>
                 <span class="hover-runtime"></span>
-                  <i class="fas fa-chevron-down bnt_open"></i>
-                <!-- 영화 좋아요 btn -->
-                <button id="modal-like" class="modal-like-btn"><i class="xi-heart-o heart"></i></button>
+                <i class="fas fa-chevron-down bnt_open"></i>
               </div>
               <p class="hover-story"></p>
             </div>
@@ -338,14 +318,37 @@
                 <span class="hover-title"></span>
                 <span class="hover-age"></span>
                 <span class="hover-runtime"></span>
-                  <i class="fas fa-chevron-down bnt_open"></i>
-                <!-- 영화 좋아요 btn -->
-                <button id="modal-like" class="modal-like-btn"><i class="fas fa-heart"></i></button>
+                <i class="fas fa-chevron-down bnt_open"></i>
               </div>
               <p class="hover-story"></p>
             </div>
           </li>
-          
+          <li class="movie size-none">
+            <img src="/static/image/action10.jpg" alt="액션이미지">
+            <div class="hoverbox">
+              <video class="top-video" src="/static/video/random_action10.mp4" autoplay loop muted></video>
+              <div class="tit">
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="fas fa-chevron-down bnt_open"></i>
+              </div>
+              <p class="hover-story"></p>
+            </div>
+          </li>
+          <li class="movie size-none">
+            <img src="/static/image/action11.jpg" alt="액션이미지">
+            <div class="hoverbox">
+              <video class="top-video" src="/static/video/random_action11.mp4" autoplay loop muted></video>
+              <div class="tit">
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="fas fa-chevron-down bnt_open"></i>
+              </div>
+              <p class="hover-story"></p>
+            </div>
+          </li>
         </ul>
       </article>
     </main>

@@ -1,6 +1,5 @@
 // romance random movies array
-const movies = [
-  {
+const movies = [{
     title: "여름날 우리",
     desc: "처음이었다, 사랑이 싹트는 기분",
     age: "12",
@@ -394,6 +393,76 @@ const movies = [
       "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Feab00d55b8ffc65f2c21601a1b43efae0555c578",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F0007909f71efba0cfe508d68bb479f7592367730",
       "https://usom.co.kr/common/img/default_profile.png",
+      "https://usom.co.kr/common/img/default_profile.png",
+      "https://usom.co.kr/common/img/default_profile.png",
+    ],
+    reviews: [
+      "넷플에서 방금 봤는데 재밌어요!! 근데 눈물이ㅠㅠㅠㅠㅠㅠ",
+      "1999년 어느 뜨거운 햇살을 받게 된 4명의 친구가 과거를 기억하고 미래로 나아가는 영화!",
+      "하이틴 느낌의 영화라서 재미있게 보았어요",
+      "뭔가 아련했다 20세기 그 시절을 그때의 나를 그때 함께했던 사람들을 그립게 만든 ...그런 영화였다",
+    ],
+  },
+  {
+    title: "노트르담",
+    desc: `1999년, 단짝 친구가 홀딱 반한 남학생을 친구 대신 관찰해 주기로 한 10대 소녀.
+    하지만 소녀에게도 예기치 못한 사랑이 찾아온다 `,
+    age: "15",
+    ott: ["웨이브"],
+    runtime: "90분",
+    story: `나는 꿈을 짓는 건축가
+    “사랑도 다시 지을 수 있나요?”
+    만년 유망주 건축가이자 두 아이를 키우는 싱글맘,모드. 
+    툭하면 애인과 싸우고 찾아오는 전남편과는 여전히 오묘한 관계를 유지하고 있다. 
+    잊고 있던 옛사랑까지 나타나 혼란스러운 가운데 노트르담 성당 산책로 복원 사업이라는 중대한 프로젝트까지 맡게 되고… 
+    일과 사랑,육아까지 그 무엇 하나 놓치고 싶지 않은 모드의 행운은 어디까지 이어질까?`,
+    director: "발레리 돈젤리",
+    actorName: ["발레리 돈젤리", "피에르 데 라돈샴", "토마 시메카", "불리 라네", "비르지니 르도엥", "이자벨 칸델리에", "", ""],
+    actorImg: [
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F1866623B4E7336B52C",
+      "https://usom.co.kr/common/img/default_profile.png",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F146A94434F7D371F15",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F114A5410AE01227245",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F1740243D4FE4357603",
+      "https://usom.co.kr/common/img/default_profile.png",
+      "https://usom.co.kr/common/img/default_profile.png",
+      "https://usom.co.kr/common/img/default_profile.png",
+    ],
+    reviews: [
+      "판타지와 로맨스가 곁들여진 사랑스러운 영화",
+      `여배우 이름이 돈젤리? 돈으로 젤리를 만들어? 어이가 없다 ㅋㅋ
+      남배우 피에르 데 라돈샴은 게이 역할 전문 배우인거 같은데
+      이번에는 색다른 역할을 맡았네요.
+      이런 가벼운 디저트 같은 영화 좋습니다.`,
+      "간만에 알찬 코미디영화를 봤네요..꼭 보세요.",
+      "엉망진창 좌충우돌로 만들어도 뭔가 신선하고 재미있으면 괜찮은데, 이건 뭐 무슨 이야기를 하고픈지 알수가 없네. 프랑스식 코미디인가? 풍자도 아니고 블랙유머도 아니고- 보다가 지친다.",
+    ],
+  },
+  {
+    title: "어바웃 타임",
+    desc: `어떠한 순간을 다시 살게 된다면, 과연 완벽한 사랑을 이룰 수 있을까?`,
+    age: "15",
+    ott: ["넷플릭스", "왓챠", "티빙", "웨이브"],
+    runtime: "123분",
+    story: `모태솔로 팀(돔놀 글리슨)은 성인이 된 날, 아버지(빌 나이)로부터 놀랄만한 가문의 비밀을 듣게 된다.
+    바로 시간을 되돌릴 수 있는 능력이 있다는 것!
+    그것이 비록 히틀러를 죽이거나 여신과 뜨거운 사랑을 할 수 는 없지만,
+    여자친구는 만들어 줄 순 있으리..
+    꿈을 위해 런던으로 간 팀은 우연히 만난 사랑스러운 여인 메리에게 첫눈에 반하게 된다.
+    그녀의 사랑을 얻기 위해 자신의 특별한 능력을 마음껏 발휘하는 팀.
+    어설픈 대시, 어색한 웃음은 리와인드! 뜨거웠던 밤은 더욱 뜨겁게 리플레이!
+    꿈에 그리던 그녀와 매일매일 최고의 순간을 보낸다.
+    하지만 그와 그녀의 사랑이 완벽해 질수록 팀을 둘러싼 주변 상황들은 미묘하게 엇갈리고,
+    예상치 못한 사건들이 여기저기 나타나기 시작하는데…
+    어떠한 순간을 다시 살게 된다면, 과연 완벽한 사랑을 이룰 수 있을까?`,
+    director: "리차드 커티스",
+    actorName: ["도널 글리슨", "레이첼 맥아담스", "빌 나이", "톰 홀랜더", "마고 로비", "리디아 윌슨", "", ""],
+    actorImg: [
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Ff4ec90ef570720f5b5c4a9ca4c396b72f9fb037c",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F250A2D38527CA67919",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fa7fbf5b1cb076bf70bda6b37058b42bed6572731",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fbcc61a638d4f451bc89d2ed9c05f86739274fa54",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F94ade82ac7383e6b2365e05ef1c3d27db8cbad0b",
       "https://usom.co.kr/common/img/default_profile.png",
       "https://usom.co.kr/common/img/default_profile.png",
     ],
