@@ -42,7 +42,7 @@
           <p>
             <!-- <span>D.nema의 추천, comedy</span><br> -->
             <span>COMEDY</span><br>
-            &nbsp;D.NEMA가 추천하는 코미디 영화!
+            &nbsp;D.NEMA가 추천하는 코미영화!
           </p>
           <button class="random-button"><i class="xi-shuffle"></i> 랜덤플레이</button>
           <div class="video">
@@ -62,164 +62,274 @@
           </div>
         </div>
       </div>
-
+  <!-- modal box -->
+  <div class="modal-bg">
+    <div class="modal-exit bnt_close"></div>
+    <div class="modal-box">
+      <!-- modal close btn -->
+      <button class="modal-close-btn bnt_close"><i class="xi-close"></i></button>
+      <div class="modal-cont">
+        <div class="modal-img">
+          <video class="modal-vd" muted autoplay loop>
+            <source src="" type="video/mp4">
+          </video>
+          <!-- 영화 좋아요 btn -->
+          <button id="modal-like" class="modal-like-btn"><i class="fas fa-heart"></i></button>
+        </div>
+        <h3 class="modal-title"></h3>
+        <div class="cont-info">
+          <!-- 영화 내용 -->
+          <p class="modal-story"></p>
+          <!-- 출연진 및 감독 -->
+          <p class="director"></p>
+          <p class="cast"></p>
+        </div>
+        <!-- 출연진 이미지 flex 배치 -->
+        <div class="cont-ex-list">
+          <h3 class="cont-ex-title">출연진</h3>
+          <ul class="cont-ex-flex">
+            <li>
+              <div class="flex-img">
+                <img class="actor-image" src="" alt="배우">
+              </div>
+              <span class="actor"></span>
+            </li>
+            <li>
+              <div class="flex-img">
+                <img class="actor-image" src="" alt="배우">
+              </div>
+              <span class="actor"></span>
+            </li>
+            <li>
+              <div class="flex-img">
+                <img class="actor-image" src="" alt="배우">
+              </div>
+              <span class="actor"></span>
+            </li>
+            <li>
+              <div class="flex-img">
+                <img class="actor-image" src="" alt="배우">
+              </div>
+              <span class="actor"></span>
+            </li>
+          </ul>
+          <ul class="cont-ex-flex">
+            <li>
+              <div class="flex-img">
+                <img class="actor-image" src="" alt="배우">
+              </div>
+              <span class="actor"></span>
+            </li>
+            <li>
+              <div class="flex-img">
+                <img class="actor-image" src="" alt="배우">
+              </div>
+              <span class="actor"></span>
+            </li>
+            <li>
+              <div class="flex-img">
+                <img class="actor-image" src="" alt="배우">
+              </div>
+              <span class="actor"></span>
+            </li>
+            <li>
+              <div class="flex-img">
+                <img class="actor-image" src="" alt="배우">
+              </div>
+              <span class="actor"></span>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-to-review">
+          <div class="review-btn-box">
+            <a href="/list" class="plus-btn review-btn"><i class="xi-pen"></i>리뷰 작성 하기</a>
+          </div>
+          <!-- 리뷰 일부 보여주도록? -->
+          <ul class="review-part-view">
+            <li><span class="Rs star">
+                ★★★★★
+                <span>★★★★★</span>
+                <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
+              </span>
+              <span class="star-info reviews">
+                
+              </span>
+            </li>
+            <li><span class="Rs star2">
+                ★★★★★
+                <span>★★★★★</span>
+                <input type="range" oninput="drawStar2(this)" value="1" step="1" min="0" max="10">
+              </span>
+              <span class="star-info reviews">
+                
+              </span>
+            </li>
+            <li><span class="Rs star3">
+                ★★★★★
+                <span>★★★★★</span>
+                <input type="range" oninput="drawStar3(this)" value="1" step="1" min="0" max="10">
+              </span>
+              <span class="star-info reviews">
+                
+              </span>
+            </li>
+            <li><span class="Rs star4">
+                ★★★★★
+                <span>★★★★★</span>
+                <input type="range" oninput="drawStar4(this)" value="1" step="1" min="0" max="10">
+              </span>
+              <span class="star-info reviews">
+                
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
       <!-- top movie -->
       <article class="movies">
         <h3>Top moives</h3>
         <ul>
-          <div class="hover-filter"></div>
-          <li class="movie movie-list1">
-            <img src="/static/image/comedy0.jpg" alt="로맨스 이미지">
+          <li class="hover-filter"></li>
+          <li class="movie">
+            <img src="/static/image/comedy0.jpg" alt="코미디이미지">
             <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_comedy0.mp4" autoplay loop muted></video>
+              <video class="top-video" src="/static/video/random_comedy0.mp4" autoplay muted loop></video>
               <div class="tit">
                 <span class="hover-title"></span>
-                <i class="far fa-heart"></i>
                 <span class="hover-age"></span>
                 <span class="hover-runtime"></span>
+                <i class="fas fa-chevron-down bnt_open"></i>
               </div>
               <p class="hover-story"></p>
             </div>
           </li>
           <li class="movie">
-            <img src="/static/image/comedy1.jpg" alt="로맨스 이미지">
+            <img src="/static/image/comedy1.jpg" alt="코미디이미지">
             <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_comedy1.mp4" autoplay loop muted></video>
+              <video class="top-video" src="/static/video/random_comedy1.mp4" autoplay muted loop></video>
               <div class="tit">
                 <span class="hover-title"></span>
-                <i class="far fa-heart"></i>
                 <span class="hover-age"></span>
                 <span class="hover-runtime"></span>
-              </div>
-              <p class="hover-story"></p>
-            </div>
-          </li>
-          <li class="movie">
-            <img src="/static/image/comedy2.jpg" alt="로맨스 이미지">
-            <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_comedy2.mp4" autoplay loop muted></video>
-              <div class="tit">
-                <span class="hover-title"></span>
-                <i class="far fa-heart"></i>
-                <span class="hover-age"></span>
-                <span class="hover-runtime"></span>
-              </div>
-              <p class="hover-story"></p>
-            </div>
-          </li>
-          <li class="movie">
-            <img src="/static/image/comedy3.jpg" alt="로맨스 이미지">
-            <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_comedy3.mp4" autoplay loop muted></video>
-              <div class="tit">
-                <span class="hover-title"></span>
-                <i class="far fa-heart"></i>
-                <span class="hover-age"></span>
-                <span class="hover-runtime"></span>
-              </div>
-              <p class="hover-story"></p>
-            </div>
-          </li>
-          <li class="movie">
-            <img src="/static/image/comedy4.jpg" alt="로맨스 이미지">
-            <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_comedy4.mp4" autoplay loop muted></video>
-              <div class="tit">
-                <span class="hover-title"></span>
-                <i class="far fa-heart"></i>
-                <span class="hover-age"></span>
-                <span class="hover-runtime"></span>
-              </div>
-              <p class="hover-story"></p>
-            </div>
-          </li>
-          <li class="movie">
-            <img src="/static/image/comedy5.jpg" alt="로맨스 이미지">
-            <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_comedy5.mp4" autoplay loop muted></video>
-              <div class="tit">
-                <span class="hover-title"></span>
-                <i class="far fa-heart"></i>
-                <span class="hover-age"></span>
-                <span class="hover-runtime"></span>
-              </div>
-              <p class="hover-story"></p>
-            </div>
-          </li>
-          <li class="movie">
-            <img src="/static/image/comedy6.jpg" alt="로맨스 이미지">
-            <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_comedy6.mp4" autoplay loop muted></video>
-              <div class="tit">
-                <span class="hover-title"></span>
-                <i class="far fa-heart"></i>
-                <span class="hover-age"></span>
-                <span class="hover-runtime"></span>
-              </div>
-              <p class="hover-story"></p>
-            </div>
-          </li>
-          <li class="movie">
-            <img src="/static/image/comedy7.jpg" alt="로맨스 이미지">
-            <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_comedy7.mp4" autoplay loop muted></video>
-              <div class="tit">
-                <span class="hover-title"></span>
-                <i class="far fa-heart"></i>
-                <span class="hover-age"></span>
-                <span class="hover-runtime"></span>
-              </div>
-              <p class="hover-story"></p>
-            </div>
-          </li>
-          <li class="movie">
-            <img src="/static/image/comedy8.jpg" alt="로맨스 이미지">
-            <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_comedy8.mp4" autoplay loop muted></video>
-              <div class="tit">
-                <span class="hover-title"></span>
-                <i class="far fa-heart"></i>
-                <span class="hover-age"></span>
-                <span class="hover-runtime"></span>
-              </div>
-              <p class="hover-story"></p>
-            </div>
-          </li>
-          <li class="movie">
-            <img src="/static/image/comedy9.jpg" alt="로맨스 이미지">
-            <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_comedy9.mp4" autoplay loop muted></video>
-              <div class="tit">
-                <span class="hover-title"></span>
-                <i class="far fa-heart"></i>
-                <span class="hover-age"></span>
-                <span class="hover-runtime"></span>
-              </div>
-              <p>
-                어느 겨울 도착한 비디오 테이프에 담긴 1999년의 기억, 17세 소녀 ‘보라’가 절친 ‘연두’의 첫사랑을 이루어주기 위해 사랑의 큐피트를 자처하며 벌어지는 첫사랑 관찰 로맨스.
-              </p>
-            </div>
-          </li>
-          <li class="movie">
-            <img src="/static/image/comedy10.jpg" alt="로맨스 이미지">
-            <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_comedy10.mp4" autoplay loop muted></video>
-              <div class="tit">
-                <span>노트르담</span>
-                <i class="far fa-heart"></i>
-                <span>15+</span>
-                <span>90분</span>
-              </div>
-              <p>
-                나는 꿈을 짓는 건축가
-                “사랑도 다시 지을 수 있나요?”
+                <i class="fas fa-chevron-down bnt_open"></i>
 
-                만년 유망주 건축가이자 두 아이를 키우는 싱글맘,모드.
-                툭하면 애인과 싸우고 찾아오는 전남편과는 여전히 오묘한 관계를 유지하고 있다.
-                잊고 있던 옛사랑까지 나타나 혼란스러운 가운데 노트르담 성당 산책로 복원 사업이라는 중대한 프로젝트까지 맡게 되고…
+              </div>
+              <p class="hover-story"></p>
+            </div>
+          </li>
+          <li class="movie">
+            <img src="/static/image/comedy2.jpg" alt="코미디이미지">
+            <div class="hoverbox">
+              <video class="top-video" src="/static/video/random_comedy2.mp4" autoplay muted loop></video>
+              <div class="tit">
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="fas fa-chevron-down bnt_open"></i>
 
-                일과 사랑,육아까지 그 무엇 하나 놓치고 싶지 않은 모드의 행운은 어디까지 이어질까?
-              </p>
+              </div>
+              <p class="hover-story"></p>
+            </div>
+            </div>
+          </li>
+          <li class="movie">
+            <img src="/static/image/comedy3.jpg" alt="코미디이미지">
+            <div class="hoverbox">
+              <video class="top-video" src="/static/video/random_comedy3.mp4" autoplay muted loop></video>
+              <div class="tit">
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="fas fa-chevron-down bnt_open"></i>
+
+              </div>
+              <p class="hover-story"></p>
+            </div>
+          </li>
+          <li class="movie">
+            <img src="/static/image/comedy4.jpg" alt="코미디이미지">
+            <div class="hoverbox">
+              <video class="top-video" src="/static/video/random_comedy4.mp4" autoplay muted loop></video>
+              <div class="tit">
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="fas fa-chevron-down bnt_open"></i>
+
+              </div>
+              <p class="hover-story"></p>
+            </div>
+          </li>
+          <li class="movie">
+            <img src="/static/image/comedy5.jpg" alt="코미디이미지">
+            <div class="hoverbox">
+              <video class="top-video" src="/static/video/random_comedy5.mp4" autoplay muted loop></video>
+              <div class="tit">
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="fas fa-chevron-down bnt_open"></i>
+
+              </div>
+              <p class="hover-story"></p>
+            </div>
+          </li>
+          <li class="movie">
+            <img src="/static/image/comedy6.jpg" alt="코미디이미지">
+            <div class="hoverbox">
+              <video class="top-video" src="/static/video/random_comedy6.mp4" autoplay muted loop></video>
+              <div class="tit">
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="fas fa-chevron-down bnt_open"></i>
+
+              </div>
+              <p class="hover-story"></p>
+            </div>
+          </li>
+          <li class="movie">
+            <img src="/static/image/comedy7.jpg" alt="코미디이미지">
+            <div class="hoverbox">
+              <video class="top-video" src="/static/video/random_comedy7.mp4" autoplay muted loop></video>
+              <div class="tit">
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="fas fa-chevron-down bnt_open"></i>
+
+              </div>
+              <p class="hover-story"></p>
+            </div>
+          </li>
+          <li class="movie">
+            <img src="/static/image/comedy8.jpg" alt="코미디이미지">
+            <div class="hoverbox">
+              <video class="top-video" src="/static/video/random_comedy8.mp4" autoplay muted loop></video>
+              <div class="tit">
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="fas fa-chevron-down bnt_open"></i>
+
+              </div>
+              <p class="hover-story"></p>
+            </div>
+          </li>
+          <li class="movie">
+            <img src="/static/image/comedy9.jpg" alt="코미디이미지">
+            <div class="hoverbox">
+              <video class="top-video" src="/static/video/random_comedy9.mp4" autoplay muted loop></video>
+              <div class="tit">
+                <span class="hover-title"></span>
+                <span class="hover-age"></span>
+                <span class="hover-runtime"></span>
+                <i class="fas fa-chevron-down bnt_open"></i>
+
+              </div>
+              <p class="hover-story"></p>
             </div>
           </li>
         </ul>
