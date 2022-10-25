@@ -57,10 +57,11 @@ const movies = [
       "마일스 텔러",
       "제니퍼 코넬리",
       "발 킬머",
+      "",
       "바쉬르 살라후딘",
       "존 햄",
-      "",
       "찰스 파넬",
+      "",
     ],
     actorImg: [
       "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Ff7704c8178c3f5acb8ee97a0079b46ab9facef40",
@@ -181,10 +182,14 @@ const movies = [
       "정웅인",
     ],
     actorImg: [
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fa1312834d18b63a2c528ed8087e96e8c1da0bcff",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F92c4879406db32fb705bdc7bec2165087bd45752",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F490af559df02c7f5b70d1b80279218a77800d771",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F02cfc7ec0dfbf60eb75a87100a41e96efab5bab9",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fc84d60cee94492d421498830fd45f8e3996ecff1",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fc7c0d41c431e623179cb256c948d7ea0b2b41f7b",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F13282D4A5108C3D233",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fec0b9fb2fb35c447470179b0fc9b6f2a57748c4f",
-      "",
     ],
     reviews: [
       "도철 같은 형사가 많다면세상이 이렇진 않을텐데....",
@@ -210,6 +215,16 @@ const movies = [
       "제시카 핸윅",
       "바그네르 모라",
       "알프리 우다드",
+    ],
+    actorImg: [
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F26575F4852BCDA7413",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F5406bf152ca8e89d6fa428af5d30ca4b8d97122b",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F9bce3d5c9de5b2fc451fa697831df9a36706b24e",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fe1cc3885f87b0975af49006380be7704854cd68a",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F12497810B050A70C26",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F18016F0F4BEB286524",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F2973f4741dc8642ccdd94ce643e510563f575d96",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F116D3110B19395C76C",
     ],
     reviews: [
       "이 영화에 관한 한 썩토 준 평론가들의 평가 믿지 마시오.굉장한 액션과 시간 가는 줄 모르는 몰입감을 느낄 것임.고슬링도 좋지만 크리스 에반스의 악역도 인상적.관람 강추",
@@ -326,7 +341,7 @@ const movies = [
       "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fae2cffb67d20a53a16e3fced954080786ee27bd0",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F490af559df02c7f5b70d1b80279218a77800d771",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fd16b292b15c2b8e84361eec1295522bc9b6210c3",
-      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F509fc8489f972743d3a3bedd7b2232a01c1f3d95https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Ff28d624a349cc51898c92a851017f19ed069195b",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F509fc8489f972743d3a3bedd7b2232a01c1f3d95",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Ff28d624a349cc51898c92a851017f19ed069195b",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F893c26077ff0dc4e4b6630df4ef9dfe7f83ddd96",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F2c0ab17e37981fe15eb43549155a8e2674052b68",
@@ -589,7 +604,7 @@ for (let i = 0; i < moreButton.length; i++) {
     modalDirector.innerText = movies[i].director;
     modalCast.innerText = movies[i].actorName;
     for (let n = 0; n < modalActor.length; n++) {
-      if (modalActor[n] == undefined || movies[i].actorImg[n] == undefined) {
+      if (modalActor[n] == undefined || movies[i].actorImg[n] === "") {
         modalActor[n].innerText = "";
         actorProfile[n].src =
           "https://chocobean.co.kr/common/img/default_profile.png";
