@@ -18,11 +18,11 @@ app.use("/static", express.static(__dirname + "/static"));
 // get 요청 : 리소스 검색하고 반환받기 위해 사용되는 메서드
 // main
 app.get("/", function (request, response) {
-  response.render("index");
+  response.render("login");
 });
 // login
-app.get("/login", function (request, response) {
-  response.render("login");
+app.get("/home", function (request, response) {
+  response.render("index");
 });
 // 영화장르별 page
 app.get("/action", function (request, response) {
@@ -42,7 +42,7 @@ app.get("/list", function (request, response) {
   response.render("list");
 });
 // 마이페이지
-app.get("/my", function (request, response) {
+app.get("/mypage", function (request, response) {
   response.render("myPage");
 });
 // 인트로화면

@@ -28,13 +28,15 @@ main{
   color: #fff;
   width: 100%;
   margin: 0 auto;
+}
+.cont-body{
   display: none;
 }
 /* 사용자 이름 */
 .cont-head h1{
   font-size: 4rem;
   font-weight: bolder;
-  padding: 500px 0 50px 100px;
+  padding: 200px 0 50px 100px;
   line-height: 5rem;
 }
 .cont-head h1 strong{
