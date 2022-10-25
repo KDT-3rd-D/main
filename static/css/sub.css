@@ -58,8 +58,8 @@ main {
   color: white;
   display: block;
   position: absolute;
-  top: 320px;
-  left: 8%;
+  top: 285px;
+  left: 7%;
   z-index: 101;
   background-size: 200% 50%;
   -moz-transition: all .4s ease-in-out;

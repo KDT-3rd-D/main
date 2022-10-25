@@ -25,5 +25,5 @@ console.log(inputEmail)
 
 form.addEventListener('submit', function(event) {
   event.preventDefault(); // 폼 제출되는 기본 동작 막기
-  location.href ='/';
+  location.href ='/home';
 });

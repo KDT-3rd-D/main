@@ -4,12 +4,7 @@ $(document).ready(function(){
 $(window).scroll(function(){
 let sPos = $(this).scrollTop();
 console.log(sPos);//스크롤값을 체크한다.
-if(sPos>=100){
-  $( '.cont-head' ).fadeIn( 1000, 'swing');
-}else{
-    $( '.cont-head' ).fadeOut( 1000, 'swing');
-}
-if(sPos>=510){
+if(sPos>=200){
   $( '.cont-body' ).fadeIn( 1000, 'swing');
 }else{
   $( '.cont-body' ).fadeOut( 1000, 'swing');
