@@ -56,18 +56,20 @@
     <!--social login container-->
     <div class="social-login-container">
 
-      <!--google-->
-      <div class="login-social-google">
+      <!--google: 클릭시 구글 홈페이지로 넘어감-->
+      <a href="https://www.google.co.kr/" target="_blank" class="login-social-google">
         <img class="login-social-google-img" src="/static/image/loginlogo/g-logo.png" alt="">
-      </div>
+      </a>
 
-      <!--naver-->
-      <img class="login-social-naver" src="/static/image/loginlogo/btnW_icon_square.png" alt="">
+      <!--naver: 클릭시 네이버 홈페이지로 넘어감-->
+      <a href="https://www.naver.com/" target="_blank">
+        <img class="login-social-naver" src="/static/image/loginlogo/btnW_icon_square.png" alt="">
+      </a>
 
-      <!--kakaotalk-->
-      <div class="login-social-kakao">
+      <!--kakaotalk: 클릭시 카카오톡 홈페이지로 넘어감-->
+      <a href="https://www.kakaocorp.com/page/" target="_blank" class="login-social-kakao">
       <i class="fas fa-comment fa-lg"></i>
-      </div>
+      </a>
 
     </div>
 
@@ -77,14 +79,3 @@
 </body>
 </html>
 
-<!--
-내가 추가한 파일 및 변경
--login.ejs(layout.css link 해제)
--login.css
--app.js
-app.get('/login', function(request, response){
-    response.render('login');
-});
--login.js
--image.loginlogo
--->
