@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="/static/css/header.css">
     <!-- css: layout /jy -->
     <link rel="stylesheet" href="/static/css/layout.css">
+    <!-- css : footer -->
+    <link rel="stylesheet" href="/static/css/footer.css">
     <!-- font : noto sans, moserrat, roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Noto+Sans+KR:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <!-- fontawsome -->
@@ -163,23 +165,8 @@
     </main>
 
     <!--footer-->
-    <footer class="main-footer-container">
-        <div class="main-footer-left">
-            <img class="main-footer-logoimg" src="/static/image/logo-v2.png" alt="">
-            
-            <div class="main-footer-groupD">CodingOn X POSCO KDT3rd - Group D</div>
-        </div>
-
-        <div class="main-footer-right">
-            <div class="main-footer-right-icon">
-                <i class="fab fa-instagram fa-2x"></i>
-                <i class="fab fa-twitter-square fa-2x"></i>
-                <i class="fab fa-facebook-square fa-2x"></i>
-            </div>
-            <div class="main-footer-copy">&copy;2022. All Rights Reserved</div>
-        </div>
-    </footer>
-
+     <%-include('footer.ejs') %>
+   
         <!-- 영화 상세 정보 btn : modal -->
         <div class="modal-bg bnt_close">
             <div class="modal-exit"></div>
