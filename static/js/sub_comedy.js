@@ -630,6 +630,7 @@ for (let i = 0; i < moreButton.length; i++) {
       modalReviews[n].innerText = movies[i].reviews[n];
     }
   });
+
   $(function () {
     $(moreButton).click(function () {
       $(".modal-bg").fadeIn(500);
@@ -638,13 +639,9 @@ for (let i = 0; i < moreButton.length; i++) {
     });
     $(".modal-close-btn").click(function () {
       $(".modal-bg").fadeOut(500);
-      modalLike.classList.add("far");
-      modalLike.classList.remove("fas");
     });
     $(".modal-exit").click(function () {
       $(".modal-bg").fadeOut(500);
-      modalLike.classList.add("far");
-      modalLike.classList.remove("fas");
     });
   });
 }

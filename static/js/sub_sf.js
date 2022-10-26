@@ -271,7 +271,7 @@ const movies = [
       "",
     ],
     actorImg: [
-      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F0d782a6e58ffae834867c53ac92bc61af1687d61",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F19d6af37db8234cf6f43f562e2bda288793a95ba",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F1358CE10ADF9F89094",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F146E7C10B290C89ED5",
@@ -439,8 +439,8 @@ const movies = [
     
     단 한 순간도 예측할 수 없는 그 곳, 과연 그들은 살아남을 수 있을 것인가!
     살아 움직이는 미로를 뚫고 탈출에 성공할 수 있을 것인가!
-    살아 남기 위해서는 뛰어야 한다!`
-    },
+    살아 남기 위해서는 뛰어야 한다!`,
+  },
 ];
 
 $(document).ready(function () {
@@ -643,58 +643,50 @@ for (let i = 0; i < moreButton.length; i++) {
     modalStory.innerText = movies[i].story;
     modalDirector.innerText = movies[i].director;
     modalCast.innerText = movies[i].actorName;
-    for (let i = 0; i < moreButton.length; i++) {
-      moreButton[i].addEventListener("click", function () {
-        modalVd.src = `/static/video/random_sf${i}.mp4`;
-        modalTitle.innerText = movies[i].title;
-        modalStory.innerText = movies[i].story;
-        modalDirector.innerText = movies[i].director;
-        modalCast.innerText = movies[i].actorName;
-        for (let n = 0; n < modalActor.length; n++) {
-          if (modalActor[n] == undefined || movies[i].actorImg[n] === "") {
-            modalActor[n].innerText = "";
-            actorProfile[n].src =
-              "https://chocobean.co.kr/common/img/default_profile.png";
-          } else {
-            modalActor[n].innerText = movies[i].actorName[n];
-            actorProfile[n].src = movies[i].actorImg[n];
-          }
-        }
-        for (let n = 0; n < modalReviews.length; n++) {
-          modalReviews[n].innerText = movies[i].reviews[n];
-        }
-      });
-      $(function () {
-        $(moreButton).click(function () {
-          $(".modal-bg").fadeIn(500);
-          let v = $(".modal-img").find("video").get(0);
-          v.play();
-        });
-        $(".modal-close-btn").click(function () {
-          $(".modal-bg").fadeOut(500);
-        });
-        $(".modal-exit").click(function () {
-          $(".modal-bg").fadeOut(500);
-        });
-      });
+    for (let n = 0; n < modalActor.length; n++) {
+      if (modalActor[n] == undefined || movies[i].actorImg[n] === "") {
+        modalActor[n].innerText = "";
+        actorProfile[n].src =
+          "https://chocobean.co.kr/common/img/default_profile.png";
+      } else {
+        modalActor[n].innerText = movies[i].actorName[n];
+        actorProfile[n].src = movies[i].actorImg[n];
+      }
     }
+    for (let n = 0; n < modalReviews.length; n++) {
+      modalReviews[n].innerText = movies[i].reviews[n];
+    }
+  });
 
-    // 모달창 등장 시, 배경(body)부분의 콘텐츠 고정 , 모달창 내부만 스크롤 생성 및 작동
-    var posY;
-
-    $(".bnt_open").on("click", function (e) {
-      posY = $(window).scrollTop();
-
-      $("html, body").addClass("not_scroll");
-      $(".cont").css("top", -posY);
+  $(function () {
+    $(moreButton).click(function () {
+      $(".modal-bg").fadeIn(500);
+      let v = $(".modal-img").find("video").get(0);
+      v.play();
     });
-
-    $(".bnt_close").on("click", function () {
-      $("html, body").removeClass("not_scroll");
-      posY = $(window).scrollTop(posY);
+    $(".modal-close-btn").click(function () {
+      $(".modal-bg").fadeOut(500);
+    });
+    $(".modal-exit").click(function () {
+      $(".modal-bg").fadeOut(500);
     });
   });
 }
+
+// 모달창 등장 시, 배경(body)부분의 콘텐츠 고정 , 모달창 내부만 스크롤 생성 및 작동
+var posY;
+
+$(".bnt_open").on("click", function (e) {
+  posY = $(window).scrollTop();
+
+  $("html, body").addClass("not_scroll");
+  $(".cont").css("top", -posY);
+});
+
+$(".bnt_close").on("click", function () {
+  $("html, body").removeClass("not_scroll");
+  posY = $(window).scrollTop(posY);
+});
 
 const modalLike = document.querySelector(".fa-heart");
 modalLike.addEventListener("click", function () {
