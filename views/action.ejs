@@ -48,7 +48,7 @@
           </p>
           <button class="random-button"><i class="xi-shuffle"></i> 랜덤플레이</button>
           <div class="video">
-            <video class="random-video" autoplay muted></video>
+            <video class="random-video" loop autoplay muted></video>
             <div class="description">
               <div class="ott">
                 <span class="age-color none"></span>
@@ -74,10 +74,12 @@
             <!-- modal close btn -->
             <button class="modal-close-btn bnt_close"><i class="xi-close"></i></button>
             <div class="modal-cont">
+              
               <div class="modal-img">
                 <video class="modal-vd" muted autoplay loop>
                   <source src="" type="video/mp4">
                 </video>
+                <button id="modal-like" class="modal-like-btn"><i class="fas fa-heart"></i></button>
               </div>
               <h3 class="modal-title"></h3>
               <div class="cont-info">

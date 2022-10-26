@@ -155,7 +155,7 @@ const movies = [
       "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F2fdfda0f9ec8eb2dea3a089397858964537b414b",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F1937CE494EC12DEC0D",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fa6974943fa06292ffb1333bae20708d77b64fe1d",
-      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F127A5A264C87054912",
+      "https://img1.daumcdn.net/thumb/C116x1l68/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F127A5A264C87054912",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F19cf84e40997657b8e81a807dedb3dc1234b8d77",
       "",
       "",
