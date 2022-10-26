@@ -504,7 +504,7 @@ $(document).ready(function () {
   // 버튼 눌렀을때 랜덤 플레이
   $(".random-button").click(function () {
     let i = Math.floor(Math.random() * 10);
-    $(".video").attr("src", `../static/video/random_SF${i}.mp4`);
+    $(".random-video").attr("src", `../static/video/random_SF${i}.mp4`);
     // 플레이 상세설명 변경
     console.log(movies[i]);
     let title = document.querySelector(".title");
@@ -630,19 +630,19 @@ for (let i = 0; i < hoverBox.length; i++) {
 let modalVd = document.querySelector(".modal-vd");
 let modalTitle = document.querySelector(".modal-title");
 let modalStory = document.querySelector(".modal-story");
-let modalDirector = document.querySelectorAll(".director");
-let modalCast = document.querySelectorAll(".cast");
+let modalDirector = document.querySelector(".director");
+let modalCast = document.querySelector(".cast");
 let modalActor = document.querySelectorAll(".actor");
 let actorProfile = document.querySelectorAll(".actor-image");
 let modalReviews = document.querySelectorAll(".reviews");
 
 for (let i = 0; i < moreButton.length; i++) {
   moreButton[i].addEventListener("click", function () {
-    modalVd.src = `/static/video/random_sf${i}.mp4`;
+    modalVd.src = `/static/video/random_action${i}.mp4`;
     modalTitle.innerText = movies[i].title;
     modalStory.innerText = movies[i].story;
     modalDirector.innerText = movies[i].director;
-    modalCast.innerText = movies[i].actorName;
+    modalCast.innerText = movies[i].actorName.slice(0, 2);
     for (let n = 0; n < modalActor.length; n++) {
       if (modalActor[n] == undefined || movies[i].actorImg[n] === "") {
         modalActor[n].innerText = "";
