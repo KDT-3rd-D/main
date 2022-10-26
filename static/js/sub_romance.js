@@ -155,7 +155,7 @@ const movies = [
       "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F2fdfda0f9ec8eb2dea3a089397858964537b414b",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F1937CE494EC12DEC0D",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fa6974943fa06292ffb1333bae20708d77b64fe1d",
-      "https://img1.daumcdn.net/thumb/C116x1l68/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F127A5A264C87054912",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F127A5A264C87054912",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F19cf84e40997657b8e81a807dedb3dc1234b8d77",
       "",
       "",
@@ -683,19 +683,19 @@ for (let i = 0; i < hoverBox.length; i++) {
 let modalVd = document.querySelector(".modal-vd");
 let modalTitle = document.querySelector(".modal-title");
 let modalStory = document.querySelector(".modal-story");
-let modalDirector = document.querySelectorAll(".director");
-let modalCast = document.querySelectorAll(".cast");
+let modalDirector = document.querySelector(".director");
+let modalCast = document.querySelector(".cast");
 let modalActor = document.querySelectorAll(".actor");
 let actorProfile = document.querySelectorAll(".actor-image");
 let modalReviews = document.querySelectorAll(".reviews");
 
 for (let i = 0; i < moreButton.length; i++) {
   moreButton[i].addEventListener("click", function () {
-    modalVd.src = `/static/video/random_romance${i}.mp4`;
+    modalVd.src = `/static/video/random_action${i}.mp4`;
     modalTitle.innerText = movies[i].title;
     modalStory.innerText = movies[i].story;
     modalDirector.innerText = movies[i].director;
-    modalCast.innerText = movies[i].actorName;
+    modalCast.innerText = movies[i].actorName.slice(0, 2);
     for (let n = 0; n < modalActor.length; n++) {
       if (modalActor[n] == undefined || movies[i].actorImg[n] === "") {
         modalActor[n].innerText = "";
