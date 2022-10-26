@@ -638,7 +638,7 @@ let modalReviews = document.querySelectorAll(".reviews");
 
 for (let i = 0; i < moreButton.length; i++) {
   moreButton[i].addEventListener("click", function () {
-    modalVd.src = `/static/video/random_action${i}.mp4`;
+    modalVd.src = `/static/video/random_SF${i}.mp4`;
     modalTitle.innerText = movies[i].title;
     modalStory.innerText = movies[i].story;
     modalDirector.innerText = movies[i].director;
