@@ -525,9 +525,7 @@ main {
 }
 
 .cont-ex-list .cont-ex-flex li span {
-  position: absolute;
-  top: 110px;
-  margin-left: 15px;
+  margin-left: 2%;
   font-size: 0.8rem;
 }
 
