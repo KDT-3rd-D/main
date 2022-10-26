@@ -638,9 +638,13 @@ for (let i = 0; i < moreButton.length; i++) {
     });
     $(".modal-close-btn").click(function () {
       $(".modal-bg").fadeOut(500);
+      modalLike.classList.add("far");
+      modalLike.classList.remove("fas");
     });
     $(".modal-exit").click(function () {
       $(".modal-bg").fadeOut(500);
+      modalLike.classList.add("far");
+      modalLike.classList.remove("fas");
     });
   });
 }
