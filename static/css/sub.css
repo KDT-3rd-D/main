@@ -33,8 +33,8 @@ main {
 
 .random p {
   position: absolute;
-  top: 170px;
-  left: 8%;
+  top: 230px;
+  left: 9%;
   white-space: nowrap;
   text-align: left;
   font-size: 1rem;
@@ -58,8 +58,8 @@ main {
   color: white;
   display: block;
   position: absolute;
-  top: 285px;
-  left: 7%;
+  top: 350px;
+  left: 8%;
   z-index: 101;
   background-size: 200% 50%;
   -moz-transition: all .4s ease-in-out;
@@ -101,7 +101,7 @@ main {
 
 .random .description {
   position: absolute;
-  bottom: 20%;
+  bottom: 25%;
   left: 9%;
   text-align: left;
 }
