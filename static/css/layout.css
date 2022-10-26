@@ -617,8 +617,9 @@ body{
     background: none;
     font-size: 1rem;
     color: #0099ff;
-    float: right;
-    transform: translate(50px,30px);
+    position: absolute;
+    right: 25%;
+    transform: translateY(30px);
 }
 .content-review .review .clear-all-btn:hover{
     color: #ff0000;
