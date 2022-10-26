@@ -1,5 +1,6 @@
 // romance random movies array
-const movies = [{
+const movies = [
+  {
     title: "여름날 우리",
     desc: "처음이었다, 사랑이 싹트는 기분",
     age: "12",
@@ -144,20 +145,20 @@ const movies = [{
       "이완",
       "박세기",
       "남기형",
-      "유민곤",
-      "김리현",
       "정행심",
       "김신비",
+      "",
+      "",
     ],
     actorImg: [
       "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F4d3152006d7af8af4288d8794204a15e63712586",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F2fdfda0f9ec8eb2dea3a089397858964537b414b",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F1937CE494EC12DEC0D",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fa6974943fa06292ffb1333bae20708d77b64fe1d",
-      "https://usom.co.kr/common/img/default_profile.png",
-      "https://usom.co.kr/common/img/default_profile.png",
-      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F127A5A264C87054912",
+      "https://img1.daumcdn.net/thumb/C116x1l68/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F127A5A264C87054912",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F19cf84e40997657b8e81a807dedb3dc1234b8d77",
+      "",
+      "",
     ],
     reviews: [
       "영화의 거리에서 만난 한 연인의 인생 이야기!!  진심으로 보고 싶어요 ^^",
@@ -392,9 +393,9 @@ const movies = [{
       "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F0b1fdac1c2dc59ee4f5d82986f7935918773f754",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Feab00d55b8ffc65f2c21601a1b43efae0555c578",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F0007909f71efba0cfe508d68bb479f7592367730",
-      "https://usom.co.kr/common/img/default_profile.png",
-      "https://usom.co.kr/common/img/default_profile.png",
-      "https://usom.co.kr/common/img/default_profile.png",
+      "",
+      "",
+      "",
     ],
     reviews: [
       "넷플에서 방금 봤는데 재밌어요!! 근데 눈물이ㅠㅠㅠㅠㅠㅠ",
@@ -417,16 +418,24 @@ const movies = [{
     잊고 있던 옛사랑까지 나타나 혼란스러운 가운데 노트르담 성당 산책로 복원 사업이라는 중대한 프로젝트까지 맡게 되고… 
     일과 사랑,육아까지 그 무엇 하나 놓치고 싶지 않은 모드의 행운은 어디까지 이어질까?`,
     director: "발레리 돈젤리",
-    actorName: ["발레리 돈젤리", "피에르 데 라돈샴", "토마 시메카", "불리 라네", "비르지니 르도엥", "이자벨 칸델리에", "", ""],
+    actorName: [
+      "발레리 돈젤리",
+      "피에르 데 라돈샴",
+      "불리 라네",
+      "비르지니 르도엥",
+      "이자벨 칸델리에",
+      "",
+      "",
+    ],
     actorImg: [
       "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F1866623B4E7336B52C",
-      "https://usom.co.kr/common/img/default_profile.png",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F2449C84B5192CA8807",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F146A94434F7D371F15",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F114A5410AE01227245",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F1740243D4FE4357603",
-      "https://usom.co.kr/common/img/default_profile.png",
-      "https://usom.co.kr/common/img/default_profile.png",
-      "https://usom.co.kr/common/img/default_profile.png",
+      "",
+      "",
+      "",
     ],
     reviews: [
       "판타지와 로맨스가 곁들여진 사랑스러운 영화",
@@ -456,15 +465,25 @@ const movies = [{
     예상치 못한 사건들이 여기저기 나타나기 시작하는데…
     어떠한 순간을 다시 살게 된다면, 과연 완벽한 사랑을 이룰 수 있을까?`,
     director: "리차드 커티스",
-    actorName: ["도널 글리슨", "레이첼 맥아담스", "빌 나이", "톰 홀랜더", "마고 로비", "리디아 윌슨", "", ""],
+    actorName: [
+      "도널 글리슨",
+      "레이첼 맥아담스",
+      "빌 나이",
+      "톰 홀랜더",
+      "마고 로비",
+      "리디아 윌슨",
+      "",
+      "",
+    ],
     actorImg: [
-      "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Ff4ec90ef570720f5b5c4a9ca4c396b72f9fb037c",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F270CCF365253BABB1D",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fcfile%2F250A2D38527CA67919",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=https%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fa7fbf5b1cb076bf70bda6b37058b42bed6572731",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2Fbcc61a638d4f451bc89d2ed9c05f86739274fa54",
       "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F94ade82ac7383e6b2365e05ef1c3d27db8cbad0b",
-      "https://usom.co.kr/common/img/default_profile.png",
-      "https://usom.co.kr/common/img/default_profile.png",
+      "https://img1.daumcdn.net/thumb/C116x168/?fname=http%3A%2F%2Ft1.daumcdn.net%2Fmovie%2F9b3e5b07862ec775973b44c54acde0725b43592d",
+      "",
+      "",
     ],
     reviews: [
       "넷플에서 방금 봤는데 재밌어요!! 근데 눈물이ㅠㅠㅠㅠㅠㅠ",
@@ -678,8 +697,10 @@ for (let i = 0; i < moreButton.length; i++) {
     modalDirector.innerText = movies[i].director;
     modalCast.innerText = movies[i].actorName;
     for (let n = 0; n < modalActor.length; n++) {
-      if (modalActor[n] == undefined) {
+      if (modalActor[n] == undefined || movies[i].actorImg[n] === "") {
         modalActor[n].innerText = "";
+        actorProfile[n].src =
+          "https://chocobean.co.kr/common/img/default_profile.png";
       } else {
         modalActor[n].innerText = movies[i].actorName[n];
         actorProfile[n].src = movies[i].actorImg[n];

@@ -552,100 +552,85 @@ body {
 }
 
 .Rs {
-  position: relative;
-  font-size: 2rem;
-  color: #ddd;
-}
-
-.Rs input {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.Rs span {
-  width: 0;
-  position: absolute;
-  left: 0;
-  color: yellow;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-/* 별점 기본값 설정 */
-.star span {
-  width: 100%;
-}
-
-.star2 span {
-  width: 10%;
-}
-
-.star3 span {
-  width: 80%;
-}
-
-.star4 span {
-  width: 90%;
-}
-
-.modal-to-review .review-part-view li .star-info {
-  width: 62%;
-  margin-left: 15px;
-  line-height: 2rem;
-}
-
-/* main - 랜덤 영화 슬라이드 */
-.content-box .content-auto-slide {
-  position: relative;
-  padding-top: 140px;
-  width: 100vw;
-  height: 200px;
-  padding-bottom: 140px;
-  overflow-x: hidden;
-}
-
-.content-box .content-auto-slide h3 {
-  transform: translate(300px, -20px);
-  font-family: 'Montserrat';
-  font-size: 1.2rem;
-}
-
-.content-box .content-auto-slide h3 strong {
-  font-family: 'Montserrat';
-  color: #7f6cf4;
-}
-
-.content-box .content-auto-slide .slide-frame {
-  position: absolute;
-  top: 155px;
-  left: 300px;
-  width: 300px;
-  height: 200px;
-  border: 4px solid #000;
-}
-
-.content-auto-slide .auto-slide {
-  display: flex;
-  width: 100vw;
-  height: 200px;
-}
-
-.content-auto-slide .auto-slide li {
-  width: 300px;
-  height: 100%;
-}
-
-.content-auto-slide .auto-slide li img {
-  object-fit: cover;
-  height: 100%;
-  transition: 0.3s;
-}
-
-/* 삽입 위치 조정 */
+    position: relative;
+    font-size: 2rem;
+    color: #ddd;
+  }
+  .Rs input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .Rs span {
+    width: 0;
+    position: absolute;
+    left: 0;
+    color: yellow;
+    overflow: hidden;
+    pointer-events: none;
+  }
+  /* 별점 기본값 설정 */
+  .star span{
+    width: 100%;
+  }
+  .star2 span{
+    width: 10%;
+  }
+  .star3 span{
+    width: 80%;
+  }
+  .star4 span{
+    width: 90%;
+  }
+  .modal-to-review .review-part-view li .star-info{
+    width: 62%;
+    margin-left: 15px;
+    line-height: 2rem;
+  }
+  /* main - 랜덤 영화 슬라이드 */
+  .content-box .content-auto-slide{
+    position: relative;
+    padding-top: 140px;
+    width: 100vw;
+    height: 200px;
+    padding-bottom: 140px;
+    overflow-x: hidden;
+  }
+  .content-box .content-auto-slide h3{
+    transform: translate(300px,-20px);
+    font-family: 'Montserrat';
+    font-size: 1.2rem;
+  }
+  .content-box .content-auto-slide h3 strong{
+    font-family: 'Montserrat';
+    color: #7f6cf4;
+  }
+  .content-box .content-auto-slide .slide-frame{
+    position: absolute;
+    top: 155px;
+    left: 300px;
+    width: 300px;
+    height: 200px;
+    border: 4px solid #000;
+  }
+  .content-auto-slide .auto-slide{
+    display: flex;
+    width: 100vw;
+    height: 200px;
+  }
+  .content-auto-slide .auto-slide li{
+    width: 300px;
+    height: 100%;
+  }
+  .content-auto-slide .auto-slide li img{
+    object-fit: cover;
+    height: 100%;
+    transition: 0.3s;
+  }
+  /* 삽입 위치 조정 */
 /* 메인콘텐츠 - 리뷰 작성 */
 .content-box .content-review {
   width: 100%;
@@ -698,14 +683,12 @@ body {
   width: 60%;
   margin: 0 auto;
 }
-
-.content-review .review .clear-all-btn {
-  background: none;
-  font-size: 1rem;
-  color: #0099ff;
-  float: right;
-  margin-right: 95px;
-  transform: translate(50px, 30px);
+.content-review .review .clear-all-btn{
+    background: none;
+    font-size: 1rem;
+    color: #0099ff;
+    float: left;
+    transform: translate(50px,30px);
 }
 
 .content-review .review .clear-all-btn:hover {
@@ -770,24 +753,20 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
 .main-footer-left {
   margin-left: 50px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
-
 .main-footer-logoimg {
   width: 70px;
   height: 14px;
   margin-bottom: 10px;
 }
-
 .fa-github-square {
   cursor: pointer;
 }
-
 .main-footer-right {
   margin-right: 50px;
   display: flex;
@@ -795,21 +774,17 @@ body {
   flex-direction: column;
   justify-content: flex-end;
 }
-
 .main-footer-right-icon {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
 }
-
 .fa-instagram {
   cursor: pointer;
 }
-
 .fa-twitter-square {
   cursor: pointer;
 }
-
 .fa-facebook-square {
   cursor: pointer;
 }

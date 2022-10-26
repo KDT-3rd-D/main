@@ -17,6 +17,8 @@
   <link rel="stylesheet" href="/static/css/action.css">
   <!-- css: scroll -->
   <link rel="stylesheet" href="static/css/scroll.css">
+  <!-- css : footer -->
+  <link rel="stylesheet" href="/static/css/footer.css">
   <!-- font : noto sans, moserrat, roboto -->
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Noto+Sans+KR:wght@400;500&family=Roboto:wght@400;500&display=swap"
@@ -46,7 +48,7 @@
           </p>
           <button class="random-button"><i class="xi-shuffle"></i> 랜덤플레이</button>
           <div class="video">
-            <video class="random-video" autoplay muted></video>
+            <video class="random-video" loop autoplay muted></video>
             <div class="description">
               <div class="ott">
                 <span class="age-color none"></span>
@@ -72,10 +74,12 @@
             <!-- modal close btn -->
             <button class="modal-close-btn bnt_close"><i class="xi-close"></i></button>
             <div class="modal-cont">
+              
               <div class="modal-img">
                 <video class="modal-vd" muted autoplay loop>
                   <source src="" type="video/mp4">
                 </video>
+                <button id="modal-like" class="modal-like-btn"><i class="fas fa-heart"></i></button>
               </div>
               <h3 class="modal-title"></h3>
               <div class="cont-info">
@@ -313,7 +317,7 @@
           <li class="movie">
             <img src="/static/image/action9.jpg" alt="액션이미지">
             <div class="hoverbox">
-              <video class="top-video" src="/static/video/random_action8.mp4" autoplay loop muted></video>
+              <video class="top-video" src="/static/video/random_action9.mp4" autoplay loop muted></video>
               <div class="tit">
                 <span class="hover-title"></span>
                 <span class="hover-age"></span>
@@ -354,9 +358,8 @@
     </main>
   </section>
 
-  <footer>
-    <aspanress>footer</aspanress>
-  </footer>
+   <!--footer-->
+   <%-include('footer.ejs') %>
 
   <script src="/static/js/sub_action.js"></script>
 
