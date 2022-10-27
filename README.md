@@ -38,10 +38,6 @@ SSH : [git@github.com](mailto:git@github.com):KDT-3rd-D/main.git
 
 ---
 
-![pngegg (3).png](D%20NEMA%20743551763ce340e48824305a12098be2/pngegg_(3).png)
-
-![pngegg (4).png](D%20NEMA%20743551763ce340e48824305a12098be2/pngegg_(4).png)
-
 **D**ice + Ci**nema** ⇒ **D.NEMA**
 
 *‘Dice’*    주사위를 굴리는 것처럼 D.NEMA에서 영화를 골라준다는 의미입니다.
@@ -60,7 +56,8 @@ SSH : [git@github.com](mailto:git@github.com):KDT-3rd-D/main.git
 
 ---
 
-![dnema_sitemapnew.png](D%20NEMA%20743551763ce340e48824305a12098be2/dnema_sitemapnew.png)
+<img width="409" alt="dnema_sitemapnew" src="https://user-images.githubusercontent.com/100466973/198163162-ded62d44-c436-4445-b555-fc9df0368ebb.png">
+
 
 ## 페이지 소개
 
@@ -72,7 +69,8 @@ D.NEMA에 접속하면 처음으로 보이는 화면입니다.
 
 **이메일과 비밀번호를 입력하여 로그인 버튼을 누르면 홈으로 이동**합니다.
 
-![Untitled](D%20NEMA%20743551763ce340e48824305a12098be2/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/100466973/198163201-20baa202-33db-4bf7-bfdf-beaae14154d5.png)
+
 
 ### 홈 화면
 
@@ -80,11 +78,9 @@ D.NEMA에 접속하면 처음으로 보이는 화면입니다.
 
 아래로 내려가면 D.NEMA에서 추천하는 **장르별 영화**와 **Q&A**가 있습니다.
 
-![Untitled](D%20NEMA%20743551763ce340e48824305a12098be2/Untitled%201.png)
-
-![Untitled](D%20NEMA%20743551763ce340e48824305a12098be2/Untitled%202.png)
-
-![Untitled](D%20NEMA%20743551763ce340e48824305a12098be2/Untitled%203.png)
+![Untitled 1](https://user-images.githubusercontent.com/100466973/198163322-44b2b08e-854c-45a3-bb1f-4a69c8acad35.png)
+![Untitled 2](https://user-images.githubusercontent.com/100466973/198163327-f5c6cbb6-a1db-4178-b421-292f1eb2b15a.png)
+![Untitled 3](https://user-images.githubusercontent.com/100466973/198163333-8de40417-199a-48e8-b9e0-578ab5cfffd1.png)
 
 ### 장르별 화면
 
@@ -96,11 +92,10 @@ D.NEMA에서 추천하는 **영화를 ‘랜덤’으로** 볼 수 있습니다!
 
 아래로 내려가면 **‘Top moives’**에서 정보를 확인할 수 있습니다.
 
-![dnema_action.png](D%20NEMA%20743551763ce340e48824305a12098be2/dnema_action.png)
+<img width="958" alt="dnema_action" src="https://user-images.githubusercontent.com/100466973/198163369-245c4902-5483-488a-9eea-e1e2ab9ccff8.png">
+<img width="958" alt="dnema_action2" src="https://user-images.githubusercontent.com/100466973/198163381-c5846f53-4fc5-4dab-85df-865d3f0a94b3.png">
+<img width="958" alt="dnema_action3" src="https://user-images.githubusercontent.com/100466973/198163388-a5dc69c6-e69f-494e-8e05-116e08f532c4.png">
 
-![dnema_action2.png](D%20NEMA%20743551763ce340e48824305a12098be2/dnema_action2.png)
-
-![dnema_action3.png](D%20NEMA%20743551763ce340e48824305a12098be2/dnema_action3.png)
 
 호버 창에서 **더보기 버튼(아래 화살표 아이콘) 클릭** 시 해당 영화의 **모달 창**으로 이동 합니다.
 
@@ -108,7 +103,7 @@ D.NEMA에서 추천하는 **영화를 ‘랜덤’으로** 볼 수 있습니다!
 
 영화 상세정보 버튼 클릭 시 **모달창에서 정보**를 볼 수 있도록 설계하였습니다.
 
-![화면 캡처 2022-10-26 093456.png](D%20NEMA%20743551763ce340e48824305a12098be2/%25ED%2599%2594%25EB%25A9%25B4_%25EC%25BA%25A1%25EC%25B2%2598_2022-10-26_093456.png)
+![%ED%99%94%EB%A9%B4_%EC%BA%A1%EC%B2%98_2022-10-26_093456](https://user-images.githubusercontent.com/100466973/198163415-016a8f7b-0aba-432d-ade1-80d70b7d28a9.png)
 
 각 영화의 정보들은 객체로 정리해 두어서 해당 영화의 정보들이 알맞게 적용되게 설게 하였습니다.
 
@@ -120,7 +115,8 @@ D.NEMA에서 추천하는 **영화를 ‘랜덤’으로** 볼 수 있습니다!
 
 내가 쓴 리뷰 클릭시 **리뷰 작성 화면으로 이동**합니다.
 
-![Untitled](D%20NEMA%20743551763ce340e48824305a12098be2/Untitled%204.png)
+![Untitled 4](https://user-images.githubusercontent.com/100466973/198163467-b9868807-abc1-4d27-ae5d-2e019b3c40ba.png)
+
 
 ### 리뷰 작성 **화면**
 
@@ -128,7 +124,7 @@ D.NEMA에서 추천하는 **영화를 ‘랜덤’으로** 볼 수 있습니다!
 
 **리뷰 작성 및 삭제**가 가능합니다!
 
-![Untitled](D%20NEMA%20743551763ce340e48824305a12098be2/Untitled%205.png)
+![Untitled 5](https://user-images.githubusercontent.com/100466973/198163480-cea4021d-e0ef-4f13-b7b6-21b7245eebce.png)
 
 ## 기능 소개
 
@@ -200,13 +196,10 @@ D.NEMA에서 추천하는 **영화를 ‘랜덤’으로** 볼 수 있습니다!
     영문 **moserrat**(포인트), **roboto**
     
 
-![Untitled](D%20NEMA%20743551763ce340e48824305a12098be2/Untitled%206.png)
-
 **사용예시: Logo, Favicon**
 
-![logo-v2.png](D%20NEMA%20743551763ce340e48824305a12098be2/logo-v2.png)
+<img width="270" alt="logo-v2" src="https://user-images.githubusercontent.com/100466973/198163507-f12f2e50-b996-4382-8643-eb012b6f3d06.png">
 
-[favicon.ico](D%20NEMA%20743551763ce340e48824305a12098be2/favicon.ico)
 
 ## 의견 조율 내용
 
@@ -215,8 +208,9 @@ D.NEMA에서 추천하는 **영화를 ‘랜덤’으로** 볼 수 있습니다!
 - 컨셉을 어떻게 통일할지 (디자인 시스템, 조합, 애니메이션, border-radius, 버튼 UI)
 - class, id 네이밍규칙
     
-    ![스크린샷 2022-10-14 오후 6.01.40.png](D%20NEMA%20743551763ce340e48824305a12098be2/%25EC%258A%25A4%25ED%2581%25AC%25EB%25A6%25B0%25EC%2583%25B7_2022-10-14_%25EC%2598%25A4%25ED%259B%2584_6.01.40.png)
-    
+
+    <img width="1440" alt="%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2022-10-14_%EC%98%A4%ED%9B%84_6 01 40" src="https://user-images.githubusercontent.com/100466973/198163553-3125de99-c6d4-4e19-a312-5ffac44f3448.png">
+
 
       ex) 부모요소를 “content”-box로 두고, 연관된 자식요소에 “content” - “기능”으로 사용
 
@@ -226,13 +220,10 @@ D.NEMA에서 추천하는 **영화를 ‘랜덤’으로** 볼 수 있습니다!
 
 ---
 
-![pngegg (1).png](D%20NEMA%20743551763ce340e48824305a12098be2/pngegg_(1).png)
+<img width="200" alt="%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2022-10-14_%EC%98%A4%ED%9B%84_6 01 40" src="https://user-images.githubusercontent.com/100466973/198163904-9988bbdc-2fc0-4dfb-afa7-a93e1ada7cd1.png"><img width="240" alt="%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2022-10-14_%EC%98%A4%ED%9B%84_6 01 40" src="https://user-images.githubusercontent.com/100466973/198163978-9f847f7c-b673-4727-9164-b10fe7ef24fe.png">
+<img width="200" alt="%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2022-10-14_%EC%98%A4%ED%9B%84_6 01 40" src="https://user-images.githubusercontent.com/100466973/198164009-44aef3a7-010f-418e-886e-00d6f3bfd34e.png">
+<img width="200" alt="%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2022-10-14_%EC%98%A4%ED%9B%84_6 01 40" src="https://user-images.githubusercontent.com/100466973/198164026-cc165368-c75b-4a05-96bb-07af332a6da7.png">
 
-![pngegg.png](D%20NEMA%20743551763ce340e48824305a12098be2/pngegg.png)
-
-![pngwing.com (1).png](D%20NEMA%20743551763ce340e48824305a12098be2/pngwing.com_(1).png)
-
-![pngegg (2).png](D%20NEMA%20743551763ce340e48824305a12098be2/pngegg_(2).png)
 
 ## 코드
 
@@ -242,35 +233,12 @@ D.NEMA에서 추천하는 **영화를 ‘랜덤’으로** 볼 수 있습니다!
 
 [Jinyoung](https://www.notion.so/Jinyoung-580e63f790c147e3a9a859698a243c9d)
 
-[HEADER](https://www.notion.so/HEADER-980fe72c5aa642c0957a0877abd80a0b)
-
-[MAIN](https://www.notion.so/MAIN-e01049d058ca4fe5be2c08b48361f5da)
-
-[LIST](https://www.notion.so/LIST-0c3229efb9fb43fcabfc99e274c8bff4)
-
-[MY PAGE](https://www.notion.so/MY-PAGE-0e288db281a04d3b87ce53e1bd617dd2)
-
 [Jaeran](https://www.notion.so/Jaeran-95f87342622440a4af03a62b86b41f44)
-
-[LOGIN](https://www.notion.so/LOGIN-797a62cc66534ac0896cd29756b8f83c)
-
-[FOOTER & SCROLL](https://www.notion.so/FOOTER-SCROLL-a016301eefd14c8bb7eabc17101b30bc)
 
 [Jung Ho](https://www.notion.so/Jung-Ho-0159d9fb2e274e3289b587e4f68450a0)
 
-[Hover](https://www.notion.so/Hover-d567bf8fff1d42c3acf17ae569200992)
-
-[Modal](https://www.notion.so/Modal-c3e4a00d550849f8935e45e3439b6919)
-
 [Hyuna](https://www.notion.so/Hyuna-eb23e3849bf649a9953bb4c8f5170bdb)
 
-[SUB Random Play](https://www.notion.so/SUB-Random-Play-01a7f1467fa5449e9f6cc77c7c140f17)
-
-[Media Query](https://www.notion.so/Media-Query-464dfc018f60490bbc3ce9f0f1f14e1a)
-
-[Toggle](https://www.notion.so/Toggle-332d9ac0b4974115a145da0b29bd7de0)
-
-[Heading](https://www.notion.so/Heading-9020c1c307b34a9aa4ac7418f3e20beb)
 
 ### **아쉬운점**
 
