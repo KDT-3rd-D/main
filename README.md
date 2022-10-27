@@ -239,6 +239,10 @@ D.NEMA에서 추천하는 **영화를 ‘랜덤’으로** 볼 수 있습니다!
 [Hyuna](https://www.notion.so/Hyuna-eb23e3849bf649a9953bb4c8f5170bdb)
 
 
+### **회고** 
+
+https://www.notion.so/72ed98bcdc654d5eb7e00bd93e74d97e?v=7c0b3bacfb8b483186554ae5c78dd792
+
 ### **아쉬운점**
 
 ---
