@@ -5,7 +5,7 @@
 [이런 일을 했어요!](https://www.notion.so/989e59ce5a75407a841508f8a2672747)
 
 <aside>
-📌 **메인 화면 주소 → http://49.50.161.92:8080/ 
+📌 **메인 화면 주소 → [http://49.50.161.92:8080/](http://49.50.161.92:8080/)**
 
 </aside>
 
@@ -178,6 +178,7 @@ D.NEMA에서 추천하는 **영화를 ‘랜덤’으로** 볼 수 있습니다!
 ## 디자인 시스템
 
 ---
+<img width="500" alt="logo-v2" src="https://user-images.githubusercontent.com/100466973/198164382-36ec0e21-a955-4b57-9580-0e4c392c1cc6.png">
 
 - **메인컬러**
     
@@ -200,7 +201,6 @@ D.NEMA에서 추천하는 **영화를 ‘랜덤’으로** 볼 수 있습니다!
 
 <img width="270" alt="logo-v2" src="https://user-images.githubusercontent.com/100466973/198163507-f12f2e50-b996-4382-8643-eb012b6f3d06.png">
 
-
 ## 의견 조율 내용
 
 ---
@@ -209,7 +209,7 @@ D.NEMA에서 추천하는 **영화를 ‘랜덤’으로** 볼 수 있습니다!
 - class, id 네이밍규칙
     
 
-    <img width="1440" alt="%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2022-10-14_%EC%98%A4%ED%9B%84_6 01 40" src="https://user-images.githubusercontent.com/100466973/198163553-3125de99-c6d4-4e19-a312-5ffac44f3448.png">
+    <img width="600" alt="%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2022-10-14_%EC%98%A4%ED%9B%84_6 01 40" src="https://user-images.githubusercontent.com/100466973/198163553-3125de99-c6d4-4e19-a312-5ffac44f3448.png">
 
 
       ex) 부모요소를 “content”-box로 두고, 연관된 자식요소에 “content” - “기능”으로 사용
