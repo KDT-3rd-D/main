@@ -645,7 +645,11 @@ for (let i = 0; i < movieImg.length; i++) {
     hoverBoxVd[i].style.width = "350px";
     //hoverInfo
     hoverTitle[i].innerText = movies[i].title;
-    hoverAge[i].innerText = `${movies[i].age}+`;
+    if (movies[i].age === "ALL") {
+      hoverAge[i].innerText = "ALL";
+    } else {
+      hoverAge[i].innerText = `${movies[i].age}+`;
+    }
     hoverRuntime[i].innerText = movies[i].runtime;
     hoverStory[i].innerText = movies[i].story;
     // hover 연령 색상 변경

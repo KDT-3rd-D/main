@@ -685,8 +685,9 @@ body {
     background: none;
     font-size: 1rem;
     color: #0099ff;
-    float: left;
-    transform: translate(50px,30px);
+    position: absolute;
+    right: 25%;
+    transform: translateY(25px);
 }
 
 .content-review .review .clear-all-btn:hover {
@@ -710,6 +711,7 @@ body {
   background-color: #fff;
   border-radius: 10px;
   transform: translateX(-5px);
+  cursor: pointer;
 }
 
 /* 리뷰 삭제 버튼 */
@@ -784,5 +786,22 @@ body {
   cursor: pointer;
 }
 .fa-facebook-square {
+  cursor: pointer;
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+  html {
+    font-size: 10px;
+  }
+}
+ /* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+  #wrap {
+    min-width: 320px;
+  }
+}
+
+.best-movies{
   cursor: pointer;
 }

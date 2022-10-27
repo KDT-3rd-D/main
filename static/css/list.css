@@ -152,3 +152,16 @@ table td {
   font-size: 1.1rem;
   color: #aaa;
 }
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+  html {
+    font-size: 10px;
+  }
+}
+ /* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+  #wrap {
+    min-width: 320px;
+  }
+}

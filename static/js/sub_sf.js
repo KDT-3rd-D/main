@@ -577,37 +577,6 @@ let hoverRuntime = document.querySelectorAll(".hover-runtime");
 let hoverStory = document.querySelectorAll(".hover-story");
 let moreButton = document.querySelectorAll(".fa-chevron-down");
 
-for (let i = 0; i < movieImg.length; i++) {
-  movieImg[i].addEventListener("mouseenter", function () {
-    //hoverFilter
-    hoverFilter.style.zIndex = "1";
-    // movieImg
-    movieImg[i].style.zIndex = "-1";
-    movieImg[i].style.transform = "scale(1.5)";
-    movieImg[i].style.opacity = "0";
-    // hoverBox
-    hoverBox[i].style.zIndex = "2";
-    hoverBox[i].style.opacity = "1";
-    hoverBox[i].style.width = "350px";
-    hoverBoxVd[i].style.width = "350px";
-    //hoverInfo
-    hoverTitle[i].innerText = movies[i].title;
-    hoverAge[i].innerText = `${movies[i].age}+`;
-    hoverRuntime[i].innerText = movies[i].runtime;
-    hoverStory[i].innerText = movies[i].story;
-    // hover 연령 색상 변경
-    if (movies[i].age === "12") {
-      $(".hover-age").css("background", "#23A2E4");
-    } else if (movies[i].age === "15") {
-      $(".hover-age").css("background", "#EDA128");
-    } else if (movies[i].age === "19") {
-      $(".hover-age").css("background", "#CA2324");
-    } else {
-      $(".hover-age").css("background", "#3EA14F");
-    }
-  });
-}
-
 for (let i = 0; i < hoverBox.length; i++) {
   hoverBox[i].addEventListener("mouseleave", function () {
     //hoverFilter
@@ -693,3 +662,32 @@ modalLike.addEventListener("click", function () {
   modalLike.classList.toggle("far");
   modalLike.classList.toggle("fas");
 });
+
+for (let i = 0; i < movieImg.length; i++) {
+  var hoverImg = function () {
+    console.log("dd");
+    // movieImg
+    movieImg[i].style.zIndex = "-1";
+    movieImg[i].style.transform = "scale(1.5)";
+    movieImg[i].style.opacity = "0";
+    // hoverBox
+    hoverBox[i].style.zIndex = "2";
+    hoverBox[i].style.opacity = "1";
+    hoverBox[i].style.width = "350px";
+    hoverBoxVd[i].style.width = "350px";
+    //hoverInfo
+    hoverTitle[i].innerText = movies[i].title;
+    hoverAge[i].innerText = `${movies[i].age}+`;
+    hoverRuntime[i].innerText = movies[i].runtime;
+    hoverStory[i].innerText = movies[i].story;
+    // hover 연령 색상 변경
+    if (movies[i].age === "12") {
+      $(".hover-age").css("background", "#23A2E4");
+    } else if (movies[i].age === "15") {
+      $(".hover-age").css("background", "#EDA128");
+    } else if (movies[i].age === "19") {
+      $(".hover-age").css("background", "#CA2324");
+    } else {
+      $(".hover-age").css("background", "#3EA14F");
+    }
+  }};

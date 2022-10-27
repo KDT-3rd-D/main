@@ -98,3 +98,16 @@ i.xi-time{
   height: 100%;
   object-fit: cover;
 }
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+  html {
+    font-size: 10px;
+  }
+}
+ /* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+  #wrap {
+    min-width: 320px;
+  }
+}
