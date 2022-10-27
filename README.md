@@ -14,7 +14,7 @@ Git Hub
 Https : [https://github.com/KDT-3rd-D/main.git](https://github.com/KDT-3rd-D/main.git)
 SSH : [git@github.com](mailto:git@github.com):KDT-3rd-D/main.git
 
-[CodingOn X POSCO KDT3rd - Group D.pdf](D%20NEMA%20743551763ce340e48824305a12098be2/CodingOn_X_POSCO_KDT3rd_-_Group_D.pdf)
+[CodingOn X POSCO KDT3rd - Group D.pdf](./D%20NEMA%20743551763ce340e48824305a12098be2/CodingOn_X_POSCO_KDT3rd_-_Group_D.pdf)
 
 ## 서비스 소개
 
@@ -316,7 +316,9 @@ for (let i = 0; i < movieImg.length; i++) {
 
 - Modal 애니메이션을 더욱 잘 만들 수 있었는데 아쉽다.
 
-ex) **넷플릭스는 모달로 이동시 매끄럽게 이어지는데,**
+![아쉬운점.gif](D%20NEMA%20743551763ce340e48824305a12098be2/%25EC%2595%2584%25EC%2589%25AC%25EC%259A%25B4%25EC%25A0%2590.gif)
+
+이처럼 넷플릭스는 모달로 이동시 매끄럽게 이어지는데,
 
 구현하지 못하여서 숨겨져있다가 나오는 애니메이션으로 대체 하였다.
 
