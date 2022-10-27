@@ -266,3 +266,8 @@ https://www.notion.so/72ed98bcdc654d5eb7e00bd93e74d97e?v=7c0b3bacfb8b483186554ae
 - `array나 object`를 활용하여, 사용자가 좋아요 버튼을 누른 영화를 데이터값으로 저장하여
 
    찜하기 기능을 구현하고 싶었는데 구현해내지 못해서 아쉽다.
+   
+   
+   **두둥!!!**
+   <img width="350" alt="스크린샷 2022-10-27 오후 2 11 07" src="https://user-images.githubusercontent.com/100466973/198198792-036070f5-cc00-4bf5-863e-523e617c563d.png">
+
