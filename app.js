@@ -5,7 +5,7 @@ const express = require("express");
 // express 함수를 호출해서 만들어진 express application
 const app = express();
 
-const PORT = 8080; // PORT NUMBER
+const PORT = process.env.PORT || 8080;
 
 // app에 view engine을 ejs로 설정
 app.set("view engine", "ejs");
@@ -18,11 +18,11 @@ app.use("/static", express.static(__dirname + "/static"));
 // get 요청 : 리소스 검색하고 반환받기 위해 사용되는 메서드
 // main
 app.get("/", function (request, response) {
-  response.render("login");
+  response.render("index");
 });
 // login
-app.get("/home", function (request, response) {
-  response.render("index");
+app.get("/login", function (request, response) {
+  response.render("login");
 });
 // 영화장르별 page
 app.get("/action", function (request, response) {
