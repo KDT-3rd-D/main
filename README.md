@@ -19,6 +19,7 @@ Https : [https://github.com/KDT-3rd-D/main.git](https://github.com/KDT-3rd-D/mai
 
 **#귀차니즘 #선택장애 #시간절약 #에너지절약 #킬링타임**
 
+<br>
 
 
 ## 개발 동기
@@ -27,6 +28,7 @@ Https : [https://github.com/KDT-3rd-D/main.git](https://github.com/KDT-3rd-D/mai
 
 **저희 D조는 영화 추천 플랫폼을 제작** 하게되었습니다.
 
+<br>
 
 
 
@@ -36,6 +38,7 @@ Https : [https://github.com/KDT-3rd-D/main.git](https://github.com/KDT-3rd-D/mai
 
 *‘Dice’*    주사위를 굴리는 것처럼 D.NEMA에서 영화를 골라준다는 의미입니다.
 
+<br>
 
 
 ## 타겟층
@@ -46,16 +49,19 @@ Https : [https://github.com/KDT-3rd-D/main.git](https://github.com/KDT-3rd-D/mai
 
 ✅ 장르별로 엄선된 영화를 추천받고자 하는 사람 
 
+<br>
 
 
 ## 사이트 맵
 
 <img width="409" alt="dnema_sitemapnew" src="https://user-images.githubusercontent.com/100466973/198163162-ded62d44-c436-4445-b555-fc9df0368ebb.png">
 
+<br>
 
 
 ## 페이지 소개
 
+<br>
 
 ### 로그인 화면
 
@@ -64,6 +70,8 @@ D.NEMA에 접속하면 처음으로 보이는 화면입니다.
 **이메일과 비밀번호를 입력하여 로그인 버튼을 누르면 홈으로 이동**합니다.
 
 ![Untitled](https://user-images.githubusercontent.com/100466973/198163201-20baa202-33db-4bf7-bfdf-beaae14154d5.png)
+
+<br>
 
 
 ### 홈 화면
@@ -75,6 +83,9 @@ D.NEMA에 접속하면 처음으로 보이는 화면입니다.
 ![Untitled 1](https://user-images.githubusercontent.com/100466973/198163322-44b2b08e-854c-45a3-bb1f-4a69c8acad35.png)
 ![Untitled 2](https://user-images.githubusercontent.com/100466973/198163327-f5c6cbb6-a1db-4178-b421-292f1eb2b15a.png)
 ![Untitled 3](https://user-images.githubusercontent.com/100466973/198163333-8de40417-199a-48e8-b9e0-578ab5cfffd1.png)
+
+<br>
+
 
 ### 장르별 화면
 
@@ -93,6 +104,9 @@ D.NEMA에서 추천하는 **영화를 ‘랜덤’으로** 볼 수 있습니다!
 
 호버 창에서 **더보기 버튼(아래 화살표 아이콘) 클릭** 시 해당 영화의 **모달 창**으로 이동 합니다.
 
+<br>
+
+
 ### **모달 창 화면**
 
 영화 상세정보 버튼 클릭 시 **모달창에서 정보**를 볼 수 있도록 설계하였습니다.
@@ -100,6 +114,9 @@ D.NEMA에서 추천하는 **영화를 ‘랜덤’으로** 볼 수 있습니다!
 ![%ED%99%94%EB%A9%B4_%EC%BA%A1%EC%B2%98_2022-10-26_093456](https://user-images.githubusercontent.com/100466973/198163415-016a8f7b-0aba-432d-ade1-80d70b7d28a9.png)
 
 각 영화의 정보들은 객체로 정리해 두어서 해당 영화의 정보들이 알맞게 적용되게 설게 하였습니다.
+
+<br>
+
 
 ### **마이페이지 화면**
 
@@ -111,6 +128,8 @@ D.NEMA에서 추천하는 **영화를 ‘랜덤’으로** 볼 수 있습니다!
 
 ![Untitled 4](https://user-images.githubusercontent.com/100466973/198163467-b9868807-abc1-4d27-ae5d-2e019b3c40ba.png)
 
+<br>
+
 
 ### 리뷰 작성 **화면**
 
@@ -120,9 +139,10 @@ D.NEMA에서 추천하는 **영화를 ‘랜덤’으로** 볼 수 있습니다!
 
 ![Untitled 5](https://user-images.githubusercontent.com/100466973/198163480-cea4021d-e0ef-4f13-b7b6-21b7245eebce.png)
 
-## 기능 소개
+<br>
 
----
+
+## 기능 소개
 
 - **Login**
     
@@ -167,11 +187,13 @@ D.NEMA에서 추천하는 **영화를 ‘랜덤’으로** 볼 수 있습니다!
 - **Review page**
     
      - 리뷰작성 및 평점 평가 가능 + 리뷰 삭제
+
     
+<br>
+
 
 ## 디자인 시스템
 
----
 <img width="500" alt="logo-v2" src="https://user-images.githubusercontent.com/100466973/198164382-36ec0e21-a955-4b57-9580-0e4c392c1cc6.png">
 
 - **메인컬러**
@@ -197,7 +219,6 @@ D.NEMA에서 추천하는 **영화를 ‘랜덤’으로** 볼 수 있습니다!
 
 ## 의견 조율 내용
 
----
 
 - 컨셉을 어떻게 통일할지 (디자인 시스템, 조합, 애니메이션, border-radius, 버튼 UI)
 - class, id 네이밍규칙
@@ -212,16 +233,16 @@ D.NEMA에서 추천하는 **영화를 ‘랜덤’으로** 볼 수 있습니다!
 
 ## 개발 도구 및 환경
 
----
 
 <img width="200" alt="%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2022-10-14_%EC%98%A4%ED%9B%84_6 01 40" src="https://user-images.githubusercontent.com/100466973/198163904-9988bbdc-2fc0-4dfb-afa7-a93e1ada7cd1.png"><img width="240" alt="%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2022-10-14_%EC%98%A4%ED%9B%84_6 01 40" src="https://user-images.githubusercontent.com/100466973/198163978-9f847f7c-b673-4727-9164-b10fe7ef24fe.png">
 <img width="200" alt="%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2022-10-14_%EC%98%A4%ED%9B%84_6 01 40" src="https://user-images.githubusercontent.com/100466973/198164009-44aef3a7-010f-418e-886e-00d6f3bfd34e.png">
 <img width="180" alt="%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7_2022-10-14_%EC%98%A4%ED%9B%84_6 01 40" src="https://user-images.githubusercontent.com/100466973/198164026-cc165368-c75b-4a05-96bb-07af332a6da7.png">
 
+<br>
+
 
 ## 코드
 
----
 
 **조원 개별 코드 설명**
 
@@ -233,14 +254,18 @@ D.NEMA에서 추천하는 **영화를 ‘랜덤’으로** 볼 수 있습니다!
 
 [Hyuna](https://www.notion.so/Hyuna-eb23e3849bf649a9953bb4c8f5170bdb)
 
+<br>
+
 
 ### **회고** 
 
 [D.NEMA 프로젝트를 마치며,](https://www.notion.so/72ed98bcdc654d5eb7e00bd93e74d97e?v=7c0b3bacfb8b483186554ae5c78dd792)
 
+<br>
+
+
 ### **아쉬운점**
 
----
 
 - 로그인: 정규식을 사용하여 유효성 검사를 할 수 있는데 능력 부족으로 구현하지 못했다.
 - Hover 애니메이션이 매끄럽지 못하다. 
@@ -250,6 +275,9 @@ D.NEMA에서 추천하는 **영화를 ‘랜덤’으로** 볼 수 있습니다!
 
 시간 부족과 자바스크립트 프로그래밍 이해가 부족하여 구현하지 못하였다.
 - Modal 애니메이션을 더욱 잘 만들 수 있었는데 아쉽다.
+
+<br>
+
 
  ex) **넷플릭스는 모달로 이동시 매끄럽게 이어지는데,**
 
