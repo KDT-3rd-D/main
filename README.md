@@ -11,8 +11,6 @@ Https : [https://github.com/KDT-3rd-D/main.git](https://github.com/KDT-3rd-D/mai
 
 ## 서비스 소개
 
----
-
 **영화 선정에 어려움을 겪는**, 
 
 **많은 범위의 콘텐츠에서 고민하기 싫고**,
@@ -21,25 +19,26 @@ Https : [https://github.com/KDT-3rd-D/main.git](https://github.com/KDT-3rd-D/mai
 
 **#귀차니즘 #선택장애 #시간절약 #에너지절약 #킬링타임**
 
-## 개발 동기
 
----
+
+## 개발 동기
 
 과도한 컨텐츠 추천으로 인한 사용자의 피로도를 줄여주기 위해 
 
 **저희 D조는 영화 추천 플랫폼을 제작** 하게되었습니다.
 
-## 서비스 이름
 
----
+
+
+## 서비스 이름
 
 **D**ice + Ci**nema** ⇒ **D.NEMA**
 
 *‘Dice’*    주사위를 굴리는 것처럼 D.NEMA에서 영화를 골라준다는 의미입니다.
 
-## 타겟층
 
----
+
+## 타겟층
 
 ✅ 영상 OTT 플랫폼에 가입되어 있지만 오히려 과도한 정보로 인해 영화 선택이 힘든 사람
 
@@ -47,16 +46,16 @@ Https : [https://github.com/KDT-3rd-D/main.git](https://github.com/KDT-3rd-D/mai
 
 ✅ 장르별로 엄선된 영화를 추천받고자 하는 사람 
 
-## 사이트 맵
 
----
+
+## 사이트 맵
 
 <img width="409" alt="dnema_sitemapnew" src="https://user-images.githubusercontent.com/100466973/198163162-ded62d44-c436-4445-b555-fc9df0368ebb.png">
 
 
+
 ## 페이지 소개
 
----
 
 ### 로그인 화면
 
